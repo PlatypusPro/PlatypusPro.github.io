@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-03-13T13:46:09.000Z</updated>
+  <updated>2015-03-13T13:46:46.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[bzoj-2539]]></title>
+    <title><![CDATA[BZOJ 2539]]></title>
     <link href="http://platypuspro.github.io/2015/03/13/bzoj-2539/"/>
     <id>http://platypuspro.github.io/2015/03/13/bzoj-2539/</id>
     <published>2015-03-13T13:25:46.000Z</published>
-    <updated>2015-03-13T13:46:09.000Z</updated>
+    <updated>2015-03-13T13:46:46.000Z</updated>
     <content type="html"><![CDATA[<p><del>为什么没有只显示标题的选项呢</del><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2539" target="_blank" rel="external">传送门</a></p>
 <p>黑书上二分图最优匹配的例题<del>尼玛黑书上说了跟没说一样</del></p>
 <p>直接上KM或费用流就可以了 但是好坑啊 QAQ</p>
