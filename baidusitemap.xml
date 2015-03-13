@@ -3,6 +3,59 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/2015/03/11/bzoj-1070-2879/</loc>
+    <lastmod>2015-03-13T11:13:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1070+2879</title>
+        <pubTime>2015-03-11T09:57:40.000Z</pubTime>
+        
+        <tag>Min Cost Flow </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/2015/03/13/bzoj-2539/</loc>
+    <lastmod>2015-03-13T07:40:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>bzoj-2539</title>
+        <pubTime>2015-03-13T07:40:24.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/2015/03/04/hello-world/</loc>
+    <lastmod>2015-03-13T06:27:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2015-03-04T06:12:00.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Others" url="http://platypuspro.github.io/categories/others/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/2015/03/12/hungary/</loc>
     <lastmod>2015-03-12T13:49:30.000Z</lastmod>
     <data>
@@ -16,24 +69,6 @@
            
              
               <breadCrumb title="Algorithm" url="http://platypuspro.github.io/categories/algorithm/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/2015/03/04/hello-world/</loc>
-    <lastmod>2015-03-12T13:49:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>hello world</title>
-        <pubTime>2015-03-04T06:12:00.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="Others" url="http://platypuspro.github.io/categories/others/"/>
           
         </display>
     </data>
@@ -69,26 +104,6 @@
         <pubTime>2015-03-11T23:55:51.000Z</pubTime>
         
         <tag>Dynamic Convex Hull </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/2015/03/11/bzoj-1070-2879/</loc>
-    <lastmod>2015-03-12T13:49:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1070&2879</title>
-        <pubTime>2015-03-11T09:57:40.000Z</pubTime>
-        
-        <tag>Min Cost Flow </tag>
          
          
            
