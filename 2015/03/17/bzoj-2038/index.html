@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>BZOJ 2038 | Platypus Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="莫队大法好">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ 2038">
+<meta property="og:url" content="http://platypuspro.github.io/2015/03/17/bzoj-2038/index.html">
+<meta property="og:site_name" content="Platypus Blog">
+<meta property="og:description" content="莫队大法好">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BZOJ 2038">
+<meta name="twitter:description" content="莫队大法好">
+  
+    <link rel="alternative" href="/atom.xml" title="Platypus Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-60564827-1', 'auto');
+  ga('send', 'pageview');
+  
+</script>
+<!-- End Google Analytics -->
+
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Platypus Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="platypuspro.github.io">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-bzoj-2038" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/17/bzoj-2038/" class="article-date">
+  <time datetime="2015-03-17T12:56:27.000Z" itemprop="datePublished">3月 17 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BZOJ 2038
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>莫队大法好<br><a id="more"></a><br>能使用莫队算法的条件是：</p>
+<blockquote>
+<p>已知<code>[l,r]</code>的答案，能在<code>O(1)</code>（或<code>O(logn)</code>等较低的时间复杂度）的时间内求得<code>[l+1,r]</code>与<code>[l,r-1]</code>的答案 ——by <a href="http://hzwer.com/2782.html" target="_blank" rel="external">hzwer</a></p>
+</blockquote>
+<p>那么我们观察这道题，假设一个区间<code>[l,r]</code>内有<code>m</code>只相同颜色的袜子 <del>怎么觉得好恶心…</del>，那么满足条件的取法有$C^2_m$种</p>
+<p>而$C^2_m=\frac{m(m-1)}{2}$</p>
+<p>整理一下，得$2C^2_m=m^2-m$</p>
+<p>现在假设这个区间<code>[l,r]</code>里有两种颜色的袜子，分别有<code>a</code>和<code>b</code>只，那么取法<code>*2</code>共有$a^2+b^2-a-b$种（把这数放在分子上看起来太小，所以就直接换成取法<code>*2</code>了）</p>
+<p>三种颜色的取法<code>*2</code>就是$a^2+b^2+c^2-a-b-c$种，发现这些式子对于某种颜色只有一只时也同样成立</p>
+<p>所以得到取法总数<code>*2</code>为$\sum_{i=1}^{colors}=colortot[i]^2-colortot[i]$（colors是区间内颜色的数目，colortot是每种颜色的袜子数），注意到后面那一坨的和就是区间里所有袜子的数</p>
+<p>所以得到取法种数<code>*2</code>即为$\sum_{i=1}^{colors}-(r-l+1)=colortot[i]^2-(r-l+1)$</p>
+<p>这样就得出了计算区间<code>[l,r]</code>内取法的方法，可以考虑上莫队了</p>
+<p>分为$\sqrt{n}$块，对其进行排序，目标是使所有左端点在一个块内的询问的右端点是递增的，举个栗子<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">n=6 m=15</span><br><span class="line">1 2</span><br><span class="line">1 3</span><br><span class="line">1 4</span><br><span class="line">1 5</span><br><span class="line">1 6</span><br><span class="line">1 7</span><br><span class="line">2 3</span><br><span class="line">2 4</span><br><span class="line">2 5</span><br><span class="line">2 6</span><br><span class="line">3 4</span><br><span class="line">3 5</span><br><span class="line">3 6</span><br><span class="line">4 5</span><br><span class="line">4 6</span><br></pre></td></tr></table></figure></p>
+<p>分块大小为每块2个，排序后变成了<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">2 3</span><br><span class="line">1 3</span><br><span class="line">2 4</span><br><span class="line">1 4</span><br><span class="line">1 5</span><br><span class="line">2 5</span><br><span class="line">2 6</span><br><span class="line">1 6</span><br><span class="line">1 7</span><br><span class="line"><span class="horizontal_rule">---以上为第一块，右端点为递增的</span></span><br><span class="line">3 4</span><br><span class="line">4 5</span><br><span class="line">3 5</span><br><span class="line">4 6</span><br><span class="line">3 6</span><br><span class="line"><span class="horizontal_rule">---第二块</span></span><br></pre></td></tr></table></figure></p>
+<p>这样的话转移时就能省很多时间</p>
+<p>初始时区间为<code>[1,0]</code>，然后依次向每个询问进行转移，依据上面的公式，只需要维护一个变量表示当前区间内每种颜色数量的平方和，这个变量减掉区间内元素个数就是答案</p>
+<p>分母就不用多说了吧，就是$C^2_{r-l+1}=\frac{(r-l+1)(r-l)}{2}$，发现分母分子都有$/2$，直接扔掉，然后用<code>gcd</code>化简一下就是答案</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2038;</span><br><span class="line"><span class="keyword">type</span> q=<span class="keyword">record</span> l,r,id:longint; mom,son:int64; <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">var</span> c,bl,cnt,pos:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">50000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    tot:int64;</span><br><span class="line">    n,m,i,block:longint;</span><br><span class="line">    ask:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">50000</span>]<span class="keyword">of</span> q;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">gcd</span><span class="params">(a,b:int64)</span>:</span>int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> b=<span class="number">0</span> <span class="keyword">then</span> <span class="keyword">exit</span>(a) <span class="keyword">else</span> <span class="keyword">exit</span>(gcd(b,a <span class="keyword">mod</span> b));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sml</span><span class="params">(a,b:q)</span>:</span>boolean;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> bl[a.l]=bl[b.l] <span class="keyword">then</span> <span class="keyword">exit</span>(a.r&lt;b.r);</span><br><span class="line">  <span class="keyword">exit</span>(a.l&lt;b.l);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">qsort</span><span class="params">(l,r:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,j:longint;</span><br><span class="line">    mid,p:q;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  i:=l;</span><br><span class="line">  j:=r;</span><br><span class="line">  mid:=ask[(l+r)&gt;&gt;<span class="number">1</span>];</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    <span class="keyword">while</span> sml(ask[i],mid) <span class="keyword">do</span> inc(i);</span><br><span class="line">    <span class="keyword">while</span> sml(mid,ask[j]) <span class="keyword">do</span> dec(j);</span><br><span class="line">    <span class="keyword">if</span> i&lt;=j <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      p:=ask[i];</span><br><span class="line">      ask[i]:=ask[j];</span><br><span class="line">      ask[j]:=p;</span><br><span class="line">      inc(i);</span><br><span class="line">      dec(j);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">until</span> i&gt;j;</span><br><span class="line">  <span class="keyword">if</span> i&lt;r <span class="keyword">then</span> qsort(i,r);</span><br><span class="line">  <span class="keyword">if</span> l&lt;j <span class="keyword">then</span> qsort(l,j);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">modify</span><span class="params">(l,r,delta:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">for</span> i:=l <span class="keyword">to</span> r <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    dec(tot,sqr(cnt[c[i]]));</span><br><span class="line">    inc(cnt[c[i]],delta);</span><br><span class="line">    inc(tot,sqr(cnt[c[i]]));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">solve</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,l,r:longint;</span><br><span class="line">    g:int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  l:=<span class="number">1</span>;</span><br><span class="line">  r:=<span class="number">0</span>;</span><br><span class="line">  tot:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> l&lt;ask[i].l <span class="keyword">then</span> modify(l,ask[i].l-<span class="number">1</span>,-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">if</span> l&gt;ask[i].l <span class="keyword">then</span> modify(ask[i].l,l-<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">if</span> r&lt;ask[i].r <span class="keyword">then</span> modify(r+<span class="number">1</span>,ask[i].r,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">if</span> r&gt;ask[i].r <span class="keyword">then</span> modify(ask[i].r+<span class="number">1</span>,r,-<span class="number">1</span>);</span><br><span class="line">    l:=ask[i].l;</span><br><span class="line">    r:=ask[i].r;</span><br><span class="line">    <span class="keyword">with</span> ask[i] <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> l=r <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        son:=<span class="number">0</span>;</span><br><span class="line">        mom:=<span class="number">1</span>;</span><br><span class="line">        continue;</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">      son:=tot-(r-l+<span class="number">1</span>);</span><br><span class="line">      mom:=int64(r-l+<span class="number">1</span>)*int64(r-l);</span><br><span class="line">      g:=gcd(mom,son);</span><br><span class="line">      son:=son <span class="keyword">div</span> g;</span><br><span class="line">      mom:=mom <span class="keyword">div</span> g;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n,m);</span><br><span class="line">  block:=trunc(sqrt(n));</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> bl[i]:=(i-<span class="number">1</span>)<span class="keyword">div</span> block+<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> <span class="keyword">read</span>(c[i]);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span> <span class="keyword">with</span> ask[i] <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(l,r);</span><br><span class="line">    id:=i;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  qsort(<span class="number">1</span>,m);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span> pos[ask[i].id]:=i;</span><br><span class="line">  solve;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span> <span class="keyword">with</span> ask[pos[i]] <span class="keyword">do</span> writeln(son,<span class="string">'/'</span>,mom);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+        <a href="http://platypuspro.github.io/2015/03/17/bzoj-2038/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/03/16/bzoj-1854/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 1854</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/03/17/bzoj-2038/" data-title="BZOJ 2038" data-url="http://platypuspro.github.io/2015/03/17/bzoj-2038/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/03/17/bzoj-2038/">BZOJ 2038</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/16/bzoj-1854/">BZOJ 1854</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/16/bzoj-1857/">BZOJ 1857</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/13/bzoj-2539/">BZOJ 2539</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/13/km/">Kuhn-Munkres</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.lydsy.com/JudgeOnline" target="_blank">BZOJ</a>
+          </li>
+        
+          <li>
+            <a href="http://hzwer.com" target="_blank">HZWER</a>
+          </li>
+        
+          <li>
+            <a href="http://hydrasmith.github.io/" target="_blank">Hydra</a>
+          </li>
+        
+          <li>
+            <a href="http://keyhvw.xyz" target="_blank">keyhvw</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 <a href="http://platypuspro.github.io" target="_blank">Platypus</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"Platypus"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?854482208903dbc461c4e5256e5d1c00";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="http://libs.useso.com/js/jquery/1.11.1/jquery.js"></script>
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true
+                    
+}
+  
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                  
+}
+    
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                            all[i].SourceElement().parentNode.className += ' has-jax';
+                                    
+            }
+                
+        });
+</script>
+
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>
