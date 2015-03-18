@@ -3,14 +3,34 @@
 
     
   <url>
-    <loc>http://platypuspro.github.io/2015/03/17/bzoj-2038/</loc>
-    <lastmod>2015-03-18T00:03:15.000Z</lastmod>
+    <loc>http://platypuspro.github.io/2015/03/18/bzoj-3566/</loc>
+    <lastmod>2015-03-18T13:52:36.000Z</lastmod>
     <data>
         <display>
-        <title>BZOJ 2038</title>
-        <pubTime>2015-03-17T12:56:27.000Z</pubTime>
+        <title>BZOJ 3566</title>
+        <pubTime>2015-03-18T12:27:34.000Z</pubTime>
         
-        <tag>Mo Algorithm </tag>
+        <tag>Dynamic Programming </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/2015/03/18/bzoj-3564/</loc>
+    <lastmod>2015-03-18T12:27:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3564</title>
+        <pubTime>2015-03-18T11:46:42.000Z</pubTime>
+        
+        <tag>Random Incremental </tag>
          
          
            
@@ -24,7 +44,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/2015/03/13/km/</loc>
-    <lastmod>2015-03-17T03:23:23.000Z</lastmod>
+    <lastmod>2015-03-18T02:39:09.000Z</lastmod>
     <data>
         <display>
         <title>Kuhn-Munkres</title>
@@ -36,6 +56,26 @@
            
              
               <breadCrumb title="Algorithm" url="http://platypuspro.github.io/categories/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/2015/03/17/bzoj-2038/</loc>
+    <lastmod>2015-03-18T00:15:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2038</title>
+        <pubTime>2015-03-17T12:56:27.000Z</pubTime>
+        
+        <tag>Mo Algorithm </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
           
         </display>
     </data>
