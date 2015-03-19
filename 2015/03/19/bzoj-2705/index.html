@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Platypus Blog</title>
+  <title>BZOJ 2705 | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Platypus Blog">
-<meta property="og:url" content="http://platypuspro.github.io/tags/Mo-Algorithm/index.html">
+  <meta name="description" content="$O(\sqrt{n})求\varphi$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ 2705">
+<meta property="og:url" content="http://platypuspro.github.io/2015/03/19/bzoj-2705/index.html">
 <meta property="og:site_name" content="Platypus Blog">
-<meta property="og:description">
+<meta property="og:description" content="$O(\sqrt{n})求\varphi$">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Platypus Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="BZOJ 2705">
+<meta name="twitter:description" content="$O(\sqrt{n})求\varphi$">
   
     <link rel="alternative" href="/atom.xml" title="Platypus Blog" type="application/atom+xml">
   
@@ -77,39 +77,86 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/03/17/bzoj-2038/" class="archive-article-date">
-  <time datetime="2015-03-17T12:56:27.000Z" itemprop="datePublished">3月 17</time>
+      <section id="main"><article id="post-bzoj-2705" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/19/bzoj-2705/" class="article-date">
+  <time datetime="2015-03-19T13:19:20.000Z" itemprop="datePublished">3月 19 2015</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/17/bzoj-2038/">BZOJ 2038</a>
+    <h1 class="article-title" itemprop="name">
+      BZOJ 2705
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>$O(\sqrt{n})求\varphi$<br><a id="more"></a></p>
+<blockquote>
+<p>SDOI真有人性，出这么欢乐题 —<a href="http://www.lydsy.com/JudgeOnline/wttl/thread.php?tid=597" target="_blank" rel="external">root</a></p>
+</blockquote>
+<p>枚举$n$的约数$k$，令$s(k)$为满足$gcd(m,n)=k,(1{\leq}m{\leq}n)m$的个数，则$ans=\sum_{n\ mod\ k=0}(k*s(k))$</p>
+<p>${\because}\ gcd(m,n)=k$</p>
+<p>${\therefore}\ gcd(\frac{m}{k},\frac{n}{k})=1$</p>
+<p>${\therefore}\ s(k)=\varphi(\frac{n}{k})$</p>
+<p>其实主要在于如何$O(\sqrt{n})$的复杂度求单个$\varphi(x)$ 步骤如下：</p>
+<ol>
+<li><p>将$\varphi$赋为$x$，表示当前与$x$互质的数有$x$个</p>
+</li>
+<li><p>找到一个$x$的约数$k$</p>
+</li>
+<li><p>找到了约数，那么和$x$互质的数就又少了$\frac{\varphi}{k}$个，更新$\varphi$</p>
+</li>
+<li><p>将这个约数从$x$中全都除掉</p>
+</li>
+<li><p>如果$x$是质数还要特判一下</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+        <a href="http://platypuspro.github.io/2015/03/19/bzoj-2705/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Euler-s-Totient-Function/">Euler's Totient Function</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/03/19/bzoj-2818/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 2818</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/03/19/bzoj-2705/" data-title="BZOJ 2705" data-url="http://platypuspro.github.io/2015/03/19/bzoj-2705/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">

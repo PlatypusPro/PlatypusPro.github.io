@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Platypus Blog</title>
+  <title>BZOJ 2818 | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Platypus Blog">
-<meta property="og:url" content="http://platypuspro.github.io/tags/Mo-Algorithm/index.html">
+  <meta name="description" content="还是$\varphi$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ 2818">
+<meta property="og:url" content="http://platypuspro.github.io/2015/03/19/bzoj-2818/index.html">
 <meta property="og:site_name" content="Platypus Blog">
-<meta property="og:description">
+<meta property="og:description" content="还是$\varphi$">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Platypus Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="BZOJ 2818">
+<meta name="twitter:description" content="还是$\varphi$">
   
     <link rel="alternative" href="/atom.xml" title="Platypus Blog" type="application/atom+xml">
   
@@ -77,39 +77,77 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/03/17/bzoj-2038/" class="archive-article-date">
-  <time datetime="2015-03-17T12:56:27.000Z" itemprop="datePublished">3月 17</time>
+      <section id="main"><article id="post-bzoj-2818" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/19/bzoj-2818/" class="article-date">
+  <time datetime="2015-03-19T11:36:13.000Z" itemprop="datePublished">3月 19 2015</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/17/bzoj-2038/">BZOJ 2038</a>
+    <h1 class="article-title" itemprop="name">
+      BZOJ 2818
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>还是$\varphi$<br><a id="more"></a><br>$gcd(x,y)=k,k$为素数说明$gcd(\frac{x}{k},\frac{y}{k})=1$  这样欧拉函数就粗线了…</p>
+<p>枚举每个素数，然后每个素数$p$对于答案的贡献就是$[1,n\ div\ p]$中互质对的个数</p>
+<p>包括$y$的数对$(x,y)\ (x\in[1,y])$中的互质对个数即为$\varphi(y)$，所以$[1,x]$中互质对个数就是$2*\varphi(x)-1$（-1是因为$(1,1)$算了两次）</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2818;</span><br><span class="line"><span class="keyword">var</span> p:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    prime:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000000</span>]<span class="keyword">of</span> boolean;</span><br><span class="line">    phi:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000000</span>]<span class="keyword">of</span> int64;</span><br><span class="line">    n,i,j,cnt:longint;</span><br><span class="line">    ans:int64;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">calc</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  fillchar(prime,sizeof(prime),true);</span><br><span class="line">  cnt:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> prime[i] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      inc(cnt);</span><br><span class="line">      p[cnt]:=i;</span><br><span class="line">      phi[i]:=i-<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> i*p[j]&gt;n <span class="keyword">then</span> break;</span><br><span class="line">      prime[i*p[j]]:=false;</span><br><span class="line">      <span class="keyword">if</span> i <span class="keyword">mod</span> p[j]=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        phi[i*p[j]]:=phi[i]*p[j];</span><br><span class="line">        break;</span><br><span class="line">      <span class="keyword">end</span> <span class="keyword">else</span> phi[i*p[j]]:=phi[i]*(p[j]-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  calc;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(phi[i],phi[i-<span class="number">1</span>]);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> phi[i]:=phi[i]&lt;&lt;<span class="number">1</span>+<span class="number">1</span>;</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span> inc(ans,phi[n <span class="keyword">div</span> p[i]]);</span><br><span class="line">  writeln(ans);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+        <a href="http://platypuspro.github.io/2015/03/19/bzoj-2818/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Euler-s-totient-function/">Euler's totient function</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/03/19/bzoj-2705/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          BZOJ 2705
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/03/19/bzoj-2190/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 2190</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2015/03/19/bzoj-2818/" data-title="BZOJ 2818" data-url="http://platypuspro.github.io/2015/03/19/bzoj-2818/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">

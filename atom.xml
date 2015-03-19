@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-03-18T13:52:36.000Z</updated>
+  <updated>2015-03-19T14:01:32.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -13,6 +13,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[BZOJ 2705]]></title>
+    <link href="http://platypuspro.github.io/2015/03/19/bzoj-2705/"/>
+    <id>http://platypuspro.github.io/2015/03/19/bzoj-2705/</id>
+    <published>2015-03-19T13:19:20.000Z</published>
+    <updated>2015-03-19T14:01:32.000Z</updated>
+    <content type="html"><![CDATA[<p>$O(\sqrt{n})求\varphi$<br><a id="more"></a></p>
+<blockquote>
+<p>SDOI真有人性，出这么欢乐题 —<a href="http://www.lydsy.com/JudgeOnline/wttl/thread.php?tid=597" target="_blank" rel="external">root</a></p>
+</blockquote>
+<p>枚举$n$的约数$k$，令$s(k)$为满足$gcd(m,n)=k,(1{\leq}m{\leq}n)m$的个数，则$ans=\sum_{n\ mod\ k=0}(k*s(k))$</p>
+<p>${\because}\ gcd(m,n)=k$</p>
+<p>${\therefore}\ gcd(\frac{m}{k},\frac{n}{k})=1$</p>
+<p>${\therefore}\ s(k)=\varphi(\frac{n}{k})$</p>
+<p>其实主要在于如何$O(\sqrt{n})$的复杂度求单个$\varphi(x)$ 步骤如下：</p>
+<ol>
+<li><p>将$\varphi$赋为$x$，表示当前与$x$互质的数有$x$个</p>
+</li>
+<li><p>找到一个$x$的约数$k$</p>
+</li>
+<li><p>找到了约数，那么和$x$互质的数就又少了$\frac{\varphi}{k}$个，更新$\varphi$</p>
+</li>
+<li><p>将这个约数从$x$中全都除掉</p>
+</li>
+<li><p>如果$x$是质数还要特判一下</p>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>$O(\sqrt{n})求\varphi$<br>]]>
+    
+    </summary>
+    
+      <category term="Euler&#39;s Totient Function" scheme="http://platypuspro.github.io/tags/Euler-s-Totient-Function/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[BZOJ 2818]]></title>
+    <link href="http://platypuspro.github.io/2015/03/19/bzoj-2818/"/>
+    <id>http://platypuspro.github.io/2015/03/19/bzoj-2818/</id>
+    <published>2015-03-19T11:36:13.000Z</published>
+    <updated>2015-03-19T13:16:58.000Z</updated>
+    <content type="html"><![CDATA[<p>还是$\varphi$<br><a id="more"></a><br>$gcd(x,y)=k,k$为素数说明$gcd(\frac{x}{k},\frac{y}{k})=1$  这样欧拉函数就粗线了…</p>
+<p>枚举每个素数，然后每个素数$p$对于答案的贡献就是$[1,n\ div\ p]$中互质对的个数</p>
+<p>包括$y$的数对$(x,y)\ (x\in[1,y])$中的互质对个数即为$\varphi(y)$，所以$[1,x]$中互质对个数就是$2*\varphi(x)-1$（-1是因为$(1,1)$算了两次）</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2818;</span><br><span class="line"><span class="keyword">var</span> p:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    prime:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000000</span>]<span class="keyword">of</span> boolean;</span><br><span class="line">    phi:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000000</span>]<span class="keyword">of</span> int64;</span><br><span class="line">    n,i,j,cnt:longint;</span><br><span class="line">    ans:int64;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">calc</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  fillchar(prime,sizeof(prime),true);</span><br><span class="line">  cnt:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> prime[i] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      inc(cnt);</span><br><span class="line">      p[cnt]:=i;</span><br><span class="line">      phi[i]:=i-<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> i*p[j]&gt;n <span class="keyword">then</span> break;</span><br><span class="line">      prime[i*p[j]]:=false;</span><br><span class="line">      <span class="keyword">if</span> i <span class="keyword">mod</span> p[j]=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        phi[i*p[j]]:=phi[i]*p[j];</span><br><span class="line">        break;</span><br><span class="line">      <span class="keyword">end</span> <span class="keyword">else</span> phi[i*p[j]]:=phi[i]*(p[j]-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  calc;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(phi[i],phi[i-<span class="number">1</span>]);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> phi[i]:=phi[i]&lt;&lt;<span class="number">1</span>+<span class="number">1</span>;</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span> inc(ans,phi[n <span class="keyword">div</span> p[i]]);</span><br><span class="line">  writeln(ans);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>还是$\varphi$<br>]]>
+    
+    </summary>
+    
+      <category term="Euler&#39;s totient function" scheme="http://platypuspro.github.io/tags/Euler-s-totient-function/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[BZOJ 2190]]></title>
+    <link href="http://platypuspro.github.io/2015/03/19/bzoj-2190/"/>
+    <id>http://platypuspro.github.io/2015/03/19/bzoj-2190/</id>
+    <published>2015-03-19T10:09:07.000Z</published>
+    <updated>2015-03-19T12:43:32.000Z</updated>
+    <content type="html"><![CDATA[<p>$\varphi$<br><a id="more"></a><br><img src="/img/2190_1.png" alt=""><br>先分析一下题目给的图，发现这张图中有三条永远那么长的线和两个对称的区域，所以答案就是其中一个对称的区域中能看到的人数*2+3</p>
+<p><img src="/img/2190_2.png" alt=""><br>一竖列一竖列来考虑</p>
+<p>首先，对于点$(i,j)$，能看到的条件是$gcd(i,j)=1$，否则还能看到$(\frac{i}{gcd(i,j)},\frac{j}{gcd(i,j)})$等点，显然它们共线，矛盾</p>
+<p>对于第$i$列，能看到的点数即为$gcd(i,j)=1(j\in[2,i-1])$的数量，就是说在$[2,i-1]$内与$i$互质的数的数量，咦这不是欧拉函数$\varphi(i-1)$君吗…你好啊~</p>
+<p>然后求欧拉函数就好了（这一篇先扯线性筛法）</p>
+<p>先用筛法求素数，然后根据求出的素数利用欧拉函数的性质来求，用到的性质如下：</p>
+<ul>
+<li><p>若x为素数，则$\varphi(x)=x-1$</p>
+</li>
+<li><p>若$a,b$互质，则$\varphi(a*b)=\varphi(a)*\varphi(b)$</p>
+</li>
+<li><p>若b为质数且$a\ mod\ b=0$，则$\varphi(a*b)=\varphi(a)*b$</p>
+</li>
+</ul>
+<p>没了，有啥问题看代码吧</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2190;</span><br><span class="line"><span class="keyword">var</span> phi,p:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">40000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    n,cnt,i,j,ans:longint;</span><br><span class="line">    prime:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">40000</span>]<span class="keyword">of</span> boolean;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  fillchar(prime,sizeof(prime),true);</span><br><span class="line">  cnt:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> prime[i] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      inc(cnt);</span><br><span class="line">      p[cnt]:=i;</span><br><span class="line">      phi[i]:=i-<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> i*p[j]&gt;=n <span class="keyword">then</span> break;</span><br><span class="line">      prime[i*p[j]]:=false;</span><br><span class="line">      <span class="keyword">if</span> i <span class="keyword">mod</span> p[j]=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        phi[i*p[j]]:=phi[i]*p[j];</span><br><span class="line">        break;</span><br><span class="line">      <span class="keyword">end</span> <span class="keyword">else</span> phi[i*p[j]]:=phi[i]*(p[j]-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n-<span class="number">1</span> <span class="keyword">do</span> inc(ans,phi[i]);</span><br><span class="line">  writeln(ans*<span class="number">2</span>+<span class="number">3</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p>$\varphi$<br>]]>
+    
+    </summary>
+    
+      <category term="Euler&#39;s totient function" scheme="http://platypuspro.github.io/tags/Euler-s-totient-function/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3566]]></title>
