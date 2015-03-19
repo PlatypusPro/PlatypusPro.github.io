@@ -4,17 +4,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Platypus Blog</title>
+  <title>Hungary | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Platypus Blog">
-<meta property="og:url" content="http://platypuspro.github.io/page/2/index.html">
+  <meta name="description" content="hungary 咕…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hungary">
+<meta property="og:url" content="http://platypuspro.github.io/posts/hungary/index.html">
 <meta property="og:site_name" content="Platypus Blog">
-<meta property="og:description">
+<meta property="og:description" content="hungary 咕…">
+<meta property="og:image" content="/img/hungary_1.png">
+<meta property="og:image" content="/img/hungary_2.png">
+<meta property="og:image" content="/img/hungary_3.png">
+<meta property="og:image" content="/img/hungary_4.png">
+<meta property="og:image" content="/img/hungary_5.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Platypus Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Hungary">
+<meta name="twitter:description" content="hungary 咕…">
   
     <link rel="alternative" href="/atom.xml" title="Platypus Blog" type="application/atom+xml">
   
@@ -77,9 +82,7 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-    <article id="post-hungary" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-hungary" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/posts/hungary/" class="article-date">
   <time datetime="2015-03-12T10:33:38.000Z" itemprop="datePublished">3月 12 2015</time>
@@ -96,8 +99,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/hungary/">Hungary</a>
+    <h1 class="article-title" itemprop="name">
+      Hungary
     </h1>
   
 
@@ -105,12 +108,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hung<del>a</del>ry 咕…<br>
-        
-          <p class="article-more-link">
-            <a href="/posts/hungary/">Read More</a>
-          </p>
-        
+        <p>hung<del>a</del>ry 咕…<br><a id="more"></a><br>对Hungary<del>极其SB</del>通俗易懂的理解是：</p>
+<blockquote>
+<p>这个点是我的，你走开，去别处再找，拜拜~<br>什么？你找不到点了啊？那我再去找别的好了…</p>
+</blockquote>
+<p>其实也没什么好讲的，未盖点交错路可增广路什么的真麻烦，举俩例子看看代码就懂了</p>
+<p><img src="/img/hungary_1.png" alt=""><br>如上图所示，刚开始<code>x1</code>找到了<code>y1</code>，记录下当前<code>y1</code>与<code>x1</code>匹配<code>（pair[y1]:=x1)</code></p>
+<p><img src="/img/hungary_2.png" alt=""><br>然后是<code>x2</code>，<code>x2</code>发现了<code>y1</code>，于是顺着<code>pair[y1]</code>发现了<code>x1</code>，于是呢，<code>x2</code>就和<code>x1</code>商量：这个点归我好不好，你再找找…<br>于是再调用寻找函数看<code>x1</code>还能不能找到另一个匹配点，然后<code>x1</code>发现了<code>y2</code>，<del>他们快乐地生活在了一起</del></p>
+<p><img src="/img/hungary_3.png" alt=""><br>然后函数一层层返回时修改每个点与哪个点匹配</p>
+<p>举个同时改多个点的例子</p>
+<p><img src="/img/hungary_4.png" alt=""><br>匹配到前三个点时是这样的</p>
+<p><img src="/img/hungary_5.png" alt=""><br>然后匹配第四个点时就会是这样了，<code>x4</code>抢走了<code>y1</code>，别的结点都找到了另外一个自己的匹配</p>
+<p>完了 = = 下面贴上丑代码</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> hungary;</span><br><span class="line"><span class="keyword">const</span> maxn=<span class="number">1000</span>;</span><br><span class="line"><span class="keyword">var</span> pair:<span class="keyword">array</span>[<span class="number">1</span>..maxn]<span class="keyword">of</span> longint;</span><br><span class="line">    link:<span class="keyword">array</span>[<span class="number">1</span>..maxn,<span class="number">1</span>..maxn]<span class="keyword">of</span> boolean;</span><br><span class="line">    v:<span class="keyword">array</span>[<span class="number">1</span>..maxn]<span class="keyword">of</span> boolean;</span><br><span class="line">    nx,ny,m,i,a,b,match:longint;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">path</span><span class="params">(x:longint)</span>:</span>boolean;</span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> ny <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> link[x,i] <span class="keyword">and</span> <span class="keyword">not</span> v[i] <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    v[i]:=true;</span><br><span class="line">    <span class="keyword">if</span> (pair[i]=<span class="number">0</span>)<span class="keyword">or</span>(path(pair[i])) <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      pair[i]:=x;</span><br><span class="line">      <span class="keyword">exit</span>(true);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">exit</span>(false);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">hungary</span>;</span></span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> nx <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    fillchar(v,sizeof(v),false);</span><br><span class="line">    <span class="keyword">if</span> path(i) <span class="keyword">then</span> inc(match);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(nx,ny,m);</span><br><span class="line">  fillchar(link,sizeof(link),false);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(a,b);</span><br><span class="line">    link[a,b]:=true;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  match:=<span class="number">0</span>;</span><br><span class="line">  fillchar(pair,sizeof(pair),<span class="number">0</span>);</span><br><span class="line">  hungary;</span><br><span class="line">  writeln(match);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+<p><del>其实只是测试一下文章里插入本地图片  &gt;_&lt;…</del></p>
+
       
     </div>
     <footer class="article-footer">
@@ -125,213 +137,33 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-bzoj-2300" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/bzoj-2300/" class="article-date">
-  <time datetime="2015-03-11T23:55:51.000Z" itemprop="datePublished">3月 12 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/posts/km/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
         
+          Kuhn-Munkres
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bzoj-2300/">BZOJ 2300</a>
-    </h1>
   
+    <a href="/posts/bzoj-2300/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 2300</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>- ( ゜- ゜)つロ 乾杯~<br>
-        
-          <p class="article-more-link">
-            <a href="/posts/bzoj-2300/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/bzoj-2300/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-  
-    <article id="post-bzoj-1070-2879" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/bzoj-1070-2879/" class="article-date">
-  <time datetime="2015-03-11T09:57:40.000Z" itemprop="datePublished">3月 11 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bzoj-1070-2879/">BZOJ 1070+2879</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><del>more标签前面就不能不放东西吗…</del><br>
-        
-          <p class="article-more-link">
-            <a href="/posts/bzoj-1070-2879/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/bzoj-1070-2879/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-bzoj-3192" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/bzoj-3192/" class="article-date">
-  <time datetime="2015-03-11T02:35:48.000Z" itemprop="datePublished">3月 11 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bzoj-3192/">BZOJ 3192</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3192" title="3192">传送门</a><br>
-        
-          <p class="article-more-link">
-            <a href="/posts/bzoj-3192/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/bzoj-3192/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/hello-world/" class="article-date">
-  <time datetime="2015-03-04T06:12:00.000Z" itemprop="datePublished">3月 4 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/others/">Others</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>~!@#$%^&amp;*()_+<br>
-        
-          <p class="article-more-link">
-            <a href="/posts/hello-world/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/hello-world/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/hungary/" data-title="Hungary" data-url="http://platypuspro.github.io/posts/hungary/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">

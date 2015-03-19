@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>BZOJ 3566 | Platypus Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="$\Theta$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ 3566">
+<meta property="og:url" content="http://platypuspro.github.io/posts/bzoj-3566/index.html">
+<meta property="og:site_name" content="Platypus Blog">
+<meta property="og:description" content="$\Theta$">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BZOJ 3566">
+<meta name="twitter:description" content="$\Theta$">
+  
+    <link rel="alternative" href="/atom.xml" title="Platypus Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-60564827-1', 'auto');
+  ga('send', 'pageview');
+  
+</script>
+<!-- End Google Analytics -->
+
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Platypus Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="platypuspro.github.io">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-bzoj-3566" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/posts/bzoj-3566/" class="article-date">
+  <time datetime="2015-03-18T12:27:34.000Z" itemprop="datePublished">3月 18 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BZOJ 3566
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>$\Theta$<br><a id="more"></a><br><a href="www.lydsy.com/JudgeOnline/problem.php?id=3566">传送门</a></p>
+<p>BY <a href="http://wyfcyx.is-programmer.com/posts/74623.html" target="_blank" rel="external">wyfcyx</a></p>
+<p>直接求充上电的概率好复杂，那么我们考虑求充不上电的概率</p>
+<p>这个概率可以分为两部分：儿子没法给它充电的概率和爸爸没法给它充电的概率，设分别为$f_{i,0}$和$f_{i,1}$，可以用两遍<code>dfs</code>搞出来</p>
+<p>首先考虑它的儿子给它充不上电的情况，即为每个儿子的$P_{儿子没电}+P_{儿子有电但边没电啊}$的乘积再乘上这个点自己没电的概率（公式中点和边的概率都用$P$来表示了，请注意区分）</p>
+<h2 id="$f_{i,0}=(1−P_i)\prod_{j{\in}son(i)}(f_{j,0}+(1−f_{j,0})∗(1−P_{Edge_{i,j}}))$">$f_{i,0}=(1−P_i)\prod_{j{\in}son(i)}(f_{j,0}+(1−f_{j,0})∗(1−P_{Edge_{i,j}}))$</h2><p>下面考虑爸爸没法给它充电的情况，设$P’$为除掉$x$对它爸爸影响后$fa_x$没充上电的概率，就是$P_{下面没电且除掉x的影响}*P_{上面没电}$</p>
+<h2 id="$P’=\frac{f_{fa_x,0}}{f_{x,0}+(1−f_{x,0})∗(1−P_{Edge(x,fa_x)})}∗f_{fa_x,1}$">$P’=\frac{f_{fa_x,0}}{f_{x,0}+(1−f_{x,0})∗(1−P_{Edge(x,fa_x)})}∗f_{fa_x,1}$</h2><p>然后$x$上面充不上电的概率就很容易得出了 就是$P_{儿子乖，爹没电}+P_{爹有电但边没电啊}$</p>
+<h2 id="$f_{x,1}=P’+(1−P’)∗(1−P_{Edge(x,fa_x)})$">$f_{x,1}=P’+(1−P’)∗(1−P_{Edge(x,fa_x)})$</h2><p>最终每个节点$i$被充电的概率$g_i=1−f_{i,0}∗f_{i,1}$</p>
+<h2 id="$ans=\sum_{i=1}^{n}g_i$">$ans=\sum_{i=1}^{n}g_i$</h2><p>嫌字小的请自行准备放大镜 <del>我才不说右键点公式会出来缩放选项的呢</del></p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_3566;</span><br><span class="line"><span class="keyword">var</span> l:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">1000000</span>]<span class="keyword">of</span> <span class="keyword">record</span> ed,pre:longint; p:extended; <span class="keyword">end</span>;</span><br><span class="line">    lst,fa:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">500000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    f1,f2:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">500000</span>]<span class="keyword">of</span> extended;</span><br><span class="line">    n,i,a,b,c,tot:longint;</span><br><span class="line">    ans:extended;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">link</span><span class="params">(a,b,p:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  inc(tot);</span><br><span class="line">  l[tot].pre:=lst[a];</span><br><span class="line">  lst[a]:=tot;</span><br><span class="line">  l[tot].ed:=b;</span><br><span class="line">  l[tot].p:=p/<span class="number">100</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">dfs1</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> k:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  k:=lst[t];</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> l[k].ed&lt;&gt;fa[t] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      fa[l[k].ed]:=t;</span><br><span class="line">      dfs1(l[k].ed);</span><br><span class="line">      f1[t]:=f1[t]*(f1[l[k].ed]+(<span class="number">1</span>-f1[l[k].ed])*(<span class="number">1</span>-l[k].p));</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    k:=l[k].pre;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">dfs2</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> k:longint;</span><br><span class="line">    p:extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  k:=lst[t];</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> l[k].ed&lt;&gt;fa[t] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      p:=f1[l[k].ed]+(<span class="number">1</span>-f1[l[k].ed])*(<span class="number">1</span>-l[k].p);</span><br><span class="line">      <span class="keyword">if</span> p&lt;<span class="number">1</span>e-<span class="number">6</span> <span class="keyword">then</span> p:=<span class="number">0</span> <span class="keyword">else</span> p:=f1[t]*f2[t]/p;</span><br><span class="line">      f2[l[k].ed]:=p+(<span class="number">1</span>-p)*(<span class="number">1</span>-l[k].p);</span><br><span class="line">      dfs2(l[k].ed);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    k:=l[k].pre;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  tot:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n-<span class="number">1</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(a,b,c);</span><br><span class="line">    link(a,b,c);</span><br><span class="line">    link(b,a,c);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">read</span>(c);</span><br><span class="line">    f1[i]:=<span class="number">1</span>-c/<span class="number">100</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  fa[<span class="number">1</span>]:=<span class="number">0</span>;</span><br><span class="line">  dfs1(<span class="number">1</span>);</span><br><span class="line">  f2[<span class="number">1</span>]:=<span class="number">1</span>;</span><br><span class="line">  dfs2(<span class="number">1</span>);</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> ans:=ans+<span class="number">1</span>-f1[i]*f2[i];</span><br><span class="line">  writeln(ans:<span class="number">0</span>:<span class="number">6</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+        <a href="http://platypuspro.github.io/posts/bzoj-3566/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/bzoj-2190/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          BZOJ 2190
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/bzoj-3564/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 3564</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-3566/" data-title="BZOJ 3566" data-url="http://platypuspro.github.io/posts/bzoj-3566/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Euler-s-Totient-Function/">Euler's Totient Function</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/posts/bzoj-2705/">BZOJ 2705</a>
+          </li>
+        
+          <li>
+            <a href="/posts/bzoj-2818/">BZOJ 2818</a>
+          </li>
+        
+          <li>
+            <a href="/posts/bzoj-2190/">BZOJ 2190</a>
+          </li>
+        
+          <li>
+            <a href="/posts/bzoj-3566/">BZOJ 3566</a>
+          </li>
+        
+          <li>
+            <a href="/posts/bzoj-3564/">BZOJ 3564</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.lydsy.com/JudgeOnline" target="_blank">BZOJ</a>
+          </li>
+        
+          <li>
+            <a href="http://hzwer.com" target="_blank">HZWER</a>
+          </li>
+        
+          <li>
+            <a href="http://juruo.github.io/" target="_blank">Hydra</a>
+          </li>
+        
+          <li>
+            <a href="http://keyhvw.xyz" target="_blank">keyhvw</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 <a href="http://platypuspro.github.io" target="_blank">Platypus</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"Platypus"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?854482208903dbc461c4e5256e5d1c00";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="http://libs.useso.com/js/jquery/1.11.1/jquery.js"></script>
+
+
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+                processEscapes: true
+                    
+}
+  
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                  
+}
+    
+        });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+            for(i=0; i < all.length; i += 1) {
+                            all[i].SourceElement().parentNode.className += ' has-jax';
+                                    
+            }
+                
+        });
+</script>
+
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.4.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>

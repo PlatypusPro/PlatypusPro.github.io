@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Platypus Blog</title>
+  <title>BZOJ 1857 | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Platypus Blog">
-<meta property="og:url" content="http://platypuspro.github.io/page/2/index.html">
+  <meta name="description" content="/3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BZOJ 1857">
+<meta property="og:url" content="http://platypuspro.github.io/posts/bzoj-1857/index.html">
 <meta property="og:site_name" content="Platypus Blog">
-<meta property="og:description">
+<meta property="og:description" content="/3">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Platypus Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="BZOJ 1857">
+<meta name="twitter:description" content="/3">
   
     <link rel="alternative" href="/atom.xml" title="Platypus Blog" type="application/atom+xml">
   
@@ -77,62 +77,10 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-    <article id="post-hungary" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-bzoj-1857" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/posts/hungary/" class="article-date">
-  <time datetime="2015-03-12T10:33:38.000Z" itemprop="datePublished">3月 12 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/algorithm/">Algorithm</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/hungary/">Hungary</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hung<del>a</del>ry 咕…<br>
-        
-          <p class="article-more-link">
-            <a href="/posts/hungary/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/hungary/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-bzoj-2300" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/bzoj-2300/" class="article-date">
-  <time datetime="2015-03-11T23:55:51.000Z" itemprop="datePublished">3月 12 2015</time>
+    <a href="/posts/bzoj-1857/" class="article-date">
+  <time datetime="2015-03-16T12:43:13.000Z" itemprop="datePublished">3月 16 2015</time>
 </a>
     
   <div class="article-category">
@@ -146,8 +94,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bzoj-2300/">BZOJ 2300</a>
+    <h1 class="article-title" itemprop="name">
+      BZOJ 1857
     </h1>
   
 
@@ -155,183 +103,57 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>- ( ゜- ゜)つロ 乾杯~<br>
-        
-          <p class="article-more-link">
-            <a href="/posts/bzoj-2300/">Read More</a>
-          </p>
-        
+        <p><code>/3</code><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1857" target="_blank" rel="external">传送门</a></p>
+<p><del>尼玛BZOJ刚刚又挂了好几个小时</del></p>
+<p>自己YY一下，在每个传送带上不同位置时的答案一定是个单峰函数，有最优解，所以就用三分好了</p>
+<blockquote>
+<p>二分用来求可行答案，三分用来求最优答案 ——ZYK</p>
+</blockquote>
+<p>先三分枚举其中一个传送带上的点，然后再套一个三分看看这个点在另一条传送带上的最优解如何，挑两个答案中比较近的更新三分的左右端点</p>
+<p>应该是比较容易理解的吧…</p>
+<p>注意这道题会出现AB两点重合的情况，我把原来的<code>while</code>改成了<code>repeat</code>，保证至少算一次最优解（<code>while</code>的话会不满足条件直接跳出，<code>repeat</code>就不会了）</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_1857;</span><br><span class="line"><span class="keyword">const</span> eps=<span class="number">1</span>e-<span class="number">3</span>;</span><br><span class="line"><span class="keyword">type</span> point=<span class="keyword">record</span> x,y:extended; <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">var</span> a,b,c,d,s1,s2,l,r:point;</span><br><span class="line">    v1,v2,v3:longint;</span><br><span class="line">    a1,a2,ans:extended;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dis</span><span class="params">(a,b:point)</span>:</span>extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>(sqrt(sqr(a.x-b.x)+sqr(a.y-b.y)));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calc</span><span class="params">(p:point)</span>:</span>extended;</span><br><span class="line"><span class="keyword">var</span> l,r,s1,s2:point;</span><br><span class="line">    a1,a2:extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  l:=c;</span><br><span class="line">  r:=d;</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    s1.x:=l.x+(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s1.y:=l.y+(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    s2.x:=r.x-(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s2.y:=r.y-(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    a1:=dis(a,p)/v1+dis(p,s1)/v3+dis(s1,d)/v2;</span><br><span class="line">    a2:=dis(a,p)/v1+dis(p,s2)/v3+dis(s2,d)/v2;</span><br><span class="line">    <span class="keyword">if</span> a1&lt;a2 <span class="keyword">then</span> r:=s2 <span class="keyword">else</span> l:=s1;</span><br><span class="line">  <span class="keyword">until</span> dis(l,r)&lt;eps;</span><br><span class="line">  <span class="keyword">if</span> a1&lt;a2 <span class="keyword">then</span> <span class="keyword">exit</span>(a1) <span class="keyword">else</span> <span class="keyword">exit</span>(a2);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">read</span>(a.x,a.y,b.x,b.y,c.x,c.y,d.x,d.y);</span><br><span class="line">  <span class="keyword">read</span>(v1,v2,v3);</span><br><span class="line">  l:=a;</span><br><span class="line">  r:=b;</span><br><span class="line">  ans:=maxlongint;</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    s1.x:=l.x+(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s1.y:=l.y+(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    s2.x:=r.x-(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s2.y:=r.y-(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    a1:=calc(s1);</span><br><span class="line">    a2:=calc(s2);</span><br><span class="line">    <span class="keyword">if</span> a1&lt;ans <span class="keyword">then</span> ans:=a1;</span><br><span class="line">    <span class="keyword">if</span> a2&lt;ans <span class="keyword">then</span> ans:=a2;</span><br><span class="line">    <span class="keyword">if</span> a1&lt;a2 <span class="keyword">then</span> r:=s2 <span class="keyword">else</span> l:=s1;</span><br><span class="line">  <span class="keyword">until</span> dis(l,r)&lt;eps;</span><br><span class="line">  writeln(ans:<span class="number">0</span>:<span class="number">2</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
       
       
-        <a href="http://platypuspro.github.io/posts/bzoj-2300/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://platypuspro.github.io/posts/bzoj-1857/#ds-thread" class="article-comment-link">评论</a>
       
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a></li></ul>
 
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-bzoj-1070-2879" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/bzoj-1070-2879/" class="article-date">
-  <time datetime="2015-03-11T09:57:40.000Z" itemprop="datePublished">3月 11 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/posts/bzoj-1854/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
         
+          BZOJ 1854
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bzoj-1070-2879/">BZOJ 1070+2879</a>
-    </h1>
   
+    <a href="/posts/bzoj-2539/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 2539</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><del>more标签前面就不能不放东西吗…</del><br>
-        
-          <p class="article-more-link">
-            <a href="/posts/bzoj-1070-2879/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/bzoj-1070-2879/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-  
-    <article id="post-bzoj-3192" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/bzoj-3192/" class="article-date">
-  <time datetime="2015-03-11T02:35:48.000Z" itemprop="datePublished">3月 11 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/bzoj-3192/">BZOJ 3192</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3192" title="3192">传送门</a><br>
-        
-          <p class="article-more-link">
-            <a href="/posts/bzoj-3192/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/bzoj-3192/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/posts/hello-world/" class="article-date">
-  <time datetime="2015-03-04T06:12:00.000Z" itemprop="datePublished">3月 4 2015</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/others/">Others</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/posts/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>~!@#$%^&amp;*()_+<br>
-        
-          <p class="article-more-link">
-            <a href="/posts/hello-world/">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/hello-world/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-1857/" data-title="BZOJ 1857" data-url="http://platypuspro.github.io/posts/bzoj-1857/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">
