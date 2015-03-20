@@ -506,7 +506,7 @@ body {
   margin-right: -15px;
 }
 #nav-rss-link:before {
-  content: "\f09e";
+  content: "icon-rss";
 }
 #nav-search-btn:before {
   content: "\f002";
