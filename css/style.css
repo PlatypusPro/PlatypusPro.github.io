@@ -506,10 +506,13 @@ body {
   margin-right: -15px;
 }
 #nav-rss-link:before {
-  content: "icon-rss";
+  content: "\f09e";
 }
 #nav-search-btn:before {
   content: "\f002";
+}
+#nav-github-link:before {
+  content: "\f113";
 }
 #search-form-wrap {
   position: absolute;
