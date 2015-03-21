@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1010/</loc>
+    <lastmod>2015-03-21T00:59:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1010</title>
+        <pubTime>2015-03-20T23:42:33.000Z</pubTime>
+        
+        <tag>Dynamic Programming </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3289/</loc>
+    <lastmod>2015-03-20T13:51:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3289</title>
+        <pubTime>2015-03-20T12:39:02.000Z</pubTime>
+        
+        <tag>Mo Algorithm </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2705/</loc>
