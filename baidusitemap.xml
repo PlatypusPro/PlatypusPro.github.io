@@ -3,8 +3,28 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3566/</loc>
+    <lastmod>2015-03-25T05:14:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3566</title>
+        <pubTime>2015-03-18T12:27:34.000Z</pubTime>
+        
+        <tag>Dynamic Programming </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1070-2879/</loc>
-    <lastmod>2015-03-21T02:29:21.000Z</lastmod>
+    <lastmod>2015-03-21T02:29:22.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1070+2879</title>
@@ -24,7 +44,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3192/</loc>
-    <lastmod>2015-03-21T01:15:02.000Z</lastmod>
+    <lastmod>2015-03-21T01:15:04.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3192</title>
@@ -44,7 +64,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1010/</loc>
-    <lastmod>2015-03-21T00:59:04.000Z</lastmod>
+    <lastmod>2015-03-21T00:59:06.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1010</title>
@@ -64,7 +84,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3289/</loc>
-    <lastmod>2015-03-20T13:51:51.000Z</lastmod>
+    <lastmod>2015-03-20T13:51:52.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3289</title>
@@ -85,7 +105,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2705/</loc>
-    <lastmod>2015-03-19T23:46:55.000Z</lastmod>
+    <lastmod>2015-03-19T23:46:56.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2705</title>
@@ -105,7 +125,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2190/</loc>
-    <lastmod>2015-03-19T14:02:59.000Z</lastmod>
+    <lastmod>2015-03-19T14:03:00.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2190</title>
@@ -125,7 +145,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2818/</loc>
-    <lastmod>2015-03-19T14:02:41.000Z</lastmod>
+    <lastmod>2015-03-19T14:02:42.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2818</title>
@@ -144,28 +164,8 @@
 
     
   <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3566/</loc>
-    <lastmod>2015-03-18T13:52:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3566</title>
-        <pubTime>2015-03-18T12:27:34.000Z</pubTime>
-        
-        <tag>Dynamic Programming </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3564/</loc>
-    <lastmod>2015-03-18T12:27:07.000Z</lastmod>
+    <lastmod>2015-03-18T12:27:08.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3564</title>
@@ -185,7 +185,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/km/</loc>
-    <lastmod>2015-03-18T02:39:09.000Z</lastmod>
+    <lastmod>2015-03-18T02:39:10.000Z</lastmod>
     <data>
         <display>
         <title>Kuhn-Munkres</title>
@@ -205,7 +205,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2038/</loc>
-    <lastmod>2015-03-18T00:15:37.000Z</lastmod>
+    <lastmod>2015-03-18T00:15:38.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2038</title>
@@ -225,7 +225,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1857/</loc>
-    <lastmod>2015-03-16T13:37:20.000Z</lastmod>
+    <lastmod>2015-03-16T13:37:22.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1857</title>
@@ -245,7 +245,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1854/</loc>
-    <lastmod>2015-03-16T13:32:22.000Z</lastmod>
+    <lastmod>2015-03-16T13:32:24.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1854</title>
@@ -266,7 +266,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2539/</loc>
-    <lastmod>2015-03-13T13:46:46.000Z</lastmod>
+    <lastmod>2015-03-13T13:46:48.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2539</title>
@@ -288,7 +288,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/hello-world/</loc>
-    <lastmod>2015-03-13T06:27:46.000Z</lastmod>
+    <lastmod>2015-03-13T06:27:48.000Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
@@ -306,7 +306,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/hungary/</loc>
-    <lastmod>2015-03-12T13:49:30.000Z</lastmod>
+    <lastmod>2015-03-12T13:49:32.000Z</lastmod>
     <data>
         <display>
         <title>Hungary</title>
@@ -326,7 +326,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2300/</loc>
-    <lastmod>2015-03-12T13:49:09.000Z</lastmod>
+    <lastmod>2015-03-12T13:49:10.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2300</title>

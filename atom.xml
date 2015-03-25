@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-03-21T00:59:04.000Z</updated>
+  <updated>2015-03-21T00:59:06.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-1010/"/>
     <id>http://platypuspro.github.io/posts/bzoj-1010/</id>
     <published>2015-03-20T23:42:33.000Z</published>
-    <updated>2015-03-21T00:59:04.000Z</updated>
+    <updated>2015-03-21T00:59:06.000Z</updated>
     <content type="html"><![CDATA[<p>$\Xi$<br><a id="more"></a><br>若将第$j+1$件到第$i$件放在一起，则<strong>总共</strong>(算上之前的决策)需要花费$f_i=f_j+(\sum_{k=j+1}^{i}C_k+i-j-L-1)^2$</p>
 <p>所以方程为$f_i=min{\lbrace}f_j+(sum_i-sum_j+i-j-L-1)^2\rbrace\ (sum_x=\sum_{i=1}^{x}C_i)$</p>
 <p>若决策$k$优于决策$j(0{\leq}k,j&lt;i)$，则$f_k+(sum_i+i-sum_k-k-L-1)^2&lt;f_j+(sum_i+i-sum_j-j-L-1)^2$</p>
@@ -48,7 +48,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3289/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3289/</id>
     <published>2015-03-20T12:39:02.000Z</published>
-    <updated>2015-03-20T13:51:51.000Z</updated>
+    <updated>2015-03-20T13:51:52.000Z</updated>
     <content type="html"><![CDATA[<p>$\Omega$<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3289" target="_blank" rel="external">传送门</a></p>
 <p><del>莫队尼玛26s才过</del></p>
 <p>因为这题没给数据范围，树状数组不知道开多大，所以先离散化一下 <del>P党程序里写了俩快排真长…TAT</del></p>
@@ -76,7 +76,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2705/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2705/</id>
     <published>2015-03-19T13:19:20.000Z</published>
-    <updated>2015-03-19T23:46:55.000Z</updated>
+    <updated>2015-03-19T23:46:56.000Z</updated>
     <content type="html"><![CDATA[<p>$O(\sqrt{n})求\varphi$<br><a id="more"></a></p>
 <blockquote>
 <p>SDOI真有人性，出这么欢乐题 —<a href="http://www.lydsy.com/JudgeOnline/wttl/thread.php?tid=597" target="_blank" rel="external">root</a></p>
@@ -119,7 +119,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2818/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2818/</id>
     <published>2015-03-19T11:36:13.000Z</published>
-    <updated>2015-03-19T14:02:41.000Z</updated>
+    <updated>2015-03-19T14:02:42.000Z</updated>
     <content type="html"><![CDATA[<p>还是$\varphi$<br><a id="more"></a><br>$gcd(x,y)=k,k$为素数说明$gcd(\frac{x}{k},\frac{y}{k})=1$  这样欧拉函数就粗线了…</p>
 <p>枚举每个素数，然后每个素数$p$对于答案的贡献就是$[1,n\ div\ p]$中互质对的个数</p>
 <p>包括$y$的数对$(x,y)\ (x\in[1,y])$中的互质对个数即为$\varphi(y)$，所以$[1,x]$中互质对个数就是$2*\varphi(x)-1$（-1是因为$(1,1)$算了两次）</p>
@@ -140,7 +140,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2190/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2190/</id>
     <published>2015-03-19T10:09:07.000Z</published>
-    <updated>2015-03-19T14:02:59.000Z</updated>
+    <updated>2015-03-19T14:03:00.000Z</updated>
     <content type="html"><![CDATA[<p>$\varphi$<br><a id="more"></a><br><img src="/img/2190_1.png" alt=""><br>先分析一下题目给的图，发现这张图中有三条永远那么长的线和两个对称的区域，所以答案就是其中一个对称的区域中能看到的人数*2+3</p>
 <p><img src="/img/2190_2.png" alt=""><br>一竖列一竖列来考虑</p>
 <p>首先，对于点$(i,j)$，能看到的条件是$gcd(i,j)=1$，否则还能看到$(\frac{i}{gcd(i,j)},\frac{j}{gcd(i,j)})$等点，显然它们共线，矛盾</p>
@@ -173,8 +173,8 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3566/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3566/</id>
     <published>2015-03-18T12:27:34.000Z</published>
-    <updated>2015-03-18T13:52:36.000Z</updated>
-    <content type="html"><![CDATA[<p>$\Theta$<br><a id="more"></a><br><a href="www.lydsy.com/JudgeOnline/problem.php?id=3566">传送门</a></p>
+    <updated>2015-03-25T05:14:24.000Z</updated>
+    <content type="html"><![CDATA[<p>$\Theta$<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3566" target="_blank" rel="external">传送门</a></p>
 <p>BY <a href="http://wyfcyx.is-programmer.com/posts/74623.html" target="_blank" rel="external">wyfcyx</a></p>
 <p>直接求充上电的概率好复杂，那么我们考虑求充不上电的概率</p>
 <p>这个概率可以分为两部分：儿子没法给它充电的概率和爸爸没法给它充电的概率，设分别为$f_{i,0}$和$f_{i,1}$，可以用两遍<code>dfs</code>搞出来</p>
@@ -200,7 +200,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3564/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3564/</id>
     <published>2015-03-18T11:46:42.000Z</published>
-    <updated>2015-03-18T12:27:07.000Z</updated>
+    <updated>2015-03-18T12:27:08.000Z</updated>
     <content type="html"><![CDATA[<p>据说随机增量只要$O(n)$？<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3564" target="_blank" rel="external">传送门</a></p>
 <p>最小椭圆覆盖是什么东西…只听说过最小圆覆盖啊…</p>
 <p>不过这道题似乎把坐标系旋转一下再把$x$轴缩短几倍就成了最小圆覆盖</p>
@@ -232,7 +232,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2038/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2038/</id>
     <published>2015-03-17T12:56:27.000Z</published>
-    <updated>2015-03-18T00:15:37.000Z</updated>
+    <updated>2015-03-18T00:15:38.000Z</updated>
     <content type="html"><![CDATA[<p>莫队大法好<br><a id="more"></a><br>能使用莫队算法的条件是：</p>
 <blockquote>
 <p>已知<code>[l,r]</code>的答案，能在<code>O(1)</code>（或<code>O(logn)</code>等较低的时间复杂度）的时间内求得<code>[l+1,r]</code>与<code>[l,r-1]</code>的答案 ——by <a href="http://hzwer.com/2782.html" target="_blank" rel="external">hzwer</a></p>
@@ -269,7 +269,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-1854/"/>
     <id>http://platypuspro.github.io/posts/bzoj-1854/</id>
     <published>2015-03-16T13:02:53.000Z</published>
-    <updated>2015-03-16T13:32:22.000Z</updated>
+    <updated>2015-03-16T13:32:24.000Z</updated>
     <content type="html"><![CDATA[<p><code>→_→</code><br><a id="more"></a><br>1191的升级版，没写的<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1191" target="_blank" rel="external">戳我</a></p>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1854" target="_blank" rel="external">传送门</a></p>
 <p>每种装备的两个属性向这个装备的序号连边，因为边数点数好大所以要用链表</p>
@@ -293,7 +293,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-1857/"/>
     <id>http://platypuspro.github.io/posts/bzoj-1857/</id>
     <published>2015-03-16T12:43:13.000Z</published>
-    <updated>2015-03-16T13:37:20.000Z</updated>
+    <updated>2015-03-16T13:37:22.000Z</updated>
     <content type="html"><![CDATA[<p><code>/3</code><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1857" target="_blank" rel="external">传送门</a></p>
 <p><del>尼玛BZOJ刚刚又挂了好几个小时</del></p>
 <p>自己YY一下，在每个传送带上不同位置时的答案一定是个单峰函数，有最优解，所以就用三分好了</p>
@@ -320,7 +320,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2539/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2539/</id>
     <published>2015-03-13T13:25:46.000Z</published>
-    <updated>2015-03-13T13:46:46.000Z</updated>
+    <updated>2015-03-13T13:46:48.000Z</updated>
     <content type="html"><![CDATA[<p><del>为什么没有只显示标题的选项呢</del><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2539" target="_blank" rel="external">传送门</a></p>
 <p>黑书上二分图最优匹配的例题<del>尼玛黑书上说了跟没说一样</del></p>
 <p>直接上KM或费用流就可以了 但是好坑啊 QAQ</p>
@@ -354,7 +354,7 @@
     <link href="http://platypuspro.github.io/posts/km/"/>
     <id>http://platypuspro.github.io/posts/km/</id>
     <published>2015-03-13T07:40:24.000Z</published>
-    <updated>2015-03-18T02:39:09.000Z</updated>
+    <updated>2015-03-18T02:39:10.000Z</updated>
     <content type="html"><![CDATA[<p>关于KM算法呢…我还没完全搞懂 = = 先扯点我的理解<del>来骗访问量</del>…<br><a id="more"></a><br>大概就是加了顶标的Hungary…然后增广时判断的条件改了一下吧…</p>
 <p>对于每个<code>x</code>点记录下顶标<code>label_x</code>，每个<code>y</code>点记录顶标<code>label_y</code><br>初始时<code>label_x[i]</code>的值为与点<code>i</code>相连所有边权值的最大值，<code>label_y</code>都赋为<code>0</code>，这样的话根据下面的增广条件能确保每条边都能够走到</p>
 <p>每条边允许通过的条件是<code>label_x[i]+label_y[j]=w[i,j]</code>，如果在当前基础上找不到增广路，则将顶标调整一下，把访问过的<code>x</code>点的顶标减掉一个值<code>d</code>，把访问过的<code>y</code>点的顶标加上一个值<code>d</code>（这样能将更多的边添加进来，证明网上都有），<code>d</code>的值是所有未访问的<code>y</code>点最小的<code>label_x+label_y-w</code>（我太水说不清楚…有啥不懂的直接看代码好了…）可以对每个<code>y</code>点记录与之相连<code>x</code>点中最小的<code>label_x+label_y-w</code></p>
@@ -379,7 +379,7 @@
     <link href="http://platypuspro.github.io/posts/hungary/"/>
     <id>http://platypuspro.github.io/posts/hungary/</id>
     <published>2015-03-12T10:33:38.000Z</published>
-    <updated>2015-03-12T13:49:30.000Z</updated>
+    <updated>2015-03-12T13:49:32.000Z</updated>
     <content type="html"><![CDATA[<p>hung<del>a</del>ry 咕…<br><a id="more"></a><br>对Hungary<del>极其SB</del>通俗易懂的理解是：</p>
 <blockquote>
 <p>这个点是我的，你走开，去别处再找，拜拜~<br>什么？你找不到点了啊？那我再去找别的好了…</p>
@@ -411,7 +411,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2300/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2300/</id>
     <published>2015-03-11T23:55:51.000Z</published>
-    <updated>2015-03-12T13:49:09.000Z</updated>
+    <updated>2015-03-12T13:49:10.000Z</updated>
     <content type="html"><![CDATA[<p>- ( ゜- ゜)つロ 乾杯~<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2300" target="_blank" rel="external">题目传送门</a></p>
 <p>凸包 动态删点并询问当前凸包周长</p>
 <p>这道题在线应该也可以，但离线一下就比较好想了，动态删点变成了动态加点</p>
@@ -443,7 +443,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-1070-2879/"/>
     <id>http://platypuspro.github.io/posts/bzoj-1070-2879/</id>
     <published>2015-03-11T09:57:40.000Z</published>
-    <updated>2015-03-21T02:29:21.000Z</updated>
+    <updated>2015-03-21T02:29:22.000Z</updated>
     <content type="html"><![CDATA[<p><del>more标签前面就不能不放东西吗…</del><br><a id="more"></a></p>
 <h2 id="1070"><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1070" target="_blank" rel="external">1070</a></h2><p>题意很简单就不扯了，关键是建图</p>
 <p>因为一个人可能要修好几辆车，所以一个点代表一个人的话似乎怎么连都无法满足条件：</p>
@@ -476,7 +476,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3192/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3192/</id>
     <published>2015-03-11T02:35:48.000Z</published>
-    <updated>2015-03-21T01:15:02.000Z</updated>
+    <updated>2015-03-21T01:15:04.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3192" title="3192" target="_blank" rel="external">传送门</a><br><a id="more"></a><br><del>尼玛more标签不能放在开头吗</del></p>
 <p>感谢<a href="http://keyhvw.xyz/" target="_blank" rel="external">Keyhvw</a> <del>什么破字符串</del> 同学指出的错误</p>
 <p>如果存到两个数组里面移来移去的一定很麻烦，那么就可以想一想能不能存到一起</p>
@@ -504,7 +504,7 @@
     <link href="http://platypuspro.github.io/posts/hello-world/"/>
     <id>http://platypuspro.github.io/posts/hello-world/</id>
     <published>2015-03-04T06:12:00.000Z</published>
-    <updated>2015-03-13T06:27:46.000Z</updated>
+    <updated>2015-03-13T06:27:48.000Z</updated>
     <content type="html"><![CDATA[<p>~!@#$%^&amp;*()_+<br><a id="more"></a></p>
 <h1 id="Hello_World">Hello World</h1><h2 id="Hello_World-1">Hello World</h2><h3 id="Hello_World-2">Hello World</h3><h4 id="Hello_World-3">Hello World</h4><h5 id="Hello_World-4">Hello World</h5><h6 id="Hello_World-5">Hello World</h6><p>咦Markdown怪好玩的</p>
 <ul>
