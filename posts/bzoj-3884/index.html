@@ -4,19 +4,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>BZOJ 2190 | Platypus Blog</title>
+  <title>BZOJ 3884 | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="$\varphi$">
+  <meta name="description">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BZOJ 2190">
-<meta property="og:url" content="http://platypuspro.github.io/posts/bzoj-2190/index.html">
+<meta property="og:title" content="BZOJ 3884">
+<meta property="og:url" content="http://platypuspro.github.io/posts/bzoj-3884/index.html">
 <meta property="og:site_name" content="Platypus Blog">
-<meta property="og:description" content="$\varphi$">
-<meta property="og:image" content="/img/2190_1.png">
-<meta property="og:image" content="/img/2190_2.png">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BZOJ 2190">
-<meta name="twitter:description" content="$\varphi$">
+<meta name="twitter:title" content="BZOJ 3884">
+<meta name="twitter:description">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
   
@@ -76,10 +74,10 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main"><article id="post-bzoj-2190" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-bzoj-3884" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/posts/bzoj-2190/" class="article-date">
-  <time datetime="2015-03-19T10:09:07.000Z" itemprop="datePublished">3月 19 2015</time>
+    <a href="/posts/bzoj-3884/" class="article-date">
+  <time datetime="2015-04-03T08:49:30.000Z" itemprop="datePublished">4月 3 2015</time>
 </a>
     
   <div class="article-category">
@@ -94,7 +92,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      BZOJ 2190
+      BZOJ 3884
     </h1>
   
 
@@ -102,32 +100,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>$\varphi$<br><a id="more"></a><br><img src="/img/2190_1.png" alt=""><br>先分析一下题目给的图，发现这张图中有三条永远那么长的线和两个对称的区域，所以答案就是其中一个对称的区域中能看到的人数*2+3</p>
-<p><img src="/img/2190_2.png" alt=""><br>一竖列一竖列来考虑</p>
-<p>首先，对于点$(i,j)$，能看到的条件是$gcd(i,j)=1$，否则还能看到$(\frac{i}{gcd(i,j)},\frac{j}{gcd(i,j)})$等点，显然它们共线，矛盾</p>
-<p>对于第$i$列，能看到的点数即为$gcd(i,j)=1(j\in[2,i-1])$的数量，就是说在$[2,i-1]$内与$i$互质的数的数量，咦这不是欧拉函数$\varphi(i-1)$君吗…你好啊~</p>
-<p>然后求欧拉函数就好了（这一篇先扯线性筛法）</p>
-<p>先用筛法求素数，然后根据求出的素数利用欧拉函数的性质来求，用到的性质如下：</p>
-<ul>
-<li><p>若x为素数，则$\varphi(x)=x-1$</p>
-</li>
-<li><p>若$a,b$互质，则$\varphi(a*b)=\varphi(a)*\varphi(b)$</p>
-</li>
-<li><p>若b为质数且$a\ mod\ b=0$，则$\varphi(a*b)=\varphi(a)*b$</p>
-</li>
-</ul>
-<p>没了，有啥问题看代码吧</p>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2190;</span><br><span class="line"><span class="keyword">var</span> phi,p:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">40000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    n,cnt,i,j,ans:longint;</span><br><span class="line">    prime:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">40000</span>]<span class="keyword">of</span> boolean;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  fillchar(prime,sizeof(prime),true);</span><br><span class="line">  cnt:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> prime[i] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      inc(cnt);</span><br><span class="line">      p[cnt]:=i;</span><br><span class="line">      phi[i]:=i-<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> i*p[j]&gt;=n <span class="keyword">then</span> break;</span><br><span class="line">      prime[i*p[j]]:=false;</span><br><span class="line">      <span class="keyword">if</span> i <span class="keyword">mod</span> p[j]=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        phi[i*p[j]]:=phi[i]*p[j];</span><br><span class="line">        break;</span><br><span class="line">      <span class="keyword">end</span> <span class="keyword">else</span> phi[i*p[j]]:=phi[i]*(p[j]-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n-<span class="number">1</span> <span class="keyword">do</span> inc(ans,phi[i]);</span><br><span class="line">  writeln(ans*<span class="number">2</span>+<span class="number">3</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+        <p><i class="fa fa-btc fa-spin"></i><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3884" target="_blank" rel="external">传送门</a></p>
+<h1 id="$$2^{2^{2^{2^{2\cdots}}}}\_mod\_p$$">$$2^{2^{2^{2^{2\cdots}}}}\ mod\ p$$</h1><p>Orz <a href="http://blog.csdn.net/PoPoQQQ/article/details/43951401" target="_blank" rel="external">PoPoQQQ</a></p>
+<p>将$p$分解为$2^k$与一个奇数的积: $p=2^k \cdot q$，原式即为</p>
+<h2 id="$$2^k(2^{(2^{2^{2^{2\cdots}}}-k)}mod\_q)mod\_p$$">$$2^k(2^{(2^{2^{2^{2\cdots}}}-k)}mod\ q)mod\ p$$</h2><p>由<a href="http://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86_(%E6%95%B0%E8%AE%BA)" target="_blank" rel="external">欧拉定理</a>得</p>
+<h2 id="$$2^k(2^{(2^{2^{2^{2\cdots}}}-k)mod\_\varphi(q)}mod\_q)mod\_p$$">$$2^k(2^{(2^{2^{2^{2\cdots}}}-k)mod\ \varphi(q)}mod\ q)mod\ p$$</h2><p>发现上面的一坨$(2^{2^{2^{2\cdots}}}-k)mod\ \varphi(q)$似乎和原式有点像啊</p>
+<blockquote>
+<p>Tips: 经打表可得：似乎奇数的欧拉函数都是偶数的说</p>
+</blockquote>
+<p>然后先把$mod\ \varphi(q)$意义下的$-k$扔到一边一会再算，递归化简这个式子，发现递归的终点是$(2^{2^{2^{2^{2\cdots}}}}-k)\ mod\ 1$</p>
+<p>而任何数$mod\ 1$都是$0$，然后…就搞完了…回溯算算就行了</p>
+<p><i class="fa fa-code fa-2x"></i></p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_3884;</span><br><span class="line"><span class="keyword">var</span> t,p:longint;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calc_phi</span><span class="params">(x:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> cnt,i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  cnt:=x;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> trunc(sqrt(x)) <span class="keyword">do</span> <span class="keyword">if</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    cnt:=cnt <span class="keyword">div</span> i*(i-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">while</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">do</span> x:=x <span class="keyword">div</span> i;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">if</span> x=<span class="number">1</span> <span class="keyword">then</span> <span class="keyword">exit</span>(cnt) <span class="keyword">else</span> <span class="keyword">exit</span>(cnt <span class="keyword">div</span> x*(x-<span class="number">1</span>));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">qp</span><span class="params">(x,k,m:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> p:int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  qp:=<span class="number">1</span>;</span><br><span class="line">  p:=x;</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> k <span class="keyword">and</span> <span class="number">1</span>=<span class="number">1</span> <span class="keyword">then</span> qp:=(qp*p)<span class="keyword">mod</span> m;</span><br><span class="line">    p:=(p*p)<span class="keyword">mod</span> m;</span><br><span class="line">    k:=k&gt;&gt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">count</span><span class="params">(p:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> k,phi,ans:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> p=<span class="number">1</span> <span class="keyword">then</span> <span class="keyword">exit</span>(<span class="number">0</span>);</span><br><span class="line">  k:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> p <span class="keyword">and</span> <span class="number">1</span>=<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    p:=p&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    inc(k);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  phi:=calc_phi(p);</span><br><span class="line">  ans:=(count(phi)+phi-k <span class="keyword">mod</span> phi)<span class="keyword">mod</span> phi;</span><br><span class="line">  <span class="keyword">exit</span>((qp(<span class="number">2</span>,ans,p)<span class="keyword">mod</span> p)&lt;&lt;k);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(t);</span><br><span class="line">  <span class="keyword">for</span> t:=<span class="number">1</span> <span class="keyword">to</span> t <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(p);</span><br><span class="line">    writeln(count(p));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
       
       
-        <a href="http://platypuspro.github.io/posts/bzoj-2190/#comments" class="article-comment-link">评论</a>
+        <a href="http://platypuspro.github.io/posts/bzoj-3884/#comments" class="article-comment-link">评论</a>
       
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/">Math</a></li></ul>
 
     </footer>
   </div>
@@ -135,19 +129,19 @@
     
 <nav id="article-nav">
   
-    <a href="/posts/bzoj-2818/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/bzoj-3560/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
       <div class="article-nav-title">
         
-          BZOJ 2818
+          BZOJ 3560
         
       </div>
     </a>
   
   
-    <a href="/posts/bzoj-3566/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/posts/bzoj-1010/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">BZOJ 3566</div>
+      <div class="article-nav-title">BZOJ 1010</div>
     </a>
   
 </nav>
@@ -157,7 +151,7 @@
 
 
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-2190/" data-title="BZOJ 2190" data-url="http://platypuspro.github.io/posts/bzoj-2190/"></div>
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-3884/" data-title="BZOJ 3884" data-url="http://platypuspro.github.io/posts/bzoj-3884/"></div>
   </section>
 </section>
       
