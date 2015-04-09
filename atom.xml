@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-04-08T13:19:30.000Z</updated>
+  <updated>2015-04-09T09:14:30.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -13,6 +13,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[BZOJ 3930]]></title>
+    <link href="http://platypuspro.github.io/posts/bzoj-3930/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3930/</id>
+    <published>2015-04-09T07:59:37.000Z</published>
+    <updated>2015-04-09T09:14:30.000Z</updated>
+    <content type="html"><![CDATA[<p><i class="fa fa-bookmark"></i><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3930" target="_blank" rel="external">传送门</a></p>
+<p>Orz伟大领袖<a href="http://lzy-foenix.gitcafe.io/2015/04/09/BZOJ-3930-CQOI2015-%E9%80%89%E6%95%B0/" target="_blank" rel="external">lzy</a></p>
+<p><del>BZOJ题被X了…我把题贴出来好了…</del></p>
+<h3 id="题目描述">题目描述</h3><p>我们知道，从区间$[L,H]$（$L$和$H$为整数）中选取$N$个整数，总共有$(H-L+1)^N$种方案。小z很好奇这样选出的数的最大公约数的规律，他决定对每种方案选出的$N$个整数都求一次最大公约数，以便进一步研究。然而他很快发现工作量太大了，于是向你寻求帮助。<br>你的任务很简单，小z会告诉你一个整数$K$，你需要回答他最大公约数刚好为$K$的选取方案有多少个。由于方案数较大，你只需要输出其除以$1000000007$的余数即可。</p>
+<h3 id="输入格式">输入格式</h3><p>输入一行，包含4个空格分开的正整数，依次为$N,K,L,H$</p>
+<h3 id="输出格式">输出格式</h3><p>输出一个整数，为所求方案数。</p>
+<h3 id="输入样例">输入样例</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2 2 2 4</span><br></pre></td></tr></table></figure>
+<h3 id="输出样例">输出样例</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+<h3 id="样例解释">样例解释</h3><p>所有可能的选择方案：$(2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(4,2),(4,3),(4,4)$<br>其中最大公约数等于$2$的只有$3$组：$(2,2),(2,4),(4,2)$</p>
+<h3 id="数据范围">数据范围</h3><p>对于$30%$的数据，$N\leq 5，H-L\leq 5$<br>对于$100%$的数据，$1\leq N,K\leq 10^9,1\leq L\leq H\leq 10^9,H-L\leq 10^5$</p>
+<p>从$[L,H]$中取$n$个数，设这$n$个数为$a_1,a_2,\cdots,a_n$,设</p>
+<h4 id="$$F(k)=\sum_{a_1=L}^H_\sum_{a_2=L}^H_\cdots_\sum_{a_n=L}^H=[k_\mid_gcd(a_1,a_2,\cdots,a_n)]$$">$$F(k)=\sum_{a_1=L}^H \sum_{a_2=L}^H \cdots \sum_{a_n=L}^H=[k \mid gcd(a_1,a_2,\cdots,a_n)]$$</h4><h4 id="$$f(k)=\sum_{a_1=L}^H_\sum_{a_2=L}^H_\cdots_\sum_{a_n=L}^H=[k=gcd(a_1,a_2,\cdots,a_n)]$$">$$f(k)=\sum_{a_1=L}^H \sum_{a_2=L}^H \cdots \sum_{a_n=L}^H=[k=gcd(a_1,a_2,\cdots,a_n)]$$</h4><p>那么</p>
+<h4 id="$$F(k)=\sum_{d_\mid_k}f(d)$$">$$F(k)=\sum_{d \mid k}f(d)$$</h4><h4 id="$$f(k)=\sum_{k_\mid_d}\mu(\frac{d}{k})F(d)$$">$$f(k)=\sum_{k \mid d}\mu(\frac{d}{k})F(d)$$</h4><p>然后搞一搞$F(k)$</p>
+<h4 id="$$F(k)=\sum_{a_1=\lfloor\frac{L-1}{k}\rfloor}^{\lfloor\frac{H}{k}\rfloor}_\sum_{a_2=\lfloor\frac{L-1}{k}\rfloor}^{\lfloor\frac{H}{k}\rfloor}_\cdots_\sum_{a_n=\lfloor\frac{L-1}{k}\rfloor}^{\lfloor\frac{H}{k}\rfloor}=[1_\mid_gcd(a_1,a_2,\cdots,a_n)]$$">$$F(k)=\sum_{a_1=\lfloor\frac{L-1}{k}\rfloor}^{\lfloor\frac{H}{k}\rfloor} \sum_{a_2=\lfloor\frac{L-1}{k}\rfloor}^{\lfloor\frac{H}{k}\rfloor} \cdots \sum_{a_n=\lfloor\frac{L-1}{k}\rfloor}^{\lfloor\frac{H}{k}\rfloor}=[1 \mid gcd(a_1,a_2,\cdots,a_n)]$$</h4><h4 id="$$F(k)=(\lfloor\frac{H}{k}\rfloor-\lfloor\frac{L-1}{k}\rfloor)^n$$">$$F(k)=(\lfloor\frac{H}{k}\rfloor-\lfloor\frac{L-1}{k}\rfloor)^n$$</h4><p>然后</p>
+<h4 id="$$f(k)=\sum_{d’=1}^{\lfloor\frac{H}{k}\rfloor}\mu(d’)(\lfloor\frac{H}{d’\cdot_k}\rfloor-\lfloor\frac{L-1}{d’\cdot_k}\rfloor)^n$$">$$f(k)=\sum_{d’=1}^{\lfloor\frac{H}{k}\rfloor}\mu(d’)(\lfloor\frac{H}{d’\cdot k}\rfloor-\lfloor\frac{L-1}{d’\cdot k}\rfloor)^n$$</h4><p>直接求当然会挂的很惨…</p>
+<p>对此，<a href="http://blog.csdn.net/popoqqq/article/details/44917831" target="_blank" rel="external">PoPoQQQ的解法</a>是搞$\mu$的前缀和然后搞个阈值然后blabla…</p>
+<p>然而…<a href="http://lzy-foenix.gitcafe.io/2015/04/09/BZOJ-3930-CQOI2015-%E9%80%89%E6%95%B0/" target="_blank" rel="external">lzy</a>早已看透了一切…</p>
+<blockquote>
+<p>后面那一坨是会出现很多$0$的，所以我们把$=0$的部分跳过去，光计算不等于$0$的时候的$\mu$值，直接用$\mu$的定义来算，而在极限数据中不等于$0$的最多就有$5w$个，所以这样的效率是$O(n^{1/2}+(5w)^{3/2})$效率是$0.2s$左右。  ——lzy</p>
+</blockquote>
+<p>跪烂了Orz…</p>
+<p><i class="fa fa-code fa-2x"></i></p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_3930;</span><br><span class="line"><span class="keyword">const</span> mo=<span class="number">1000000007</span>;</span><br><span class="line"><span class="keyword">var</span> n,k,l,h:int64;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">min</span><span class="params">(a,b:int64)</span>:</span>int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> a&lt;b <span class="keyword">then</span> <span class="keyword">exit</span>(a) <span class="keyword">else</span> <span class="keyword">exit</span>(b);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">qp</span><span class="params">(x,k:int64)</span>:</span>int64;</span><br><span class="line"><span class="keyword">var</span> p:int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  p:=x;</span><br><span class="line">  qp:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> k <span class="keyword">and</span> <span class="number">1</span>=<span class="number">1</span> <span class="keyword">then</span> qp:=(qp*p)<span class="keyword">mod</span> mo;</span><br><span class="line">    p:=(p*p)<span class="keyword">mod</span> mo;</span><br><span class="line">    k:=k&gt;&gt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mu</span><span class="params">(x:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  mu:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> trunc(sqrt(x)) <span class="keyword">do</span> <span class="keyword">while</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    x:=x <span class="keyword">div</span> i;</span><br><span class="line">    mu:=-mu;</span><br><span class="line">    <span class="keyword">if</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">then</span> <span class="keyword">exit</span>(<span class="number">0</span>);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">if</span> x&lt;&gt;<span class="number">1</span> <span class="keyword">then</span> mu:=-mu;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">calc</span>;</span></span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line">    ans,q:int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  i:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">while</span> i&lt;=h <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    q:=qp(h <span class="keyword">div</span>(i*k)-(l-<span class="number">1</span>)<span class="keyword">div</span>(i*k),n);</span><br><span class="line">    <span class="keyword">if</span> q&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> ans:=(ans+mu(i)*q+mo)<span class="keyword">mod</span> mo <span class="keyword">else</span></span><br><span class="line">    <span class="keyword">if</span> (l-<span class="number">1</span>)<span class="keyword">div</span> i&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> i:=min(h <span class="keyword">div</span>(h <span class="keyword">div</span> i),(l-<span class="number">1</span>)<span class="keyword">div</span>((l-<span class="number">1</span>)<span class="keyword">div</span> i)) <span class="keyword">else</span> i:=h <span class="keyword">div</span>(h <span class="keyword">div</span> i);</span><br><span class="line">    inc(i);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  writeln(ans);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n,k,l,h);</span><br><span class="line">  calc;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<p><i class="fa fa-bookmark"></i><br>]]>
+    
+    </summary>
+    
+      <category term="Math" scheme="http://platypuspro.github.io/tags/Math/"/>
+    
+      <category term="Mobius_inversion" scheme="http://platypuspro.github.io/tags/Mobius-inversion/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[BZOJ 2301]]></title>
@@ -665,37 +707,6 @@
       <category term="Binary Indexed Tree" scheme="http://platypuspro.github.io/tags/Binary-Indexed-Tree/"/>
     
       <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://platypuspro.github.io/posts/hello-world/"/>
-    <id>http://platypuspro.github.io/posts/hello-world/</id>
-    <published>2015-03-04T06:12:00.000Z</published>
-    <updated>2015-03-13T06:27:48.000Z</updated>
-    <content type="html"><![CDATA[<p>~!@#$%^&amp;*()_+<br><a id="more"></a></p>
-<h1 id="Hello_World">Hello World</h1><h2 id="Hello_World-1">Hello World</h2><h3 id="Hello_World-2">Hello World</h3><h4 id="Hello_World-3">Hello World</h4><h5 id="Hello_World-4">Hello World</h5><h6 id="Hello_World-5">Hello World</h6><p>咦Markdown怪好玩的</p>
-<ul>
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-</ul>
-<hr>
-<hr>
-<hr>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> ab;</span><br><span class="line"><span class="keyword">var</span> a,b:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(a,b);</span><br><span class="line">  writeln(a+b);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>Too young too simple,somtimes naive</p>
-</blockquote>
-<p><img src="https://github.com/identicons/platypuspro.png" alt=""></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>~!@#$%^&amp;*()_+<br>]]>
-    
-    </summary>
-    
-      <category term="Others" scheme="http://platypuspro.github.io/categories/others/"/>
     
   </entry>
   
