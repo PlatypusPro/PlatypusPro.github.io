@@ -12,6 +12,7 @@
 <meta property="og:url" content="http://platypuspro.github.io/posts/bzoj-3931/index.html">
 <meta property="og:site_name" content="Platypus Blog">
 <meta property="og:description">
+<meta property="og:image" content="http://i1.tietuku.com/4e49691e7c20f9b9.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BZOJ 3931">
 <meta name="twitter:description">
@@ -110,11 +111,12 @@
 <h3 id="输出格式">输出格式</h3><p>输出一个整数，为题目所求吞吐量。</p>
 <h3 id="输入样例">输入样例</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">7 10</span><br><span class="line">1 2 2</span><br><span class="line">1 5 2</span><br><span class="line">2 4 1</span><br><span class="line">2 3 3</span><br><span class="line">3 7 1</span><br><span class="line">4 5 4</span><br><span class="line">4 3 1</span><br><span class="line">4 6 1</span><br><span class="line">5 6 2</span><br><span class="line">6 7 1</span><br><span class="line">1</span><br><span class="line">00</span><br><span class="line">20</span><br><span class="line">50</span><br><span class="line">20</span><br><span class="line">60</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 <h3 id="输出样例">输出样例</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">70</span><br></pre></td></tr></table></figure>
-<h3 id="样例解释">样例解释</h3><p>(图在PDF里…有空再搞出来贴上)</p>
+<h3 id="样例解释">样例解释</h3><p><img src="http://i1.tietuku.com/4e49691e7c20f9b9.png" alt=""></p>
+<h3 id="数据范围">数据范围</h3><p>对于$30%$的数据，$n\leq 100,m\leq 1000$<br>对于$100%$的数据，$n\leq 500,m\leq 100000,d,c\leq 10^9$</p>
 <blockquote>
 <p>Q: 比裸题更裸的是什么？<br>A: BZOJ 3931</p>
 </blockquote>
-<p>先两遍最短路</p>
+<p>先一正一反两遍最短路</p>
 <p>然后对于某条边，若$1$到它的一个端点的距离与它的另一个端点到$n$的距离之和再加上这条边的长度等于$1$到$n$的长度的话，(也就是说$dis_{1,a}+dis_{b,n}+dis_{a,b}=dis_{1,n}$)，说明这条边属于最短路图</p>
 <p>这样搞出最短路图，然后拆点裸上最大流就是答案</p>
 <p><i class="fa fa-code fa-2x"></i></p>

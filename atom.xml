@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-04-09T14:00:52.000Z</updated>
+  <updated>2015-04-10T04:54:52.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3931/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3931/</id>
     <published>2015-04-09T13:37:01.000Z</published>
-    <updated>2015-04-09T14:00:52.000Z</updated>
+    <updated>2015-04-10T04:54:52.000Z</updated>
     <content type="html"><![CDATA[<p><i class="fa fa-tasks"></i><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3931" target="_blank" rel="external">传送门</a></p>
 <p><del>BZOJ上又没贴题…</del></p>
 <h3 id="题目描述">题目描述</h3><p>路由是指通过计算机网络把信息从源地址传输到目的地址的活动，也是计算机网络设计中的重点和难点。网络中实现路由转发的硬件设备称为路由器。为了使数据包最快的到达目的地，路由器需要选择最优的路径转发数据包。例如，在常用的路由算法OSPF(开放式最短路径优先)中，路由器会使用经典的Dijkstra算法计算最短路径，然后尽量沿最短路径转发数据包。<br>现在，若已知一个计算机网络中各路由器间的连接情况，以及各个路由器的最大吞吐量（即每秒能转发的数据包数量），假设所有数据包一定沿最短路径转发，试计算从路由器$1$到路由器$n$的网络的最大吞吐量。计算中忽略转发及传输的时间开销，不考虑链路的带宽限制，即认为数据包可以瞬间通过网络。路由器$1$到路由器$n$作为起点和终点，自身的吞吐量不用考虑，网络上也不存在将$1$和$n$直接相连的链路。</p>
@@ -27,11 +27,12 @@
 <h3 id="输出格式">输出格式</h3><p>输出一个整数，为题目所求吞吐量。</p>
 <h3 id="输入样例">输入样例</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">7 10</span><br><span class="line">1 2 2</span><br><span class="line">1 5 2</span><br><span class="line">2 4 1</span><br><span class="line">2 3 3</span><br><span class="line">3 7 1</span><br><span class="line">4 5 4</span><br><span class="line">4 3 1</span><br><span class="line">4 6 1</span><br><span class="line">5 6 2</span><br><span class="line">6 7 1</span><br><span class="line">1</span><br><span class="line">00</span><br><span class="line">20</span><br><span class="line">50</span><br><span class="line">20</span><br><span class="line">60</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
 <h3 id="输出样例">输出样例</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">70</span><br></pre></td></tr></table></figure>
-<h3 id="样例解释">样例解释</h3><p>(图在PDF里…有空再搞出来贴上)</p>
+<h3 id="样例解释">样例解释</h3><p><img src="http://i1.tietuku.com/4e49691e7c20f9b9.png" alt=""></p>
+<h3 id="数据范围">数据范围</h3><p>对于$30%$的数据，$n\leq 100,m\leq 1000$<br>对于$100%$的数据，$n\leq 500,m\leq 100000,d,c\leq 10^9$</p>
 <blockquote>
 <p>Q: 比裸题更裸的是什么？<br>A: BZOJ 3931</p>
 </blockquote>
-<p>先两遍最短路</p>
+<p>先一正一反两遍最短路</p>
 <p>然后对于某条边，若$1$到它的一个端点的距离与它的另一个端点到$n$的距离之和再加上这条边的长度等于$1$到$n$的长度的话，(也就是说$dis_{1,a}+dis_{b,n}+dis_{a,b}=dis_{1,n}$)，说明这条边属于最短路图</p>
 <p>这样搞出最短路图，然后拆点裸上最大流就是答案</p>
 <p><i class="fa fa-code fa-2x"></i></p>
