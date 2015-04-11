@@ -197,7 +197,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #999;
+  color: #888;
   margin-bottom: 1em;
   margin-left: 5px;
   line-height: 1em;
@@ -293,7 +293,7 @@ body {
 .article-entry h6,
 .widget h6 {
   font-size: 1em;
-  color: #999;
+  color: #888;
 }
 .article-entry hr,
 .widget hr {
@@ -733,7 +733,7 @@ a.article-title:hover {
   margin-left: 1em;
 }
 .article-entry .caption {
-  color: #999;
+  color: #888;
   display: block;
   font-size: 0.9em;
   margin-top: 0.5em;
@@ -763,7 +763,7 @@ a.article-title:hover {
   -webkit-border-radius: 15px;
   border-radius: 15px;
   background: #eee;
-  color: #999;
+  color: #888;
   text-shadow: 0 1px #fff;
   text-decoration: none;
 }
@@ -790,7 +790,7 @@ a.article-title:hover {
   clear: both;
 }
 .article-footer a {
-  color: #999;
+  color: #888;
   text-decoration: none;
 }
 .article-footer a:hover {
@@ -846,7 +846,7 @@ a.article-title:hover {
 .article-nav-link-wrap {
   text-decoration: none;
   text-shadow: 0 1px #fff;
-  color: #999;
+  color: #888;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -994,7 +994,7 @@ a.article-title:hover {
   margin-top: 1em;
 }
 .archive-article-date {
-  color: #999;
+  color: #888;
   text-decoration: none;
   font-size: 0.85em;
   line-height: 1em;
@@ -1011,7 +1011,7 @@ a.article-title:hover {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
-  color: #999;
+  color: #888;
   overflow: hidden;
 }
 #page-nav:before,
@@ -1029,11 +1029,11 @@ a.article-title:hover {
   height: 2ex;
 }
 #page-nav a {
-  color: #999;
+  color: #888;
   text-decoration: none;
 }
 #page-nav a:hover {
-  background: #999;
+  background: #888;
   color: #fff;
 }
 #page-nav .prev {
@@ -1061,7 +1061,7 @@ a.article-title:hover {
   background: #262a30;
   padding: 50px 0;
   border-top: 1px solid #ddd;
-  color: #999;
+  color: #888;
 }
 #footer a {
   color: #0098bd;
@@ -1076,14 +1076,14 @@ a.article-title:hover {
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #fff;
+  background: #2d2d2d;
   margin: 0 -20px;
   padding: 15px 20px;
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
   overflow: auto;
-  color: #4d4d4c;
+  color: #ccc;
   line-height: 21px;
 }
 .article-entry .highlight .gutter pre,
@@ -1126,7 +1126,7 @@ a.article-title:hover {
 .article-entry .highlight figcaption {
   zoom: 1;
   font-size: 0.85em;
-  color: #8e908c;
+  color: #999;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -1153,7 +1153,7 @@ a.article-title:hover {
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: #fff;
+  background: #2d2d2d;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -1179,8 +1179,8 @@ a.article-title:hover {
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #fff;
-  color: #8e908c;
+  background: #2d2d2d;
+  color: #999;
   font: 0.85em "Alegreya Sans SC", "Microsoft Yahei", Helvetica, Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -1196,10 +1196,10 @@ a.article-title:hover {
 }
 pre .comment,
 pre .preprocessor {
-  color: #8e908c;
+  color: #999;
 }
 pre .tag {
-  color: #4d4d4c;
+  color: #ccc;
 }
 pre .title,
 pre .variable,
@@ -1212,22 +1212,22 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #f2777a;
 }
 pre .number,
 pre .built_in,
 pre .literal,
 pre .constant {
-  color: #8959a8;
+  color: #c9c;
 }
 pre .params {
-  color: #f5871f;
+  color: #f99157;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute,
 pre .attribute {
-  color: #718c00;
+  color: #9c9;
 }
 pre .string,
 pre .value,
@@ -1235,10 +1235,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #eab700;
+  color: #fc6;
 }
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #6cc;
 }
 pre .function,
 pre .python .decorator,
@@ -1248,11 +1248,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #69c;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #4271ae;
+  color: #69c;
 }
 @media screen and (max-width: 479px) {
   #mobile-nav {
@@ -1268,7 +1268,7 @@ pre .javascript .function {
 @media screen and (max-width: 479px) {
   .mobile-nav-link {
     display: block;
-    color: #999;
+    color: #888;
     text-decoration: none;
     padding: 15px 20px;
     font-weight: bold;
@@ -1312,7 +1312,7 @@ pre .javascript .function {
   border-radius: 3px;
 }
 .widget a {
-  color: #999;
+  color: #888;
   text-decoration: none;
 }
 .widget a:hover {
@@ -1359,7 +1359,7 @@ pre .javascript .function {
 .tag-list-count,
 .archive-list-count {
   padding-left: 5px;
-  color: #999;
+  color: #888;
   font-size: 0.85em;
 }
 .category-list-count:before,
