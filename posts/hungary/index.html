@@ -96,29 +96,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>hung<del>a</del>ry 咕…<br><a id="more"></a><br>对Hungary<del>极其SB</del>通俗易懂的理解是：</p>
+        <p>hungry…<br><a id="more"></a><br>对Hungary<del>极其SB</del>通俗易懂的理解是：</p>
 <blockquote>
 <p>这个点是我的，你走开，去别处再找，拜拜~<br>什么？你找不到点了啊？那我再去找别的好了…</p>
 </blockquote>
-<p>其实也没什么好讲的，未盖点交错路可增广路什么的真麻烦，举俩例子看看代码就懂了</p>
+<p>其实也没什么好讲的，未盖点交错路可增广路什么的真麻烦，举俩例子看看代码应该就懂了…</p>
 <p><img src="/img/hungary_1.png" alt=""><br>如上图所示，刚开始<code>x1</code>找到了<code>y1</code>，记录下当前<code>y1</code>与<code>x1</code>匹配<code>（pair[y1]:=x1)</code></p>
 <p><img src="/img/hungary_2.png" alt=""><br>然后是<code>x2</code>，<code>x2</code>发现了<code>y1</code>，于是顺着<code>pair[y1]</code>发现了<code>x1</code>，于是呢，<code>x2</code>就和<code>x1</code>商量：这个点归我好不好，你再找找…<br>于是再调用寻找函数看<code>x1</code>还能不能找到另一个匹配点，然后<code>x1</code>发现了<code>y2</code>，<del>他们快乐地生活在了一起</del></p>
 <p><img src="/img/hungary_3.png" alt=""><br>然后函数一层层返回时修改每个点与哪个点匹配</p>
 <p>举个同时改多个点的例子</p>
 <p><img src="/img/hungary_4.png" alt=""><br>匹配到前三个点时是这样的</p>
 <p><img src="/img/hungary_5.png" alt=""><br>然后匹配第四个点时就会是这样了，<code>x4</code>抢走了<code>y1</code>，别的结点都找到了另外一个自己的匹配</p>
-<p>完了 = = 下面贴上丑代码</p>
+<p><i class="fa fa-code fa-2x"></i></p>
 <figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> hungary;</span><br><span class="line"><span class="keyword">const</span> maxn=<span class="number">1000</span>;</span><br><span class="line"><span class="keyword">var</span> pair:<span class="keyword">array</span>[<span class="number">1</span>..maxn]<span class="keyword">of</span> longint;</span><br><span class="line">    link:<span class="keyword">array</span>[<span class="number">1</span>..maxn,<span class="number">1</span>..maxn]<span class="keyword">of</span> boolean;</span><br><span class="line">    v:<span class="keyword">array</span>[<span class="number">1</span>..maxn]<span class="keyword">of</span> boolean;</span><br><span class="line">    nx,ny,m,i,a,b,match:longint;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">path</span><span class="params">(x:longint)</span>:</span>boolean;</span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> ny <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> link[x,i] <span class="keyword">and</span> <span class="keyword">not</span> v[i] <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    v[i]:=true;</span><br><span class="line">    <span class="keyword">if</span> (pair[i]=<span class="number">0</span>)<span class="keyword">or</span>(path(pair[i])) <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      pair[i]:=x;</span><br><span class="line">      <span class="keyword">exit</span>(true);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">exit</span>(false);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">hungary</span>;</span></span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> nx <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    fillchar(v,sizeof(v),false);</span><br><span class="line">    <span class="keyword">if</span> path(i) <span class="keyword">then</span> inc(match);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(nx,ny,m);</span><br><span class="line">  fillchar(link,sizeof(link),false);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(a,b);</span><br><span class="line">    link[a,b]:=true;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  match:=<span class="number">0</span>;</span><br><span class="line">  fillchar(pair,sizeof(pair),<span class="number">0</span>);</span><br><span class="line">  hungary;</span><br><span class="line">  writeln(match);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
 <p><del>其实只是测试一下文章里插入本地图片  &gt;_&lt;…</del></p>
 
       
     </div>
     <footer class="article-footer">
-      
-      
-        <a href="http://platypuspro.github.io/posts/hungary/#comments" class="article-comment-link">评论</a>
-      
-
+      <a href="http://platypuspro.github.io/posts/hungary/#comments" class="article-comment-link">评论</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a></li></ul>
 
@@ -160,7 +156,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">23</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -169,7 +165,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Max-Flow/">Max Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobius-inversion/">Mobius_inversion</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortest-Path/">Shortest Path</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Max-Flow/">Max Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobius-inversion/">Mobius_inversion</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortest-Path/">Shortest Path</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -179,6 +175,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/posts/bzoj-3571/">BZOJ 3571</a>
+          </li>
         
           <li>
             <a href="/posts/bzoj-2152/">BZOJ 2152</a>
@@ -194,10 +194,6 @@
         
           <li>
             <a href="/posts/bzoj-3931/">BZOJ 3931</a>
-          </li>
-        
-          <li>
-            <a href="/posts/bzoj-3930/">BZOJ 3930</a>
           </li>
         
       </ul>
