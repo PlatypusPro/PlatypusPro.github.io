@@ -2,6 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-2186/</loc>
+    <lastmod>2015-04-17T13:51:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2186</title>
+        <pubTime>2015-04-17T13:27:34.000Z</pubTime>
+        
+        <tag>Euler&#39;s Totient Function </tag>
+         
+        <tag>Math </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3192/</loc>
+    <lastmod>2015-04-17T12:08:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3192</title>
+        <pubTime>2015-03-11T02:35:48.000Z</pubTime>
+        
+        <tag>Binary Indexed Tree </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3560/</loc>
+    <lastmod>2015-04-17T12:01:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3560</title>
+        <pubTime>2015-04-03T10:14:12.000Z</pubTime>
+        
+        <tag>Math </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3571/</loc>
@@ -172,26 +234,6 @@
 
     
   <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3560/</loc>
-    <lastmod>2015-04-03T12:53:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3560</title>
-        <pubTime>2015-04-03T10:14:12.000Z</pubTime>
-        
-        <tag>Math </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3884/</loc>
     <lastmod>2015-04-03T10:11:52.000Z</lastmod>
     <data>
@@ -241,26 +283,6 @@
         <pubTime>2015-03-11T09:57:40.000Z</pubTime>
         
         <tag>Min Cost Flow </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3192/</loc>
-    <lastmod>2015-03-21T01:15:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3192</title>
-        <pubTime>2015-03-11T02:35:48.000Z</pubTime>
-        
-        <tag>Binary Indexed Tree </tag>
          
          
            
