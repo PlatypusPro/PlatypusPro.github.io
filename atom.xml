@@ -43,6 +43,34 @@
   </entry>
   
   <entry>
+    <title><![CDATA[BZOJ 1965]]></title>
+    <link href="http://platypuspro.github.io/posts/bzoj-1965/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-1965/</id>
+    <published>2015-04-17T13:27:01.000Z</published>
+    <updated>2015-04-18T07:42:25.000Z</updated>
+    <content type="html"><![CDATA[<p><i class="fa fa-building-o"></i><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1965" target="_blank" rel="external">传送门</a></p>
+<p>观察发现每次洗牌后编号为$x$的牌会跑到$2\cdot x\ mod(n+1)$的位置上</p>
+<p>那么洗牌$m$次后就会跑到$2^m\cdot x\ mod(n+1)$的位置上</p>
+<p>设洗牌$m$次后跑到$1$号位的牌为$x$，则$2^m\cdot x\equiv 1(mod\ n+1)$</p>
+<p>即为$2^m\cdot x+(n+1)\cdot y=1$</p>
+<p>然后拿扩展欧几里得解出$x$后第$L$张就是$x\cdot L\ mod\ (n+1)$</p>
+<p>注意$x$可能为负，要所以特判答案为负的情况</p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_1965;</span><br><span class="line"><span class="keyword">var</span> n,m,l,p,mo,x,y,g,ans:int64;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">qp</span><span class="params">(x,k:int64)</span>:</span>int64;</span><br><span class="line"><span class="keyword">var</span> p:int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  qp:=<span class="number">1</span>;</span><br><span class="line">  p:=x;</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> k <span class="keyword">and</span> <span class="number">1</span>=<span class="number">1</span> <span class="keyword">then</span> qp:=(qp*p)<span class="keyword">mod</span> mo;</span><br><span class="line">    p:=(p*p)<span class="keyword">mod</span> mo;</span><br><span class="line">    k:=k&gt;&gt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">exgcd</span><span class="params">(a,b:int64)</span>:</span>int64;</span><br><span class="line"><span class="keyword">var</span> t,g:int64;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> b=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    x:=<span class="number">1</span>;</span><br><span class="line">    y:=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">exit</span>(a);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  g:=exgcd(b,a <span class="keyword">mod</span> b);</span><br><span class="line">  t:=x;</span><br><span class="line">  x:=y;</span><br><span class="line">  y:=t-(a <span class="keyword">div</span> b)*y;</span><br><span class="line">  <span class="keyword">exit</span>(g);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n,m,l);</span><br><span class="line">  mo:=n+<span class="number">1</span>;</span><br><span class="line">  p:=qp(<span class="number">2</span>,m);</span><br><span class="line">  g:=exgcd(p,mo);</span><br><span class="line">  ans:=(x*l <span class="keyword">mod</span> mo+mo)<span class="keyword">mod</span> mo;</span><br><span class="line">  writeln(ans);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><i class="fa fa-building-o"></i><br>]]>
+    
+    </summary>
+    
+      <category term="Extended Euclidean" scheme="http://platypuspro.github.io/tags/Extended-Euclidean/"/>
+    
+      <category term="Math" scheme="http://platypuspro.github.io/tags/Math/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[BZOJ 3571]]></title>
     <link href="http://platypuspro.github.io/posts/bzoj-3571/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3571/</id>
@@ -692,33 +720,6 @@
     </summary>
     
       <category term="Bipartite-Graph Matching" scheme="http://platypuspro.github.io/tags/Bipartite-Graph-Matching/"/>
-    
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[BZOJ 1857]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-1857/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-1857/</id>
-    <published>2015-03-16T12:43:13.000Z</published>
-    <updated>2015-03-16T13:37:22.000Z</updated>
-    <content type="html"><![CDATA[<p><code>/3</code><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1857" target="_blank" rel="external">传送门</a></p>
-<p><del>尼玛BZOJ刚刚又挂了好几个小时</del></p>
-<p>自己YY一下，在每个传送带上不同位置时的答案一定是个单峰函数，有最优解，所以就用三分好了</p>
-<blockquote>
-<p>二分用来求可行答案，三分用来求最优答案 ——ZYK</p>
-</blockquote>
-<p>先三分枚举其中一个传送带上的点，然后再套一个三分看看这个点在另一条传送带上的最优解如何，挑两个答案中比较近的更新三分的左右端点</p>
-<p>应该是比较容易理解的吧…</p>
-<p>注意这道题会出现AB两点重合的情况，我把原来的<code>while</code>改成了<code>repeat</code>，保证至少算一次最优解（<code>while</code>的话会不满足条件直接跳出，<code>repeat</code>就不会了）</p>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_1857;</span><br><span class="line"><span class="keyword">const</span> eps=<span class="number">1</span>e-<span class="number">3</span>;</span><br><span class="line"><span class="keyword">type</span> point=<span class="keyword">record</span> x,y:extended; <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">var</span> a,b,c,d,s1,s2,l,r:point;</span><br><span class="line">    v1,v2,v3:longint;</span><br><span class="line">    a1,a2,ans:extended;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dis</span><span class="params">(a,b:point)</span>:</span>extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>(sqrt(sqr(a.x-b.x)+sqr(a.y-b.y)));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calc</span><span class="params">(p:point)</span>:</span>extended;</span><br><span class="line"><span class="keyword">var</span> l,r,s1,s2:point;</span><br><span class="line">    a1,a2:extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  l:=c;</span><br><span class="line">  r:=d;</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    s1.x:=l.x+(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s1.y:=l.y+(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    s2.x:=r.x-(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s2.y:=r.y-(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    a1:=dis(a,p)/v1+dis(p,s1)/v3+dis(s1,d)/v2;</span><br><span class="line">    a2:=dis(a,p)/v1+dis(p,s2)/v3+dis(s2,d)/v2;</span><br><span class="line">    <span class="keyword">if</span> a1&lt;a2 <span class="keyword">then</span> r:=s2 <span class="keyword">else</span> l:=s1;</span><br><span class="line">  <span class="keyword">until</span> dis(l,r)&lt;eps;</span><br><span class="line">  <span class="keyword">if</span> a1&lt;a2 <span class="keyword">then</span> <span class="keyword">exit</span>(a1) <span class="keyword">else</span> <span class="keyword">exit</span>(a2);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">read</span>(a.x,a.y,b.x,b.y,c.x,c.y,d.x,d.y);</span><br><span class="line">  <span class="keyword">read</span>(v1,v2,v3);</span><br><span class="line">  l:=a;</span><br><span class="line">  r:=b;</span><br><span class="line">  ans:=maxlongint;</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    s1.x:=l.x+(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s1.y:=l.y+(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    s2.x:=r.x-(r.x-l.x)/<span class="number">3</span>;</span><br><span class="line">    s2.y:=r.y-(r.y-l.y)/<span class="number">3</span>;</span><br><span class="line">    a1:=calc(s1);</span><br><span class="line">    a2:=calc(s2);</span><br><span class="line">    <span class="keyword">if</span> a1&lt;ans <span class="keyword">then</span> ans:=a1;</span><br><span class="line">    <span class="keyword">if</span> a2&lt;ans <span class="keyword">then</span> ans:=a2;</span><br><span class="line">    <span class="keyword">if</span> a1&lt;a2 <span class="keyword">then</span> r:=s2 <span class="keyword">else</span> l:=s1;</span><br><span class="line">  <span class="keyword">until</span> dis(l,r)&lt;eps;</span><br><span class="line">  writeln(ans:<span class="number">0</span>:<span class="number">2</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p><code>/3</code><br>]]>
-    
-    </summary>
-    
-      <category term="Divide and Conquer" scheme="http://platypuspro.github.io/tags/Divide-and-Conquer/"/>
     
       <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
