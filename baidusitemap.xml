@@ -3,6 +3,110 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-2150/</loc>
+    <lastmod>2015-04-26T11:42:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2150</title>
+        <pubTime>2015-04-26T09:58:59.000Z</pubTime>
+        
+        <tag>Bipartite-Graph Matching </tag>
+         
+        <tag>Max Flow </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-2049/</loc>
+    <lastmod>2015-04-26T11:11:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2049</title>
+        <pubTime>2015-04-26T09:58:43.000Z</pubTime>
+        
+        <tag>Link Cut Tree </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1051/</loc>
+    <lastmod>2015-04-26T11:06:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1051</title>
+        <pubTime>2015-04-26T09:58:33.000Z</pubTime>
+        
+        <tag>Tarjan SCC </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1036/</loc>
+    <lastmod>2015-04-26T10:38:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1036</title>
+        <pubTime>2015-04-26T09:58:27.000Z</pubTime>
+        
+        <tag>Link Cut Tree </tag>
+         
+        <tag>Tree Chain Split </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1031/</loc>
+    <lastmod>2015-04-26T10:05:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1031</title>
+        <pubTime>2015-04-26T09:58:21.000Z</pubTime>
+        
+        <tag>Suffix Array </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3932/</loc>
     <lastmod>2015-04-22T23:30:57.000Z</lastmod>
     <data>
