@@ -1,11 +1,10 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   
-  <title>About Me | Platypus Blog</title>
+  <title>BZOJ 4008 | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src='/js/nprogress.js'></script>
   <link rel='stylesheet' href='/css/nprogress.css'/>
@@ -69,13 +68,18 @@
     </div>
   </div>
 </header>
+	<script> NProgress.inc(); </script>
     <div class="outer">
-      <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-bzoj-4008" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/about-me.html" class="article-date">
-  <time datetime="2015-03-20T00:54:19.000Z" itemprop="datePublished">3月 20 2015</time>
+    <a href="/posts/bzoj-4008/" class="article-date">
+  <time datetime="2015-04-26T09:59:06.000Z" itemprop="datePublished">4月 26 2015</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -84,7 +88,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      About Me
+      BZOJ 4008
     </h1>
   
 
@@ -92,28 +96,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>HA的蒟蒻，目前高二，啥都不会  <i class="fa fa-cog fa-spin"></i> <del><a href="http://fontawesome.io/" target="_blank" rel="external">Font-Awesome</a>真棒</del></p>
-<p><a href="http://www.lydsy.com/JudgeOnline/userinfo.php?user=Platypus" target="_blank" rel="external">水题列表</a></p>
-<p>欢迎以以下几种方式指导本蒟蒻：</p>
-<p><a href="http://wpa.qq.com/msgrd?v=3&uin=1293705262&site=qq&menu=yes" target="_blank" rel="external"><i class="fa fa-qq fa-2x"></i></a> <a href="mailto:1293705262@qq.com" target="_blank" rel="external"><i class="fa fa-envelope fa-2x"></i></a> <a href="#comments"><i class="fa fa-comments fa-2x"></i></a></p>
+        <p><i class="fa fa-send"></i><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4008" target="_blank" rel="external">传送门</a></p>
+<p>题目意思大概就是在$n$张卡牌中挑$1~r$张，每张只能挑一次，求选出的卡牌的期望总伤害</p>
+<p>设$F[i,j]$为选至第$i$张，还能选$j$次的期望伤害值</p>
+<p>每张牌有选与不选两种情况，所以</p>
+<h4 id="$$F_{i,j}=F_{i-1,j}\cdot(1-p_i)^j+F_{i-1,j+1}\cdot(1-(1-p_i)^{j+1})$$">$$F_{i,j}=F_{i-1,j}\cdot(1-p_i)^j+F_{i-1,j+1}\cdot(1-(1-p_i)^{j+1})$$</h4><p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_4008;</span><br><span class="line"><span class="keyword">var</span> g,f:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">221</span>,<span class="number">0</span>..<span class="number">133</span>]<span class="keyword">of</span> extended;</span><br><span class="line">    t,n,r,i:longint;</span><br><span class="line">    p:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">220</span>]<span class="keyword">of</span> extended;</span><br><span class="line">    d:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">220</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    ans:extended;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">calc</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,j:longint;</span><br><span class="line">    a,b:extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> r <span class="keyword">do</span> g[i,j]:=g[i,j-<span class="number">1</span>]*(<span class="number">1</span>-p[i]);</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  fillchar(f,sizeof(f),<span class="number">0</span>);</span><br><span class="line">  f[<span class="number">0</span>,r]:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">0</span> <span class="keyword">to</span> r <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    a:=f[i-<span class="number">1</span>,j]*g[i,j];</span><br><span class="line">    b:=f[i-<span class="number">1</span>,j+<span class="number">1</span>]*(<span class="number">1</span>-g[i,j+<span class="number">1</span>]);</span><br><span class="line">    f[i,j]:=a+b;</span><br><span class="line">    ans:=ans+b*d[i];</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(t);</span><br><span class="line">  fillchar(g,sizeof(g),<span class="number">0</span>);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> <span class="number">220</span> <span class="keyword">do</span> g[i,<span class="number">0</span>]:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> t:=<span class="number">1</span> <span class="keyword">to</span> t <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(n,r);</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> readln(p[i],d[i]);</span><br><span class="line">    calc;</span><br><span class="line">    writeln(ans:<span class="number">0</span>:<span class="number">10</span>);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a href="http://platypuspro.github.io/about-me.html#comments" class="article-comment-link">评论</a>
+      <a href="http://platypuspro.github.io/posts/bzoj-4008/#comments" class="article-comment-link">评论</a>
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Expected-Value/">Expected Value</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/posts/poj-2104/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          POJ 2104
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/bzoj-2150/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 2150</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="about-me.html" data-title="About Me" data-url="http://platypuspro.github.io/about-me.html"></div>
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-4008/" data-title="BZOJ 4008" data-url="http://platypuspro.github.io/posts/bzoj-4008/"></div>
   </section>
-
 </section>
       
       <aside id="sidebar">
@@ -204,6 +229,7 @@
   
 </aside>
       
+	  <script> NProgress.inc(); </script>
     </div>
     <footer id="footer">
   
@@ -216,12 +242,14 @@
     </div>
   </div>
 </footer>
+	<script> NProgress.inc(); </script>
   </div>
   <nav id="mobile-nav">
   <a class="mobile-nav-link" href="/"><i class="fa fa-home"></i></a>
   <a class="mobile-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
   <a class="mobile-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
 </nav>
+  <script> NProgress.inc(); </script>
   <div id="totop">
 <a title="返回顶部"><img src="http://i3.tietuku.com/ad16d182a6d6f52b.png"/></a>
 </div>
@@ -298,4 +326,3 @@ var _hmt = _hmt || [];
 </div>
 </body>
 </html>
-

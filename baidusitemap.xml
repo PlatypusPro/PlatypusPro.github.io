@@ -3,6 +3,70 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3932/</loc>
+    <lastmod>2015-04-29T00:31:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3932</title>
+        <pubTime>2015-04-11T13:36:02.000Z</pubTime>
+        
+        <tag>Fotile Tree </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/poj-2104/</loc>
+    <lastmod>2015-04-29T00:31:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>POJ 2104</title>
+        <pubTime>2015-04-27T13:31:52.000Z</pubTime>
+        
+        <tag>Fotile Tree </tag>
+         
+        <tag>Whole Binary-Divide </tag>
+         
+         
+           
+             
+              <breadCrumb title="POJ" url="http://platypuspro.github.io/categories/POJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-4008/</loc>
+    <lastmod>2015-04-28T23:50:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4008</title>
+        <pubTime>2015-04-26T09:59:06.000Z</pubTime>
+        
+        <tag>Dynamic Programming </tag>
+         
+        <tag>Expected Value </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2150/</loc>
     <lastmod>2015-04-26T11:42:57.000Z</lastmod>
     <data>
@@ -95,26 +159,6 @@
         <pubTime>2015-04-26T09:58:21.000Z</pubTime>
         
         <tag>Suffix Array </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3932/</loc>
-    <lastmod>2015-04-22T23:30:57.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3932</title>
-        <pubTime>2015-04-11T13:36:02.000Z</pubTime>
-        
-        <tag>Segment Tree </tag>
          
          
            
