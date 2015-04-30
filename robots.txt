@@ -3,3 +3,4 @@ Disallow: /2015/
 Disallow: /tags/
 Disallow: /categories/
 Disallow: /archives/
+Disallow: /page/
