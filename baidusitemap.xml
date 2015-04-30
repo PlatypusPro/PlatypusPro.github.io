@@ -3,14 +3,16 @@
 
     
   <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3932/</loc>
-    <lastmod>2015-04-29T00:31:17.000Z</lastmod>
+    <loc>http://platypuspro.github.io/posts/bzoj-3110/</loc>
+    <lastmod>2015-04-30T01:02:31.000Z</lastmod>
     <data>
         <display>
-        <title>BZOJ 3932</title>
-        <pubTime>2015-04-11T13:36:02.000Z</pubTime>
+        <title>BZOJ 3110</title>
+        <pubTime>2015-04-28T13:32:05.000Z</pubTime>
         
-        <tag>Fotile Tree </tag>
+        <tag>Tree in Tree </tag>
+         
+        <tag>Whole Binary Divide </tag>
          
          
            
@@ -24,7 +26,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/poj-2104/</loc>
-    <lastmod>2015-04-29T00:31:07.000Z</lastmod>
+    <lastmod>2015-04-29T00:33:58.000Z</lastmod>
     <data>
         <display>
         <title>POJ 2104</title>
@@ -38,6 +40,26 @@
            
              
               <breadCrumb title="POJ" url="http://platypuspro.github.io/categories/POJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3932/</loc>
+    <lastmod>2015-04-29T00:31:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3932</title>
+        <pubTime>2015-04-11T13:36:02.000Z</pubTime>
+        
+        <tag>Fotile Tree </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
           
         </display>
     </data>
