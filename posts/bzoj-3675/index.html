@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>BZOJ 2705 | Platypus Blog</title>
+  <title>BZOJ 3675 | Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src='/js/nprogress.js'></script>
   <link rel='stylesheet' href='/css/nprogress.css'/>
@@ -77,10 +77,10 @@ var _hmt = _hmt || [];
 </header>
 	<script> NProgress.inc(); </script>
     <div class="outer">
-      <section id="main"><article id="post-bzoj-2705" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-bzoj-3675" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/posts/bzoj-2705/" class="article-date">
-  <time datetime="2015-03-19T13:19:20.000Z" itemprop="datePublished">3月 19 2015</time>
+    <a href="/posts/bzoj-3675/" class="article-date">
+  <time datetime="2015-05-02T11:00:26.000Z" itemprop="datePublished">5月 2 2015</time>
 </a>
     
   <div class="article-category">
@@ -95,7 +95,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      BZOJ 2705
+      BZOJ 3675
     </h1>
   
 
@@ -103,38 +103,22 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>$O(\sqrt{n})求\varphi$<br><a id="more"></a></p>
-<blockquote>
-<p>SDOI真有人性，出这么欢乐题 —<a href="http://www.lydsy.com/JudgeOnline/wttl/thread.php?tid=597" target="_blank" rel="external">root</a></p>
-</blockquote>
-<p>枚举$n$的约数$k$，令$s(k)$为满足$gcd(m,n)=k,(1{\leq}m{\leq}n)m$的个数，则$ans=\sum_{n\ mod\ k=0}(k*s(k))$</p>
-<p>${\because}\ gcd(m,n)=k$</p>
-<p>${\therefore}\ gcd(\frac{m}{k},\frac{n}{k})=1$</p>
-<p>${\therefore}\ s(k)=\varphi(\frac{n}{k})$</p>
-<p>其实主要在于如何$O(\sqrt{n})$的复杂度求单个$\varphi(x)$ 步骤如下：</p>
-<ol>
-<li><p>将$\varphi$赋为$x$，表示当前与$x$互质的数有$x$个</p>
-</li>
-<li><p>找到一个$x$的约数$k$</p>
-</li>
-<li><p>找到了约数，那么和$x$互质的数就又少了$\frac{\varphi}{k}$个，$\varphi=\varphi*\frac{k-1}{k}$</p>
-</li>
-<li><p>将这个约数从$x$中全都除掉</p>
-</li>
-<li><p>重复以上步骤直到找不到$x$的约数</p>
-</li>
-<li><p>最后如果$x$是质数还要特判一下</p>
-</li>
-<li><p>返回$\varphi$的值</p>
-</li>
-</ol>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2705;</span><br><span class="line"><span class="keyword">var</span> n,ans:int64;</span><br><span class="line">    m,i:longint;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">phi</span><span class="params">(x:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  phi:=x;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> trunc(sqrt(x)) <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    phi:=phi <span class="keyword">div</span> i*(i-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">while</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">do</span> x:=x <span class="keyword">div</span> i;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">if</span> x&gt;<span class="number">1</span> <span class="keyword">then</span> phi:=phi <span class="keyword">div</span> x*(x-<span class="number">1</span>);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  m:=trunc(sqrt(n));</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> n <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    inc(ans,i*phi(n <span class="keyword">div</span> i));</span><br><span class="line">    inc(ans,(n <span class="keyword">div</span> i)*phi(i));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">if</span> int64(m)*int64(m)=n <span class="keyword">then</span> dec(ans,(n <span class="keyword">div</span> m)*phi(m));</span><br><span class="line">  writeln(ans);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+        <p>PASCAL的常数啊QAQ<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3675" target="_blank" rel="external">传送门</a></p>
+<p>设最后分成的各个子序列的和分别为$S_1,S_2,\cdots,S_{k+1}$，那么答案就是<br>$$\sum_{i=1}^kS_i\sum_{j=i+1}^{k+1}S_j$$</p>
+<p>与分割的顺序无关，然后可以搞出DP方程<br>$$F_{i,k}=max\lbrace F_{j,k-1},j\in[1,i)\rbrace+sum_j\times(sum_i-sum_j)$$</p>
+<p>取$0&lt;a,b&lt;i$，决策$a$优于决策$b$当且仅当</p>
+<p>$$F_{a,k}+sum_a\cdot sum_i-{sum_a}^2&gt;F_{b,k}+sum_b\cdot sum_i-{sum_b}^2$$</p>
+<p>$$\frac{(F_{a,k}-{sum_a}^2)-(F_{b,k}-{sum_b}^2)}{sum_a-sum_b}&gt;-sum_i$$</p>
+<p>然后就是斜率优化的事了…（只用滚动数组就够了）</p>
+<p><del>C++平均10s PASCAL最快25s（我30s）是要闹哪样</del></p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_3675;</span><br><span class="line"><span class="keyword">const</span> eps=<span class="number">1</span>e-<span class="number">6</span>;</span><br><span class="line"><span class="keyword">var</span> f,g:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">100000</span>,<span class="number">0</span>..<span class="number">1</span>]<span class="keyword">of</span> int64;</span><br><span class="line">    sum,q:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">100000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    n,m,hd,tl,i,j,t:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n,m);</span><br><span class="line">  sum[<span class="number">0</span>]:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">read</span>(t);</span><br><span class="line">    sum[i]:=sum[i-<span class="number">1</span>]+t;</span><br><span class="line">    g[i,<span class="number">0</span>]:=-int64(sum[i])*int64(sum[i]);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  t:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    hd:=<span class="number">1</span>;</span><br><span class="line">    tl:=<span class="number">1</span>;</span><br><span class="line">    q[<span class="number">1</span>]:=<span class="number">0</span>;</span><br><span class="line">    t:=t xor <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">while</span> (hd&lt;tl)<span class="keyword">and</span>(g[q[hd],t xor <span class="number">1</span>]-g[q[hd+<span class="number">1</span>],t xor <span class="number">1</span>]&lt;-int64(sum[i])*int64(sum[q[hd]]-sum[q[hd+<span class="number">1</span>]])+eps) <span class="keyword">do</span> inc(hd);</span><br><span class="line">      f[i,t]:=f[q[hd],t xor <span class="number">1</span>]+int64(sum[q[hd]])*int64(sum[i]-sum[q[hd]]);</span><br><span class="line">      g[i,t]:=f[i,t]-int64(sum[i])*int64(sum[i]);</span><br><span class="line">      <span class="keyword">while</span> (hd&lt;tl)<span class="keyword">and</span>((g[q[tl-<span class="number">1</span>],t xor <span class="number">1</span>]-g[q[tl],t xor <span class="number">1</span>])*int64(sum[i]-sum[q[tl]])+eps&gt;(g[q[tl],t xor <span class="number">1</span>]-g[i,t xor <span class="number">1</span>])*int64(sum[q[tl]]-sum[q[tl-<span class="number">1</span>]])) <span class="keyword">do</span> dec(tl);</span><br><span class="line">      inc(tl);</span><br><span class="line">      q[tl]:=i;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  writeln(f[n,t]);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     <footer class="article-footer">
-      <a href="http://platypuspro.github.io/posts/bzoj-2705/#comments" class="article-comment-link">评论</a>
+      <a href="http://platypuspro.github.io/posts/bzoj-3675/#comments" class="article-comment-link">评论</a>
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a></li></ul>
 
     </footer>
   </div>
@@ -142,19 +126,10 @@ var _hmt = _hmt || [];
     
 <nav id="article-nav">
   
-    <a href="/posts/bzoj-3289/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">
-        
-          BZOJ 3289
-        
-      </div>
-    </a>
   
-  
-    <a href="/posts/bzoj-2818/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/posts/bzoj-4034/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">BZOJ 2818</div>
+      <div class="article-nav-title">BZOJ 4034</div>
     </a>
   
 </nav>
@@ -164,7 +139,7 @@ var _hmt = _hmt || [];
 
 
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-2705/" data-title="BZOJ 2705" data-url="http://platypuspro.github.io/posts/bzoj-2705/"></div>
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-3675/" data-title="BZOJ 3675" data-url="http://platypuspro.github.io/posts/bzoj-3675/"></div>
   </section>
 </section>
       

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>BZOJ 2705 | Platypus Blog</title>
+  <title>Platypus Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src='/js/nprogress.js'></script>
   <link rel='stylesheet' href='/css/nprogress.css'/>
@@ -77,14 +77,16 @@ var _hmt = _hmt || [];
 </header>
 	<script> NProgress.inc(); </script>
     <div class="outer">
-      <section id="main"><article id="post-bzoj-2705" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/posts/bzoj-2705/" class="article-date">
-  <time datetime="2015-03-19T13:19:20.000Z" itemprop="datePublished">3月 19 2015</time>
+    <a href="/posts/hello-world/" class="article-date">
+  <time datetime="2015-03-04T06:12:00.000Z" itemprop="datePublished">3月 4 2015</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+    <a class="article-category-link" href="/categories/others/">Others</a>
   </div>
 
   </div>
@@ -94,8 +96,8 @@ var _hmt = _hmt || [];
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      BZOJ 2705
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/hello-world/">Hello World</a>
     </h1>
   
 
@@ -103,69 +105,29 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>$O(\sqrt{n})求\varphi$<br><a id="more"></a></p>
-<blockquote>
-<p>SDOI真有人性，出这么欢乐题 —<a href="http://www.lydsy.com/JudgeOnline/wttl/thread.php?tid=597" target="_blank" rel="external">root</a></p>
-</blockquote>
-<p>枚举$n$的约数$k$，令$s(k)$为满足$gcd(m,n)=k,(1{\leq}m{\leq}n)m$的个数，则$ans=\sum_{n\ mod\ k=0}(k*s(k))$</p>
-<p>${\because}\ gcd(m,n)=k$</p>
-<p>${\therefore}\ gcd(\frac{m}{k},\frac{n}{k})=1$</p>
-<p>${\therefore}\ s(k)=\varphi(\frac{n}{k})$</p>
-<p>其实主要在于如何$O(\sqrt{n})$的复杂度求单个$\varphi(x)$ 步骤如下：</p>
-<ol>
-<li><p>将$\varphi$赋为$x$，表示当前与$x$互质的数有$x$个</p>
-</li>
-<li><p>找到一个$x$的约数$k$</p>
-</li>
-<li><p>找到了约数，那么和$x$互质的数就又少了$\frac{\varphi}{k}$个，$\varphi=\varphi*\frac{k-1}{k}$</p>
-</li>
-<li><p>将这个约数从$x$中全都除掉</p>
-</li>
-<li><p>重复以上步骤直到找不到$x$的约数</p>
-</li>
-<li><p>最后如果$x$是质数还要特判一下</p>
-</li>
-<li><p>返回$\varphi$的值</p>
-</li>
-</ol>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2705;</span><br><span class="line"><span class="keyword">var</span> n,ans:int64;</span><br><span class="line">    m,i:longint;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">phi</span><span class="params">(x:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  phi:=x;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> trunc(sqrt(x)) <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    phi:=phi <span class="keyword">div</span> i*(i-<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">while</span> x <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">do</span> x:=x <span class="keyword">div</span> i;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">if</span> x&gt;<span class="number">1</span> <span class="keyword">then</span> phi:=phi <span class="keyword">div</span> x*(x-<span class="number">1</span>);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  m:=trunc(sqrt(n));</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">if</span> n <span class="keyword">mod</span> i=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    inc(ans,i*phi(n <span class="keyword">div</span> i));</span><br><span class="line">    inc(ans,(n <span class="keyword">div</span> i)*phi(i));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">if</span> int64(m)*int64(m)=n <span class="keyword">then</span> dec(ans,(n <span class="keyword">div</span> m)*phi(m));</span><br><span class="line">  writeln(ans);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+        <p>~!@#$%^&amp;*()_+<br>
+        
+          <p class="article-more-link">
+            <a href="/posts/hello-world/">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a href="http://platypuspro.github.io/posts/bzoj-2705/#comments" class="article-comment-link">评论</a>
+      <a href="http://platypuspro.github.io/posts/hello-world/#comments" class="article-comment-link">评论</a>
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a></li></ul>
-
     </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/posts/bzoj-3289/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">
-        
-          BZOJ 3289
-        
-      </div>
-    </a>
-  
-  
-    <a href="/posts/bzoj-2818/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">BZOJ 2818</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
 
-  <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-2705/" data-title="BZOJ 2705" data-url="http://platypuspro.github.io/posts/bzoj-2705/"></div>
-  </section>
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    </nav>
+  
 </section>
       
       <aside id="sidebar">
