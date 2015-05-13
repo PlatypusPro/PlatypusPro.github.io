@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Platypus Blog]]></title>
+  <title><![CDATA[Platypus's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
@@ -159,7 +159,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3110/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3110/</id>
     <published>2015-04-28T13:32:05.000Z</published>
-    <updated>2015-04-30T01:02:31.000Z</updated>
+    <updated>2015-05-13T10:11:03.000Z</updated>
     <content type="html"><![CDATA[<p><i class="fa fa-coffee"></i><br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3110" target="_blank" rel="external">传送门</a></p>
 <blockquote>
 <p><a href="#Divide">整体二分</a><br><a href="#Tree">树套树</a></p>
@@ -191,7 +191,7 @@
     
       <category term="Tree in Tree" scheme="http://platypuspro.github.io/tags/Tree-in-Tree/"/>
     
-      <category term="Whole Binary Divide" scheme="http://platypuspro.github.io/tags/Whole-Binary-Divide/"/>
+      <category term="Whole Binary-Divide" scheme="http://platypuspro.github.io/tags/Whole-Binary-Divide/"/>
     
       <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
