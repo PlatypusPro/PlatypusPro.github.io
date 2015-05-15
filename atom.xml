@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-05-14T13:43:22.000Z</updated>
+  <updated>2015-05-15T10:20:31.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2286/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2286/</id>
     <published>2015-05-14T12:37:38.000Z</published>
-    <updated>2015-05-14T13:43:22.000Z</updated>
+    <updated>2015-05-15T10:20:31.000Z</updated>
     <content type="html"><![CDATA[<p>我说这傻逼题我™改了一整天你信么…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2286" target="_blank" rel="external">传送门</a></p>
-<p>一大早在被窝里YY了个虚树写法…到了机房开始敲</p>
+<p>一大早回忆了一下老早之前看过的虚树写法…到了机房开始敲</p>
 <p>敲了一个小时发现过不了样例于是找了个BUG，改了一会过了样例和对拍</p>
 <p>发现稍微大一点的数据跑起来就像吃了*一样 <del>咦为什么还没有暴力快</del>，然后回头瞅了瞅代码</p>
 <p>发现我这个傻逼干了这些事情：</p>
@@ -38,6 +38,7 @@
 <p>不管怎么改依旧本地压线过交上去毫无疑问TLE</p>
 <p>无奈又各种膜代码，发现PoPoQQQ的建虚树过程和DP放在一起搞…好神奇的样子</p>
 <p>然后改呀改呀最终本地4S+ BZOJ 12S+</p>
+<p>UPD: 发现了罪魁祸首，在建虚树过程中我傻逼地写了个$O(n)$级别的循环来赋初始值 = = 改完以后BZOJ 10S+…</p>
 <p><del>咦好像扯远了我还没讲题呢…</del></p>
 <p>首先把要建到虚树中的点按照DFS序排序</p>
 <p>然后维护一个栈，从栈顶到栈底深度递减（栈底是根），保证从栈顶到栈底是一条需要建进虚树的路径，路径中只保留必要的点（询问的点与询问的点的LCA），这些点间的其他边和点都缩到一条边里</p>
