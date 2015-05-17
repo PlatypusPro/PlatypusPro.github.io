@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-05-15T10:20:31.000Z</updated>
+  <updated>2015-05-15T10:57:12.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2286/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2286/</id>
     <published>2015-05-14T12:37:38.000Z</published>
-    <updated>2015-05-15T10:20:31.000Z</updated>
+    <updated>2015-05-15T10:57:12.000Z</updated>
     <content type="html"><![CDATA[<p>我说这傻逼题我™改了一整天你信么…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2286" target="_blank" rel="external">传送门</a></p>
 <p>一大早回忆了一下老早之前看过的虚树写法…到了机房开始敲</p>
 <p>敲了一个小时发现过不了样例于是找了个BUG，改了一会过了样例和对拍</p>
