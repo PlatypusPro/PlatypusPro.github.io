@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Platypus&#39;s Blog</title>
+  <title>vimrc | Platypus&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src='//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'></script>
   <link rel='stylesheet' href='/css/nprogress.css'>
@@ -71,58 +71,71 @@
 </header>
 	<script> NProgress.inc(); </script>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/bzoj-3289/" class="archive-article-date">
-  <time datetime="2015-03-20T12:39:02.000Z" itemprop="datePublished">3月 20</time>
+      <section id="main"><article id="post-vimrc" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/posts/vimrc/" class="article-date">
+  <time datetime="2015-05-21T23:49:50.000Z" itemprop="datePublished">5月 22 2015</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/others/">Others</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/posts/bzoj-3289/">BZOJ 3289</a>
+    <h1 class="article-title" itemprop="name">
+      vimrc
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/posts/bzoj-2038/" class="archive-article-date">
-  <time datetime="2015-03-17T12:56:27.000Z" itemprop="datePublished">3月 17</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/posts/bzoj-2038/">BZOJ 2038</a>
-    </h1>
-  
+        <a id="more"></a>
+<p>Orz Vim…</p>
+<p>听说SC只有Vim没有gdb?…肿么办啊QAQ<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">colorscheme Tomorrow-Night-Eighties "主题</span><br><span class="line"></span><br><span class="line">syntax on "代码高亮 *</span><br><span class="line"></span><br><span class="line">set bs=indent,eol,start "backspace 启用退格 *</span><br><span class="line">set nocp "nocompatible 去掉Vi兼容性 *</span><br><span class="line">set gfn=Source_Code_Pro:h15 "guifont 字体</span><br><span class="line">set nu "number 开启行号 *</span><br><span class="line">set ai "autoindent 自动缩进 *</span><br><span class="line">set ts=2 "tabstop 缩进长度 *</span><br><span class="line">set sw=2 "shiftwidth 自动缩进长度 *</span><br><span class="line">set nobk "nobackup 禁用备份</span><br><span class="line">set et "expandtab tab转空格</span><br><span class="line">set ar "autoread 自动加载更改</span><br><span class="line">set acd "autochangedir 自动切换目录到当前文件目录</span><br><span class="line"></span><br><span class="line">map &lt;F7&gt; :!gdb %&lt; &lt;CR&gt; "gdb调试 *</span><br><span class="line">map &lt;F9&gt; :w&lt;CR&gt; :!fpc % -g -O2 &lt;CR&gt; "编译 *</span><br><span class="line">map &lt;C-F9&gt; :!%&lt; &lt;CR&gt; "运行 *</span><br></pre></td></tr></table></figure></p>
+<p><code>&quot;</code>后面的是全称和说明，直接写前面的简写就够了</p>
+<p>其实考试的时候用不到这么多，只用加<code>*</code>的那些就够了…这些只是我本地用的…</p>
+<blockquote>
+<p><strong>附</strong>：</p>
+<ul>
+<li><a href="https://github.com/chriskempson/tomorrow-theme" target="_blank" rel="external">tomorrow主题官方项目主页</a></li>
+<li><a href="https://github.com/adobe-fonts/source-code-pro" target="_blank" rel="external">Source Code Pro官方项目主页</a><br>需要的自己下</li>
+</ul>
+</blockquote>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a href="http://platypuspro.github.io/posts/vimrc/#comments" class="article-comment-link">评论</a>
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/posts/bzoj-4006/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 4006</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/vimrc/" data-title="vimrc" data-url="http://platypuspro.github.io/posts/vimrc/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">

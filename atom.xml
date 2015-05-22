@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-05-20T14:00:41.000Z</updated>
+  <updated>2015-05-22T00:10:16.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -13,6 +13,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[vimrc]]></title>
+    <link href="http://platypuspro.github.io/posts/vimrc/"/>
+    <id>http://platypuspro.github.io/posts/vimrc/</id>
+    <published>2015-05-21T23:49:50.000Z</published>
+    <updated>2015-05-22T00:10:16.000Z</updated>
+    <content type="html"><![CDATA[<a id="more"></a>
+<p>Orz Vim…</p>
+<p>听说SC只有Vim没有gdb?…肿么办啊QAQ<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">colorscheme Tomorrow-Night-Eighties "主题</span><br><span class="line"></span><br><span class="line">syntax on "代码高亮 *</span><br><span class="line"></span><br><span class="line">set bs=indent,eol,start "backspace 启用退格 *</span><br><span class="line">set nocp "nocompatible 去掉Vi兼容性 *</span><br><span class="line">set gfn=Source_Code_Pro:h15 "guifont 字体</span><br><span class="line">set nu "number 开启行号 *</span><br><span class="line">set ai "autoindent 自动缩进 *</span><br><span class="line">set ts=2 "tabstop 缩进长度 *</span><br><span class="line">set sw=2 "shiftwidth 自动缩进长度 *</span><br><span class="line">set nobk "nobackup 禁用备份</span><br><span class="line">set et "expandtab tab转空格</span><br><span class="line">set ar "autoread 自动加载更改</span><br><span class="line">set acd "autochangedir 自动切换目录到当前文件目录</span><br><span class="line"></span><br><span class="line">map &lt;F7&gt; :!gdb %&lt; &lt;CR&gt; "gdb调试 *</span><br><span class="line">map &lt;F9&gt; :w&lt;CR&gt; :!fpc % -g -O2 &lt;CR&gt; "编译 *</span><br><span class="line">map &lt;C-F9&gt; :!%&lt; &lt;CR&gt; "运行 *</span><br></pre></td></tr></table></figure></p>
+<p><code>&quot;</code>后面的是全称和说明，直接写前面的简写就够了</p>
+<p>其实考试的时候用不到这么多，只用加<code>*</code>的那些就够了…这些只是我本地用的…</p>
+<blockquote>
+<p><strong>附</strong>：</p>
+<ul>
+<li><a href="https://github.com/chriskempson/tomorrow-theme" target="_blank" rel="external">tomorrow主题官方项目主页</a></li>
+<li><a href="https://github.com/adobe-fonts/source-code-pro" target="_blank" rel="external">Source Code Pro官方项目主页</a><br>需要的自己下</li>
+</ul>
+</blockquote>
+]]></content>
+    <summary type="html">
+    <![CDATA[<a id="more"></a>
+<p>Orz Vim…</p>
+<p>听说SC只有Vim没有gdb?…肿么办啊QAQ<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="li]]>
+    </summary>
+    
+      <category term="Others" scheme="http://platypuspro.github.io/categories/others/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4006]]></title>
@@ -609,27 +638,6 @@
       <category term="Link Cut Tree" scheme="http://platypuspro.github.io/tags/Link-Cut-Tree/"/>
     
       <category term="Tree Chain Split" scheme="http://platypuspro.github.io/tags/Tree-Chain-Split/"/>
-    
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[BZOJ 1031]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-1031/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-1031/</id>
-    <published>2015-04-26T09:58:21.000Z</published>
-    <updated>2015-04-26T10:05:56.000Z</updated>
-    <content type="html"><![CDATA[<p>后缀数组模板题<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1031" target="_blank" rel="external">传送门</a></p>
-<p>直接把字符串复制一遍接在末尾，然后用裸的后缀数组处理完后按排名依次输出属于前一半的字符串</p>
-<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_1031;</span><br><span class="line"><span class="keyword">const</span> maxl=<span class="number">100000</span>;</span><br><span class="line"><span class="keyword">var</span> rank,sa,cnt,tsa,rank1,rank2:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">2</span>*maxl]<span class="keyword">of</span> longint;</span><br><span class="line">    s:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">2</span>*maxl]<span class="keyword">of</span> char;</span><br><span class="line">    n,i,p:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  n:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> <span class="keyword">not</span> eoln <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    inc(n);</span><br><span class="line">    <span class="keyword">read</span>(s[n]);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> s[n+i]:=s[i];</span><br><span class="line">  n:=n&lt;&lt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">0</span> <span class="keyword">to</span> <span class="number">255</span> <span class="keyword">do</span> cnt[i]:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(cnt[ord(s[i])]);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> <span class="number">255</span> <span class="keyword">do</span> inc(cnt[i],cnt[i-<span class="number">1</span>]);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> rank[i]:=cnt[ord(s[i])];</span><br><span class="line">  p:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">while</span> p&lt;n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      rank1[i]:=rank[i];</span><br><span class="line">      <span class="keyword">if</span> i+p&lt;=n <span class="keyword">then</span> rank2[i]:=rank[i+p] <span class="keyword">else</span> rank2[i]:=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">0</span> <span class="keyword">to</span> n <span class="keyword">do</span> cnt[i]:=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(cnt[rank2[i]]);</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(cnt[i],cnt[i-<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">for</span> i:=n <span class="keyword">downto</span> <span class="number">1</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      tsa[cnt[rank2[i]]]:=i;</span><br><span class="line">      dec(cnt[rank2[i]]);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">0</span> <span class="keyword">to</span> n <span class="keyword">do</span> cnt[i]:=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(cnt[rank1[i]]);</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> inc(cnt[i],cnt[i-<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">for</span> i:=n <span class="keyword">downto</span> <span class="number">1</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      sa[cnt[rank1[tsa[i]]]]:=tsa[i];</span><br><span class="line">      dec(cnt[rank1[tsa[i]]]);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    rank[sa[<span class="number">1</span>]]:=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      rank[sa[i]]:=rank[sa[i-<span class="number">1</span>]];</span><br><span class="line">      <span class="keyword">if</span> (rank1[sa[i]]&lt;&gt;rank1[sa[i-<span class="number">1</span>]])<span class="keyword">or</span>(rank2[sa[i]]&lt;&gt;rank2[sa[i-<span class="number">1</span>]]) <span class="keyword">then</span> inc(rank[sa[i]]);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    p:=p&lt;&lt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> <span class="keyword">if</span> sa[i]&lt;=n&gt;&gt;<span class="number">1</span> <span class="keyword">then</span> <span class="keyword">write</span>(s[sa[i]+n&gt;&gt;<span class="number">1</span>-<span class="number">1</span>]);</span><br><span class="line">  writeln;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>后缀数组模板题<br>]]>
-    
-    </summary>
-    
-      <category term="Suffix Array" scheme="http://platypuspro.github.io/tags/Suffix-Array/"/>
     
       <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
