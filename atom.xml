@@ -3,9 +3,9 @@
   <title><![CDATA[Platypus's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://platypuspro.github.io/"/>
+  <link href="http://platypuspro.gitcafe.io/"/>
   <updated>2015-05-22T00:10:16.000Z</updated>
-  <id>http://platypuspro.github.io/</id>
+  <id>http://platypuspro.gitcafe.io/</id>
   
   <author>
     <name><![CDATA[Platypus]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[vimrc]]></title>
-    <link href="http://platypuspro.github.io/posts/vimrc/"/>
-    <id>http://platypuspro.github.io/posts/vimrc/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/vimrc/"/>
+    <id>http://platypuspro.gitcafe.io/posts/vimrc/</id>
     <published>2015-05-21T23:49:50.000Z</published>
     <updated>2015-05-22T00:10:16.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -39,14 +39,14 @@
 <p>听说SC只有Vim没有gdb?…肿么办啊QAQ<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="li]]>
     </summary>
     
-      <category term="Others" scheme="http://platypuspro.github.io/categories/others/"/>
+      <category term="Others" scheme="http://platypuspro.gitcafe.io/categories/others/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4006]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4006/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4006/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4006/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4006/</id>
     <published>2015-05-20T13:19:04.000Z</published>
     <updated>2015-05-20T14:00:41.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -67,18 +67,18 @@
 <p>注意到题上的$p\l]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
     
-      <category term="Steiner Tree" scheme="http://platypuspro.github.io/tags/Steiner-Tree/"/>
+      <category term="Steiner Tree" scheme="http://platypuspro.gitcafe.io/tags/Steiner-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4007]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4007/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4007/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4007/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4007/</id>
     <published>2015-05-19T13:00:44.000Z</published>
     <updated>2015-05-20T13:30:24.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -96,16 +96,16 @@
 <p>头一次见正解是DFS]]>
     </summary>
     
-      <category term="Search" scheme="http://platypuspro.github.io/tags/Search/"/>
+      <category term="Search" scheme="http://platypuspro.gitcafe.io/tags/Search/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4003]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4003/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4003/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4003/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4003/</id>
     <published>2015-05-19T01:03:22.000Z</published>
     <updated>2015-05-19T02:24:15.000Z</updated>
     <content type="html"><![CDATA[<p>Splay又被卡链了…尼玛…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4003" target="_blank" rel="external">传送门</a></p>
@@ -122,18 +122,18 @@
     
     </summary>
     
-      <category term="Mergeable Heap" scheme="http://platypuspro.github.io/tags/Mergeable-Heap/"/>
+      <category term="Mergeable Heap" scheme="http://platypuspro.gitcafe.io/tags/Mergeable-Heap/"/>
     
-      <category term="Splay" scheme="http://platypuspro.github.io/tags/Splay/"/>
+      <category term="Splay" scheme="http://platypuspro.gitcafe.io/tags/Splay/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4002]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4002/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4002/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4002/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4002/</id>
     <published>2015-05-18T13:00:38.000Z</published>
     <updated>2015-05-20T00:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>好坑啊QAQ<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4002" target="_blank" rel="external">传送门</a></p>
@@ -153,16 +153,16 @@
     
     </summary>
     
-      <category term="Matrix Multiplication" scheme="http://platypuspro.github.io/tags/Matrix-Multiplication/"/>
+      <category term="Matrix Multiplication" scheme="http://platypuspro.gitcafe.io/tags/Matrix-Multiplication/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3611]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-3611/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-3611/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3611/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-3611/</id>
     <published>2015-05-17T01:04:00.000Z</published>
     <updated>2015-05-20T13:30:49.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -180,16 +180,16 @@
 <p>先搞出来虚树，然后树]]>
     </summary>
     
-      <category term="Virtual Tree" scheme="http://platypuspro.github.io/tags/Virtual-Tree/"/>
+      <category term="Virtual Tree" scheme="http://platypuspro.gitcafe.io/tags/Virtual-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 2286]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-2286/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-2286/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-2286/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-2286/</id>
     <published>2015-05-14T12:37:38.000Z</published>
     <updated>2015-05-15T10:57:12.000Z</updated>
     <content type="html"><![CDATA[<p>我说这傻逼题我™改了一整天你信么…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2286" target="_blank" rel="external">传送门</a></p>
@@ -233,16 +233,16 @@
     
     </summary>
     
-      <category term="Virtual Tree" scheme="http://platypuspro.github.io/tags/Virtual-Tree/"/>
+      <category term="Virtual Tree" scheme="http://platypuspro.gitcafe.io/tags/Virtual-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3295]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-3295/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-3295/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3295/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-3295/</id>
     <published>2015-05-14T12:37:26.000Z</published>
     <updated>2015-05-14T13:44:02.000Z</updated>
     <content type="html"><![CDATA[<p>论主席树の日常MLE…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3295" target="_blank" rel="external">传送门</a></p>
@@ -258,16 +258,16 @@
     
     </summary>
     
-      <category term="Fotile Tree" scheme="http://platypuspro.github.io/tags/Fotile-Tree/"/>
+      <category term="Fotile Tree" scheme="http://platypuspro.gitcafe.io/tags/Fotile-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3675]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-3675/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-3675/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3675/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-3675/</id>
     <published>2015-05-02T11:00:26.000Z</published>
     <updated>2015-05-02T12:34:15.000Z</updated>
     <content type="html"><![CDATA[<p>PASCAL的常数啊QAQ<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3675" target="_blank" rel="external">传送门</a></p>
@@ -285,16 +285,16 @@
     
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4034]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4034/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4034/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4034/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4034/</id>
     <published>2015-05-02T11:00:19.000Z</published>
     <updated>2015-05-02T12:41:46.000Z</updated>
     <content type="html"><![CDATA[<p>考场上直接A掉了~啦啦啦~<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4034" target="_blank" rel="external">传送门</a></p>
@@ -308,16 +308,16 @@
     
     </summary>
     
-      <category term="Tree Chain Split" scheme="http://platypuspro.github.io/tags/Tree-Chain-Split/"/>
+      <category term="Tree Chain Split" scheme="http://platypuspro.gitcafe.io/tags/Tree-Chain-Split/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4033]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4033/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4033/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4033/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4033/</id>
     <published>2015-05-02T11:00:11.000Z</published>
     <updated>2015-05-20T13:31:11.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -335,16 +335,16 @@
 <p>考场上交的30分暴力]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3111]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-3111/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-3111/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3111/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-3111/</id>
     <published>2015-05-02T11:00:05.000Z</published>
     <updated>2015-05-20T13:31:21.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -372,16 +372,16 @@
 <h3 id="问题描述"]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 1901]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-1901/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-1901/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-1901/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-1901/</id>
     <published>2015-04-30T13:13:37.000Z</published>
     <updated>2015-05-20T13:31:30.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -404,16 +404,16 @@
 <p>其实这是道权限题…建]]>
     </summary>
     
-      <category term="Fotile Tree" scheme="http://platypuspro.github.io/tags/Fotile-Tree/"/>
+      <category term="Fotile Tree" scheme="http://platypuspro.gitcafe.io/tags/Fotile-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3110]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-3110/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-3110/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3110/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-3110/</id>
     <published>2015-04-28T13:32:05.000Z</published>
     <updated>2015-05-20T13:31:06.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -448,18 +448,18 @@
 ]]>
     </summary>
     
-      <category term="Tree in Tree" scheme="http://platypuspro.github.io/tags/Tree-in-Tree/"/>
+      <category term="Tree in Tree" scheme="http://platypuspro.gitcafe.io/tags/Tree-in-Tree/"/>
     
-      <category term="Whole Binary-Divide" scheme="http://platypuspro.github.io/tags/Whole-Binary-Divide/"/>
+      <category term="Whole Binary-Divide" scheme="http://platypuspro.gitcafe.io/tags/Whole-Binary-Divide/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[POJ 2104]]></title>
-    <link href="http://platypuspro.github.io/posts/poj-2104/"/>
-    <id>http://platypuspro.github.io/posts/poj-2104/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/poj-2104/"/>
+    <id>http://platypuspro.gitcafe.io/posts/poj-2104/</id>
     <published>2015-04-27T13:31:52.000Z</published>
     <updated>2015-05-20T13:31:37.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -483,18 +483,18 @@
 <p><a href="#tag1">整体二]]>
     </summary>
     
-      <category term="Fotile Tree" scheme="http://platypuspro.github.io/tags/Fotile-Tree/"/>
+      <category term="Fotile Tree" scheme="http://platypuspro.gitcafe.io/tags/Fotile-Tree/"/>
     
-      <category term="Whole Binary-Divide" scheme="http://platypuspro.github.io/tags/Whole-Binary-Divide/"/>
+      <category term="Whole Binary-Divide" scheme="http://platypuspro.gitcafe.io/tags/Whole-Binary-Divide/"/>
     
-      <category term="POJ" scheme="http://platypuspro.github.io/categories/POJ/"/>
+      <category term="POJ" scheme="http://platypuspro.gitcafe.io/categories/POJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4008]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-4008/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-4008/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4008/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-4008/</id>
     <published>2015-04-26T09:59:06.000Z</published>
     <updated>2015-05-20T13:31:49.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -510,18 +510,18 @@
 <p>题目意思大概就是在$]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
     
-      <category term="Expected Value" scheme="http://platypuspro.github.io/tags/Expected-Value/"/>
+      <category term="Expected Value" scheme="http://platypuspro.gitcafe.io/tags/Expected-Value/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 2150]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-2150/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-2150/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-2150/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-2150/</id>
     <published>2015-04-26T09:58:59.000Z</published>
     <updated>2015-05-20T13:31:54.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -546,18 +546,18 @@
 <p>$最小路径覆盖=\m]]>
     </summary>
     
-      <category term="Bipartite-Graph Matching" scheme="http://platypuspro.github.io/tags/Bipartite-Graph-Matching/"/>
+      <category term="Bipartite-Graph Matching" scheme="http://platypuspro.gitcafe.io/tags/Bipartite-Graph-Matching/"/>
     
-      <category term="Max Flow" scheme="http://platypuspro.github.io/tags/Max-Flow/"/>
+      <category term="Max Flow" scheme="http://platypuspro.gitcafe.io/tags/Max-Flow/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 2049]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-2049/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-2049/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-2049/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-2049/</id>
     <published>2015-04-26T09:58:43.000Z</published>
     <updated>2015-04-26T11:11:41.000Z</updated>
     <content type="html"><![CDATA[<p>动态树模板题<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2049" target="_blank" rel="external">传送门</a></p>
@@ -569,16 +569,16 @@
     
     </summary>
     
-      <category term="Link Cut Tree" scheme="http://platypuspro.github.io/tags/Link-Cut-Tree/"/>
+      <category term="Link Cut Tree" scheme="http://platypuspro.gitcafe.io/tags/Link-Cut-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 1051]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-1051/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-1051/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-1051/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-1051/</id>
     <published>2015-04-26T09:58:33.000Z</published>
     <updated>2015-04-26T11:06:44.000Z</updated>
     <content type="html"><![CDATA[<p>强连通分量模板题<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1051" target="_blank" rel="external">传送门</a></p>
@@ -597,16 +597,16 @@
     
     </summary>
     
-      <category term="Tarjan SCC" scheme="http://platypuspro.github.io/tags/Tarjan-SCC/"/>
+      <category term="Tarjan SCC" scheme="http://platypuspro.gitcafe.io/tags/Tarjan-SCC/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 1036]]></title>
-    <link href="http://platypuspro.github.io/posts/bzoj-1036/"/>
-    <id>http://platypuspro.github.io/posts/bzoj-1036/</id>
+    <link href="http://platypuspro.gitcafe.io/posts/bzoj-1036/"/>
+    <id>http://platypuspro.gitcafe.io/posts/bzoj-1036/</id>
     <published>2015-04-26T09:58:27.000Z</published>
     <updated>2015-04-26T10:38:34.000Z</updated>
     <content type="html"><![CDATA[<p>树链剖分&amp;动态树 模板题<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1036" target="_blank" rel="external">传送门</a></p>
@@ -635,11 +635,11 @@
     
     </summary>
     
-      <category term="Link Cut Tree" scheme="http://platypuspro.github.io/tags/Link-Cut-Tree/"/>
+      <category term="Link Cut Tree" scheme="http://platypuspro.gitcafe.io/tags/Link-Cut-Tree/"/>
     
-      <category term="Tree Chain Split" scheme="http://platypuspro.github.io/tags/Tree-Chain-Split/"/>
+      <category term="Tree Chain Split" scheme="http://platypuspro.gitcafe.io/tags/Tree-Chain-Split/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
     
   </entry>
   
