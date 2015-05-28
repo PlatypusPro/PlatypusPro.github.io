@@ -3,9 +3,9 @@
   <title><![CDATA[Platypus's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://platypuspro.gitcafe.io/"/>
-  <updated>2015-05-28T01:49:40.000Z</updated>
-  <id>http://platypuspro.gitcafe.io/</id>
+  <link href="http://platypuspro.github.io/"/>
+  <updated>2015-05-25T14:02:44.000Z</updated>
+  <id>http://platypuspro.github.io/</id>
   
   <author>
     <name><![CDATA[Platypus]]></name>
@@ -15,67 +15,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Problem 3]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/t3/"/>
-    <id>http://platypuspro.gitcafe.io/posts/t3/</id>
-    <published>2015-05-27T13:07:19.000Z</published>
-    <updated>2015-05-28T01:49:40.000Z</updated>
-    <content type="html"><![CDATA[<a id="more"></a>
-<h2 id="题目描述">题目描述</h2><p>给定一棵树，每条树边有权值，需要资瓷以下几种操作</p>
-<ol>
-<li>给定$k$个点，求$k$个点两两间距离的和、最小值、最大值（共$k\choose 2$条路径）</li>
-<li>将两点间路径都加上一个值</li>
-<li>将两点间路径权值全部取相反数</li>
-<li>将一个点子树中路径都加上一个值</li>
-<li>将一个点子树中路径权值全部取相反数</li>
-</ol>
-<h2 id="输入格式">输入格式</h2><p>第一行两个整数$n,m$<br>接下来$n-1$行，每行三个整数$u,v,w$，表示$u,v$之间有一条权值为$w$的边<br>接下来$m$行，每行第一个数$c$，为$[1,5]$之间的整数<br>若$c=1$，之后是一个正整数$k$，然后有$k$个正整数，表示选中的点<br>若$c=2$，之后有三个整数$u,v,w$，表示从$u$到$v$的路径权值都加上$w$<br>若$c=3$，之后有两个整数$u,v$，表示从$u$到$v$的路径权值全部取相反数<br>若$c=4$，之后有两个整数$u,w$，表示$u$子树中的路径权值都加上$w$<br>若$c=5$，之后有一个整数$u$，表示$u$子树中的路径权值全部取相反数</p>
-<h2 id="输出格式">输出格式</h2><p>对于每个$c=1$的询问，输出一行三个整数，分别为和，最小值，最大值</p>
-<h2 id="样例输入">样例输入</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">5 5</span><br><span class="line">2 1 1</span><br><span class="line">3 4 5</span><br><span class="line">5 3 9</span><br><span class="line">1 3 1</span><br><span class="line">1 1 2 5 4</span><br><span class="line">2 2 5 10</span><br><span class="line">1 1 2 5 4</span><br><span class="line">4 3</span><br><span class="line">1 1 2 5 4</span><br></pre></td></tr></table></figure>
-<h2 id="样例输出">样例输出</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">49 1 14</span><br><span class="line">149 11 41</span><br><span class="line">5 -24 17</span><br></pre></td></tr></table></figure>
-<h2 id="数据范围">数据范围</h2><p>对于$30%$的数据，$n,m\leq 1000$<br>对于$100%$的数据，$n\leq 50000,m\leq 100000,k\geq 2$，所有询问点数之和$\sum k\leq 400000$<br>数据大概会爆<code>longint</code>吧…我也不清楚</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<a id="more"></a>
-<h2 id="题目描述">题目描述</h2><p>给定一棵树，每条树边有权值，需要资瓷以下几种操作</p>
-<ol>
-<li>给定$k$个点，求$k$个点两两间距离的和、最小值、最大值（共$k\choose 2$条路径）</li>
-<li>将]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Problem 2]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/t2/"/>
-    <id>http://platypuspro.gitcafe.io/posts/t2/</id>
-    <published>2015-05-27T13:07:15.000Z</published>
-    <updated>2015-05-28T01:49:23.000Z</updated>
-    <content type="html"><![CDATA[<a id="more"></a>
-<h2 id="题目描述">题目描述</h2><p>小A和小B在打炉石，双方都铺满了场，两边场上铺了$n$个随从</p>
-<p>现在轮到了小A的回合，小A用第$i$个随从攻击小B的第$j$个随从会受到$d_{i,j}$的伤害（假设这里的一个随从攻击不同的随从所造成的伤害不一样 = =），并损失场面优势$e_{i,j}$</p>
-<p>小A的每个随从只能攻击一次，小B的每个随从也只能被指定为攻击目标一次，也就是说这$2n$个随从是一对一配对的，小A的第$i$个随从的攻击目标是$aim[i]$</p>
-<p>设小A这回合的损失为$(\sum d_{i,aim[i]})\times(\sum e_{i,aim[i]})$，求小A的最小损失</p>
-<h2 id="输入格式">输入格式</h2><p>第一行一个正整数$n$</p>
-<p>然后是一个$n\times n$的矩阵，第$i$行第$j$个代表$d_{i,j}$</p>
-<p>然后还有一个$n\times n$的矩阵，第$i$行第$j$个代表$e_{i,j}$</p>
-<h2 id="输出格式">输出格式</h2><p>仅一个正整数，代表小A的最小损失</p>
-<h2 id="样例输入">样例输入</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">1 3 5 4</span><br><span class="line">2 3 4 4</span><br><span class="line">5 3 4 4</span><br><span class="line">2 1 2 3</span><br><span class="line">4 1 5 4</span><br><span class="line">1 1 1 4</span><br><span class="line">3 4 2 4</span><br><span class="line">2 3 4 5</span><br></pre></td></tr></table></figure>
-<h2 id="样例输出">样例输出</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">104</span><br></pre></td></tr></table></figure>
-<h2 id="数据范围">数据范围</h2><p>对于$30%$的数据，$n\leq 10$<br>对于$100%$的数据，$n\leq 100$，答案在<code>longint</code>范围内</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<a id="more"></a>
-<h2 id="题目描述">题目描述</h2><p>小A和小B在打炉石，双方都铺满了场，两边场上铺了$n$个随从</p>
-<p>现在轮到了小A的回合，小A用第$i$个随从攻击小B的第$j$个随从会受到$d_{i,j}$的伤害（假设这里的一个随从]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[BZOJ 3998]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3998/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3998/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3998/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3998/</id>
     <published>2015-05-25T13:33:47.000Z</published>
     <updated>2015-05-25T14:02:44.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -95,16 +37,16 @@
 <p><img src="]]>
     </summary>
     
-      <category term="Suffix Automaton" scheme="http://platypuspro.gitcafe.io/tags/Suffix-Automaton/"/>
+      <category term="Suffix Automaton" scheme="http://platypuspro.github.io/tags/Suffix-Automaton/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3676]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3676/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3676/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3676/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3676/</id>
     <published>2015-05-25T13:27:57.000Z</published>
     <updated>2015-05-25T23:21:34.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -120,18 +62,18 @@
 <p>首先搞出来后缀自动机]]>
     </summary>
     
-      <category term="Manacher" scheme="http://platypuspro.gitcafe.io/tags/Manacher/"/>
+      <category term="Manacher" scheme="http://platypuspro.github.io/tags/Manacher/"/>
     
-      <category term="Suffix Automaton" scheme="http://platypuspro.gitcafe.io/tags/Suffix-Automaton/"/>
+      <category term="Suffix Automaton" scheme="http://platypuspro.github.io/tags/Suffix-Automaton/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[vimrc]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/vimrc/"/>
-    <id>http://platypuspro.gitcafe.io/posts/vimrc/</id>
+    <link href="http://platypuspro.github.io/posts/vimrc/"/>
+    <id>http://platypuspro.github.io/posts/vimrc/</id>
     <published>2015-05-21T23:49:50.000Z</published>
     <updated>2015-05-22T00:10:16.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -153,14 +95,14 @@
 <p>听说SC只有Vim没有gdb?…肿么办啊QAQ<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="li]]>
     </summary>
     
-      <category term="Others" scheme="http://platypuspro.gitcafe.io/categories/others/"/>
+      <category term="Others" scheme="http://platypuspro.github.io/categories/others/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4006]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4006/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4006/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4006/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4006/</id>
     <published>2015-05-20T13:19:04.000Z</published>
     <updated>2015-05-20T14:00:41.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -181,18 +123,18 @@
 <p>注意到题上的$p\l]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
     
-      <category term="Steiner Tree" scheme="http://platypuspro.gitcafe.io/tags/Steiner-Tree/"/>
+      <category term="Steiner Tree" scheme="http://platypuspro.github.io/tags/Steiner-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4007]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4007/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4007/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4007/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4007/</id>
     <published>2015-05-19T13:00:44.000Z</published>
     <updated>2015-05-20T13:30:24.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -210,16 +152,16 @@
 <p>头一次见正解是DFS]]>
     </summary>
     
-      <category term="Search" scheme="http://platypuspro.gitcafe.io/tags/Search/"/>
+      <category term="Search" scheme="http://platypuspro.github.io/tags/Search/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4003]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4003/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4003/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4003/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4003/</id>
     <published>2015-05-19T01:03:22.000Z</published>
     <updated>2015-05-19T02:24:15.000Z</updated>
     <content type="html"><![CDATA[<p>Splay又被卡链了…尼玛…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4003" target="_blank" rel="external">传送门</a></p>
@@ -236,18 +178,18 @@
     
     </summary>
     
-      <category term="Mergeable Heap" scheme="http://platypuspro.gitcafe.io/tags/Mergeable-Heap/"/>
+      <category term="Mergeable Heap" scheme="http://platypuspro.github.io/tags/Mergeable-Heap/"/>
     
-      <category term="Splay" scheme="http://platypuspro.gitcafe.io/tags/Splay/"/>
+      <category term="Splay" scheme="http://platypuspro.github.io/tags/Splay/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4002]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4002/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4002/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4002/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4002/</id>
     <published>2015-05-18T13:00:38.000Z</published>
     <updated>2015-05-20T00:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>好坑啊QAQ<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4002" target="_blank" rel="external">传送门</a></p>
@@ -267,16 +209,16 @@
     
     </summary>
     
-      <category term="Matrix Multiplication" scheme="http://platypuspro.gitcafe.io/tags/Matrix-Multiplication/"/>
+      <category term="Matrix Multiplication" scheme="http://platypuspro.github.io/tags/Matrix-Multiplication/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3611]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3611/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3611/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3611/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3611/</id>
     <published>2015-05-17T01:04:00.000Z</published>
     <updated>2015-05-20T13:30:49.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -294,16 +236,16 @@
 <p>先搞出来虚树，然后树]]>
     </summary>
     
-      <category term="Virtual Tree" scheme="http://platypuspro.gitcafe.io/tags/Virtual-Tree/"/>
+      <category term="Virtual Tree" scheme="http://platypuspro.github.io/tags/Virtual-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 2286]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-2286/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-2286/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-2286/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-2286/</id>
     <published>2015-05-14T12:37:38.000Z</published>
     <updated>2015-05-15T10:57:12.000Z</updated>
     <content type="html"><![CDATA[<p>我说这傻逼题我™改了一整天你信么…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2286" target="_blank" rel="external">传送门</a></p>
@@ -347,16 +289,16 @@
     
     </summary>
     
-      <category term="Virtual Tree" scheme="http://platypuspro.gitcafe.io/tags/Virtual-Tree/"/>
+      <category term="Virtual Tree" scheme="http://platypuspro.github.io/tags/Virtual-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3295]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3295/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3295/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3295/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3295/</id>
     <published>2015-05-14T12:37:26.000Z</published>
     <updated>2015-05-14T13:44:02.000Z</updated>
     <content type="html"><![CDATA[<p>论主席树の日常MLE…<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3295" target="_blank" rel="external">传送门</a></p>
@@ -372,16 +314,16 @@
     
     </summary>
     
-      <category term="Fotile Tree" scheme="http://platypuspro.gitcafe.io/tags/Fotile-Tree/"/>
+      <category term="Fotile Tree" scheme="http://platypuspro.github.io/tags/Fotile-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3675]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3675/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3675/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3675/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3675/</id>
     <published>2015-05-02T11:00:26.000Z</published>
     <updated>2015-05-02T12:34:15.000Z</updated>
     <content type="html"><![CDATA[<p>PASCAL的常数啊QAQ<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3675" target="_blank" rel="external">传送门</a></p>
@@ -399,16 +341,16 @@
     
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4034]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4034/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4034/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4034/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4034/</id>
     <published>2015-05-02T11:00:19.000Z</published>
     <updated>2015-05-02T12:41:46.000Z</updated>
     <content type="html"><![CDATA[<p>考场上直接A掉了~啦啦啦~<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4034" target="_blank" rel="external">传送门</a></p>
@@ -422,16 +364,16 @@
     
     </summary>
     
-      <category term="Tree Chain Split" scheme="http://platypuspro.gitcafe.io/tags/Tree-Chain-Split/"/>
+      <category term="Tree Chain Split" scheme="http://platypuspro.github.io/tags/Tree-Chain-Split/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4033]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4033/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4033/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4033/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4033/</id>
     <published>2015-05-02T11:00:11.000Z</published>
     <updated>2015-05-20T13:31:11.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -449,16 +391,16 @@
 <p>考场上交的30分暴力]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3111]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3111/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3111/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3111/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3111/</id>
     <published>2015-05-02T11:00:05.000Z</published>
     <updated>2015-05-20T13:31:21.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -486,16 +428,16 @@
 <h3 id="问题描述"]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 1901]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-1901/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-1901/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-1901/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-1901/</id>
     <published>2015-04-30T13:13:37.000Z</published>
     <updated>2015-05-20T13:31:30.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -518,16 +460,16 @@
 <p>其实这是道权限题…建]]>
     </summary>
     
-      <category term="Fotile Tree" scheme="http://platypuspro.gitcafe.io/tags/Fotile-Tree/"/>
+      <category term="Fotile Tree" scheme="http://platypuspro.github.io/tags/Fotile-Tree/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 3110]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-3110/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-3110/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-3110/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-3110/</id>
     <published>2015-04-28T13:32:05.000Z</published>
     <updated>2015-05-20T13:31:06.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -562,18 +504,18 @@
 ]]>
     </summary>
     
-      <category term="Tree in Tree" scheme="http://platypuspro.gitcafe.io/tags/Tree-in-Tree/"/>
+      <category term="Tree in Tree" scheme="http://platypuspro.github.io/tags/Tree-in-Tree/"/>
     
-      <category term="Whole Binary-Divide" scheme="http://platypuspro.gitcafe.io/tags/Whole-Binary-Divide/"/>
+      <category term="Whole Binary-Divide" scheme="http://platypuspro.github.io/tags/Whole-Binary-Divide/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[POJ 2104]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/poj-2104/"/>
-    <id>http://platypuspro.gitcafe.io/posts/poj-2104/</id>
+    <link href="http://platypuspro.github.io/posts/poj-2104/"/>
+    <id>http://platypuspro.github.io/posts/poj-2104/</id>
     <published>2015-04-27T13:31:52.000Z</published>
     <updated>2015-05-20T13:31:37.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -597,18 +539,18 @@
 <p><a href="#tag1">整体二]]>
     </summary>
     
-      <category term="Fotile Tree" scheme="http://platypuspro.gitcafe.io/tags/Fotile-Tree/"/>
+      <category term="Fotile Tree" scheme="http://platypuspro.github.io/tags/Fotile-Tree/"/>
     
-      <category term="Whole Binary-Divide" scheme="http://platypuspro.gitcafe.io/tags/Whole-Binary-Divide/"/>
+      <category term="Whole Binary-Divide" scheme="http://platypuspro.github.io/tags/Whole-Binary-Divide/"/>
     
-      <category term="POJ" scheme="http://platypuspro.gitcafe.io/categories/POJ/"/>
+      <category term="POJ" scheme="http://platypuspro.github.io/categories/POJ/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[BZOJ 4008]]></title>
-    <link href="http://platypuspro.gitcafe.io/posts/bzoj-4008/"/>
-    <id>http://platypuspro.gitcafe.io/posts/bzoj-4008/</id>
+    <link href="http://platypuspro.github.io/posts/bzoj-4008/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-4008/</id>
     <published>2015-04-26T09:59:06.000Z</published>
     <updated>2015-05-20T13:31:49.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
@@ -624,11 +566,68 @@
 <p>题目意思大概就是在$]]>
     </summary>
     
-      <category term="Dynamic Programming" scheme="http://platypuspro.gitcafe.io/tags/Dynamic-Programming/"/>
+      <category term="Dynamic Programming" scheme="http://platypuspro.github.io/tags/Dynamic-Programming/"/>
     
-      <category term="Expected Value" scheme="http://platypuspro.gitcafe.io/tags/Expected-Value/"/>
+      <category term="Expected Value" scheme="http://platypuspro.github.io/tags/Expected-Value/"/>
     
-      <category term="BZOJ" scheme="http://platypuspro.gitcafe.io/categories/BZOJ/"/>
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[BZOJ 2150]]></title>
+    <link href="http://platypuspro.github.io/posts/bzoj-2150/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-2150/</id>
+    <published>2015-04-26T09:58:59.000Z</published>
+    <updated>2015-05-20T13:31:54.000Z</updated>
+    <content type="html"><![CDATA[<a id="more"></a>
+<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2150" target="_blank" rel="external">传送门</a></p>
+<p>$最小路径覆盖=\mid P \mid - 最大匹配$<br><del>为啥这个“径”是繁体…</del></p>
+<blockquote>
+<p><a href="#Hungary">二分图最大匹配</a><br><a href="#Dinic">网络流</a></p>
+</blockquote>
+<p>其实两个方法差不多，只是建的图有点区别</p>
+<p>都是如果能走就向下连边，然后直接求最大匹配</p>
+<p>但是这道题的${\rm Hungary}$真的好快啊QAQ</p>
+<!--Hungary-->
+<h3 id="Hungary">Hungary</h3><p>这个建了个二分图…</p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2150;</span><br><span class="line"><span class="keyword">var</span> num:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">50</span>,<span class="number">1</span>..<span class="number">50</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    pair,lst:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">5000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    v:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">5000</span>]<span class="keyword">of</span> boolean;</span><br><span class="line">    l:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000</span>]<span class="keyword">of</span> <span class="keyword">record</span> ed,pre:longint; <span class="keyword">end</span>;</span><br><span class="line">    n,m,r,c,i,j,cnt,tot,ans:longint;</span><br><span class="line">    ch:char;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">link</span><span class="params">(a,b:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  inc(tot);</span><br><span class="line">  l[tot].pre:=lst[a];</span><br><span class="line">  lst[a]:=tot;</span><br><span class="line">  l[tot].ed:=b;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">check</span><span class="params">(x,y:longint)</span>:</span>boolean;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>((x&gt;<span class="number">0</span>)<span class="keyword">and</span>(x&lt;=m)<span class="keyword">and</span>(y&gt;<span class="number">0</span>)<span class="keyword">and</span>(y&lt;=n)<span class="keyword">and</span>(num[x,y]&lt;&gt;<span class="number">0</span>));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hungary</span><span class="params">(x:longint)</span>:</span>boolean;</span><br><span class="line"><span class="keyword">var</span> k:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  k:=lst[x];</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> v[l[k].ed] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      v[l[k].ed]:=true;</span><br><span class="line">      <span class="keyword">if</span> (pair[l[k].ed]=<span class="number">0</span>)<span class="keyword">or</span>(hungary(pair[l[k].ed])) <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        pair[l[k].ed]:=x;</span><br><span class="line">        <span class="keyword">exit</span>(true);</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    k:=l[k].pre;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">exit</span>(false);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(m,n,r,c);</span><br><span class="line">  cnt:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">read</span>(ch);</span><br><span class="line">      <span class="keyword">if</span> ch=<span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        inc(cnt);</span><br><span class="line">        num[i,j]:=cnt;</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    readln;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> num[i,j]=<span class="number">0</span> <span class="keyword">then</span> continue;</span><br><span class="line">    <span class="keyword">if</span> check(i+r,j-c) <span class="keyword">then</span> link(num[i,j],cnt+num[i+r,j-c]);</span><br><span class="line">    <span class="keyword">if</span> check(i+r,j+c) <span class="keyword">then</span> link(num[i,j],cnt+num[i+r,j+c]);</span><br><span class="line">    <span class="keyword">if</span> check(i+c,j-r) <span class="keyword">then</span> link(num[i,j],cnt+num[i+c,j-r]);</span><br><span class="line">    <span class="keyword">if</span> check(i+c,j+r) <span class="keyword">then</span> link(num[i,j],cnt+num[i+c,j+r]);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  ans:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> cnt <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    fillchar(v,sizeof(v),false);</span><br><span class="line">    <span class="keyword">if</span> hungary(i) <span class="keyword">then</span> inc(ans);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  writeln(cnt-ans);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+<!--Dinic-->
+<h3 id="Dinic">Dinic</h3><p>这个是一个矩阵图…</p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2150;</span><br><span class="line"><span class="keyword">const</span> inf=maxlongint&gt;&gt;<span class="number">1</span>;</span><br><span class="line">      qs=<span class="number">100000</span>;</span><br><span class="line"><span class="keyword">var</span> d,lst,que:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">10010</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    v:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">10010</span>]<span class="keyword">of</span> boolean;</span><br><span class="line">    l:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">5000000</span>]<span class="keyword">of</span> <span class="keyword">record</span> f,ed,pre:longint; <span class="keyword">end</span>;</span><br><span class="line">    q:<span class="keyword">array</span>[<span class="number">0</span>..qs]<span class="keyword">of</span> longint;</span><br><span class="line">    n,m,r,c,i,j,ss,tt,hd,tl,maxf,tot,cnt,len:longint;</span><br><span class="line">    ch:char;</span><br><span class="line">    pd:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">100</span>,<span class="number">0</span>..<span class="number">100</span>]<span class="keyword">of</span> boolean;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">min</span><span class="params">(a,b:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> a&lt;b <span class="keyword">then</span> <span class="keyword">exit</span>(a) <span class="keyword">else</span> <span class="keyword">exit</span>(b);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">ad</span><span class="params">(a,b,f:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  inc(tot);</span><br><span class="line">  l[tot].pre:=lst[a];</span><br><span class="line">  lst[a]:=tot;</span><br><span class="line">  l[tot].ed:=b;</span><br><span class="line">  l[tot].f:=f;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">link</span><span class="params">(x,y,a,b:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> (a&gt;m)<span class="keyword">or</span>(b&lt;<span class="number">1</span>)<span class="keyword">or</span>(b&gt;n)<span class="keyword">or</span>(<span class="keyword">not</span> pd[a,b]) <span class="keyword">then</span> <span class="keyword">exit</span>;</span><br><span class="line">  ad((x-<span class="number">1</span>)*n+y+m*n,(a-<span class="number">1</span>)*n+b,<span class="number">1</span>);</span><br><span class="line">  ad((a-<span class="number">1</span>)*n+b,(x-<span class="number">1</span>)*n+y+m*n,<span class="number">0</span>);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">spfa</span>:</span>boolean;</span><br><span class="line"><span class="keyword">var</span> k:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  fillchar(v,sizeof(v),false);</span><br><span class="line">  fillchar(d,sizeof(d),$<span class="number">7</span>f);</span><br><span class="line">  hd:=<span class="number">0</span>;</span><br><span class="line">  tl:=<span class="number">1</span>;</span><br><span class="line">  q[<span class="number">1</span>]:=ss;</span><br><span class="line">  d[ss]:=<span class="number">0</span>;</span><br><span class="line">  v[ss]:=true;</span><br><span class="line">  <span class="keyword">while</span> hd&lt;&gt;tl <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    inc(hd);</span><br><span class="line">    <span class="keyword">if</span> hd&gt;qs <span class="keyword">then</span> hd:=<span class="number">1</span>;</span><br><span class="line">    k:=lst[q[hd]];</span><br><span class="line">    <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> (l[k].f&gt;<span class="number">0</span>)<span class="keyword">and</span>(d[q[hd]]+<span class="number">1</span>&lt;d[l[k].ed]) <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        d[l[k].ed]:=d[q[hd]]+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> v[l[k].ed] <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">begin</span></span><br><span class="line">          inc(tl);</span><br><span class="line">          <span class="keyword">if</span> tl&gt;qs <span class="keyword">then</span> tl:=<span class="number">1</span>;</span><br><span class="line">          q[tl]:=l[k].ed;</span><br><span class="line">          v[l[k].ed]:=true;</span><br><span class="line">        <span class="keyword">end</span>;</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">      k:=l[k].pre;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    v[q[hd]]:=false;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  fillchar(v,sizeof(v),false);</span><br><span class="line">  <span class="keyword">exit</span>(d[tt]&lt;inf);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">expand</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,f:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  f:=inf;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> len <span class="keyword">do</span> <span class="keyword">if</span> l[que[i]].f&lt;f <span class="keyword">then</span> f:=l[que[i]].f;</span><br><span class="line">  inc(maxf,f);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> len <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    dec(l[que[i]].f,f);</span><br><span class="line">    inc(l[que[i] xor <span class="number">1</span>].f,f);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">dfs</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> k:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  v[t]:=true;</span><br><span class="line">  <span class="keyword">if</span> t=tt <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    expand;</span><br><span class="line">    <span class="keyword">exit</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  k:=lst[t];</span><br><span class="line">  <span class="keyword">while</span> k&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (l[k].f&gt;<span class="number">0</span>)<span class="keyword">and</span>(d[l[k].ed]=d[t]+<span class="number">1</span>)<span class="keyword">and</span>(<span class="keyword">not</span> v[l[k].ed]) <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      inc(len);</span><br><span class="line">      que[len]:=k;</span><br><span class="line">      dfs(l[k].ed);</span><br><span class="line">      dec(len);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    k:=l[k].pre;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(m,n,r,c);</span><br><span class="line">  ss:=<span class="number">2</span>*m*n+<span class="number">1</span>;</span><br><span class="line">  tt:=<span class="number">2</span>*m*n+<span class="number">2</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">read</span>(ch);</span><br><span class="line">      pd[i,j]:=(ch=<span class="string">'.'</span>);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    readln;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  cnt:=<span class="number">0</span>;</span><br><span class="line">  tot:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> pd[i,j] <span class="keyword">then</span> continue;</span><br><span class="line">    inc(cnt);</span><br><span class="line">    link(i,j,i+r,j-c);</span><br><span class="line">    link(i,j,i+r,j+c);</span><br><span class="line">    ad((i-<span class="number">1</span>)*n+j,tt,<span class="number">1</span>);</span><br><span class="line">    ad(tt,(i-<span class="number">1</span>)*n+j,<span class="number">0</span>);</span><br><span class="line">    ad(ss,(i-<span class="number">1</span>)*n+j+m*n,<span class="number">1</span>);</span><br><span class="line">    ad((i-<span class="number">1</span>)*n+j+m*n,ss,<span class="number">0</span>);</span><br><span class="line">    link(i,j,i+c,j-r);</span><br><span class="line">    link(i,j,i+c,j+r);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  maxf:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> spfa <span class="keyword">do</span> dfs(ss);</span><br><span class="line">  writeln(cnt-maxf);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<a id="more"></a>
+<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2150" target="_blank" rel="external">传送门</a></p>
+<p>$最小路径覆盖=\m]]>
+    </summary>
+    
+      <category term="Bipartite-Graph Matching" scheme="http://platypuspro.github.io/tags/Bipartite-Graph-Matching/"/>
+    
+      <category term="Max Flow" scheme="http://platypuspro.github.io/tags/Max-Flow/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[BZOJ 2049]]></title>
+    <link href="http://platypuspro.github.io/posts/bzoj-2049/"/>
+    <id>http://platypuspro.github.io/posts/bzoj-2049/</id>
+    <published>2015-04-26T09:58:43.000Z</published>
+    <updated>2015-04-26T11:11:41.000Z</updated>
+    <content type="html"><![CDATA[<p>动态树模板题<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2049" target="_blank" rel="external">传送门</a></p>
+<p>全都是动态树的基础操作…就不讲了吧…看代码脑补得了….<del>实际是不会讲啊QAQ</del></p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2049;</span><br><span class="line"><span class="keyword">var</span> s:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">10000</span>]<span class="keyword">of</span> <span class="keyword">record</span> fa,lc,rc:longint; root,rev:boolean; <span class="keyword">end</span>;</span><br><span class="line">    n,m,i,j,a,b:longint;</span><br><span class="line">    c,cc:char;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">pushdown</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> p:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> <span class="keyword">not</span> s[t].rev <span class="keyword">then</span> <span class="keyword">exit</span>;</span><br><span class="line">  p:=s[t].lc;</span><br><span class="line">  s[t].lc:=s[t].rc;</span><br><span class="line">  s[t].rc:=p;</span><br><span class="line">  s[t].rev:=<span class="keyword">not</span> s[t].rev;</span><br><span class="line">  <span class="keyword">if</span> s[t].lc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[t].lc].rev:=<span class="keyword">not</span> s[s[t].lc].rev;</span><br><span class="line">  <span class="keyword">if</span> s[t].rc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[t].rc].rev:=<span class="keyword">not</span> s[s[t].rc].rev;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">l_rotate</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> p:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  p:=s[t].fa;</span><br><span class="line">  s[p].rc:=s[t].lc;</span><br><span class="line">  <span class="keyword">if</span> s[t].lc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[t].lc].fa:=p;</span><br><span class="line">  s[t].fa:=s[p].fa;</span><br><span class="line">  <span class="keyword">if</span> p=s[s[p].fa].lc <span class="keyword">then</span> s[s[p].fa].lc:=t;</span><br><span class="line">  <span class="keyword">if</span> p=s[s[p].fa].rc <span class="keyword">then</span> s[s[p].fa].rc:=t;</span><br><span class="line">  s[t].root:=s[p].root;</span><br><span class="line">  s[p].root:=false;</span><br><span class="line">  s[t].lc:=p;</span><br><span class="line">  s[p].fa:=t;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">r_rotate</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> p:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  p:=s[t].fa;</span><br><span class="line">  s[p].lc:=s[t].rc;</span><br><span class="line">  <span class="keyword">if</span> s[t].rc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[t].rc].fa:=p;</span><br><span class="line">  s[t].fa:=s[p].fa;</span><br><span class="line">  <span class="keyword">if</span> p=s[s[p].fa].lc <span class="keyword">then</span> s[s[p].fa].lc:=t;</span><br><span class="line">  <span class="keyword">if</span> p=s[s[p].fa].rc <span class="keyword">then</span> s[s[p].fa].rc:=t;</span><br><span class="line">  s[t].root:=s[p].root;</span><br><span class="line">  s[p].root:=false;</span><br><span class="line">  s[t].rc:=p;</span><br><span class="line">  s[p].fa:=t;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">splay</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">while</span> <span class="keyword">not</span> s[t].root <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> s[s[t].fa].rev <span class="keyword">then</span> pushdown(s[t].fa);</span><br><span class="line">    <span class="keyword">if</span> s[s[s[t].fa].lc].rev <span class="keyword">then</span> pushdown(s[s[t].fa].lc);</span><br><span class="line">    <span class="keyword">if</span> s[s[s[t].fa].rc].rev <span class="keyword">then</span> pushdown(s[s[t].fa].rc);</span><br><span class="line">    <span class="keyword">if</span> t=s[s[t].fa].lc <span class="keyword">then</span> r_rotate(t) <span class="keyword">else</span> l_rotate(t);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">access</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> p:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  splay(t);</span><br><span class="line">  <span class="keyword">if</span> s[t].rev <span class="keyword">then</span> pushdown(t);</span><br><span class="line">  <span class="keyword">if</span> s[t].rc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[t].rc].root:=true;</span><br><span class="line">  s[t].rc:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span> s[t].fa&lt;&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    p:=s[t].fa;</span><br><span class="line">    splay(p);</span><br><span class="line">    <span class="keyword">if</span> s[p].rev <span class="keyword">then</span> pushdown(p);</span><br><span class="line">    <span class="keyword">if</span> s[p].rc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[p].rc].root:=true;</span><br><span class="line">    s[t].root:=false;</span><br><span class="line">    s[p].rc:=t;</span><br><span class="line">    s[t].fa:=p;</span><br><span class="line">    splay(t);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">evert</span><span class="params">(t:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  access(t);</span><br><span class="line">  s[t].rev:=true;</span><br><span class="line">  pushdown(t);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">link</span><span class="params">(a,b:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  evert(a);</span><br><span class="line">  access(b);</span><br><span class="line">  s[a].lc:=b;</span><br><span class="line">  s[b].fa:=a;</span><br><span class="line">  s[b].root:=false;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">cut</span><span class="params">(a,b:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  evert(a);</span><br><span class="line">  access(b);</span><br><span class="line">  <span class="keyword">if</span> s[b].lc&lt;&gt;<span class="number">0</span> <span class="keyword">then</span> s[s[b].lc].root:=true;</span><br><span class="line">  s[a].fa:=<span class="number">0</span>;</span><br><span class="line">  s[b].lc:=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">find</span><span class="params">(t:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  access(t);</span><br><span class="line">  <span class="keyword">while</span> s[t].lc&lt;&gt;<span class="number">0</span> <span class="keyword">do</span> t:=s[t].lc;</span><br><span class="line">  <span class="keyword">exit</span>(t);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n,m);</span><br><span class="line">  fillchar(s,sizeof(s),<span class="number">0</span>);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> s[i].root:=true;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">read</span>(c);</span><br><span class="line">    <span class="keyword">case</span> c <span class="keyword">of</span></span><br><span class="line">      <span class="string">'C'</span>:<span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> <span class="number">6</span> <span class="keyword">do</span> <span class="keyword">read</span>(cc);</span><br><span class="line">        readln(a,b);</span><br><span class="line">        link(a,b);</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">      <span class="string">'D'</span>:<span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> <span class="number">6</span> <span class="keyword">do</span> <span class="keyword">read</span>(cc);</span><br><span class="line">        readln(a,b);</span><br><span class="line">        cut(a,b);</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">      <span class="string">'Q'</span>:<span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> <span class="number">4</span> <span class="keyword">do</span> <span class="keyword">read</span>(cc);</span><br><span class="line">        readln(a,b);</span><br><span class="line">        <span class="keyword">if</span> find(a)=find(b) <span class="keyword">then</span> writeln(<span class="string">'Yes'</span>) <span class="keyword">else</span> writeln(<span class="string">'No'</span>);</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>动态树模板题<br>]]>
+    
+    </summary>
+    
+      <category term="Link Cut Tree" scheme="http://platypuspro.github.io/tags/Link-Cut-Tree/"/>
+    
+      <category term="BZOJ" scheme="http://platypuspro.github.io/categories/BZOJ/"/>
     
   </entry>
   
