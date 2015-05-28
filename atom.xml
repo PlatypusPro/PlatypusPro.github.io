@@ -50,12 +50,12 @@
     <link href="http://platypuspro.gitcafe.io/posts/t2/"/>
     <id>http://platypuspro.gitcafe.io/posts/t2/</id>
     <published>2015-05-27T13:07:15.000Z</published>
-    <updated>2015-05-28T00:18:58.000Z</updated>
+    <updated>2015-05-28T00:19:28.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <h2 id="题目描述">题目描述</h2><p>小A和小B在打炉石，双方都铺满了场，两边场上铺了$n$个随从</p>
 <p>现在轮到了小A的回合，小A用第$i$个随从攻击小B的第$j$个随从会受到$d_{i,j}$的伤害（假设这里的一个随从攻击不同的随从所造成的伤害不一样 = =），并损失场面优势$e_{i,j}$</p>
 <p>小A的每个随从只能攻击一次，小B的每个随从也只能被指定为攻击目标一次，也就是说这$2n$个随从是一对一配对的，小A的第$i$个随从的攻击目标是$aim[i]$</p>
-<p>设小A这回合的损失为$\sum d_{i,aim[i]}times\sum e_{i,aim[i]}$，求小A的最小损失</p>
+<p>设小A这回合的损失为$\sum d_{i,aim[i]}\times\sum e_{i,aim[i]}$，求小A的最小损失</p>
 <h2 id="输入格式">输入格式</h2><p>第一行一个正整数$n$</p>
 <p>然后是一个$n\times n$的矩阵，第$i$行第$j$个代表$d_{i,j}$</p>
 <p>然后还有一个$n\times n$的矩阵，第$i$行第$j$个代表$e_{i,j}$</p>
