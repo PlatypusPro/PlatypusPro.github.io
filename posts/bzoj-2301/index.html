@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BZOJ 2301 | Platypus&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src='//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'></script>
+  <link rel='stylesheet' href='/css/nprogress.css'>
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Alegreya+Sans+SC" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Exo+2" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-60564827-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?854482208903dbc461c4e5256e5d1c00";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+<script> NProgress.start(); </script>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Platypus&#39;s Blog</a>
+      </h1>
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+          <a class="main-nav-link" href="/"><i class="fa fa-home"></i></a>
+          <a class="main-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
+          <a class="main-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/PlatypusPro" title="Github"></a>
+        <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="platypuspro.gitcafe.io">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+	<script> NProgress.inc(); </script>
+    <div class="outer">
+      <section id="main"><article id="post-bzoj-2301" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/posts/bzoj-2301/" class="article-date">
+  <time datetime="2015-04-08T11:22:15.000Z" itemprop="datePublished">4月 8 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BZOJ 2301
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2301" target="_blank" rel="external">传送门</a></p>
+<p>先贴点资料 <del>然后跑</del></p>
+<p><a href="http://zh.wikipedia.org/wiki/%E9%BB%98%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E5%85%AC%E5%BC%8F" target="_blank" rel="external">莫比乌斯反演</a></p>
+<p><a href="http://zh.wikipedia.org/wiki/%E9%BB%98%E6%AF%94%E4%B9%8C%E6%96%AF%E5%87%BD%E6%95%B0" target="_blank" rel="external">莫比乌斯函数</a></p>
+<p><a href="https://www.zybuluo.com/ZYK1997/note/83900" target="_blank" rel="external">Orz ZYK</a></p>
+<p>题目要求$x\in[a,b]\ y\in[c,d]$的结果，根据容斥原理可知其实就是求$(x\in[1,b]\ y\in[1,d])+(x\in[1,a-1]\ y\in[1,c-1])-(x\in[1,a-1]\ y\in[c,d])-(x\in[a,b]\ y\in[1,c-1])$的结果</p>
+<p>既然是莫XXX<del>繁衍</del>反演，就要搞两个函数出来 <del>(ZYK:你不证明怎么能用呢！)</del></p>
+<p>设</p>
+<h4 id="$$F(d)=\sum_{i=1}^n\sum_{j=1}^m[d\mid_gcd(i,j)]$$">$$F(d)=\sum_{i=1}^n\sum_{j=1}^m[d\mid gcd(i,j)]$$</h4><h4 id="$$f(d)=\sum_{i=1}^n\sum_{j=1}^m[d=gcd(i,j)]$$">$$f(d)=\sum_{i=1}^n\sum_{j=1}^m[d=gcd(i,j)]$$</h4><p>那么</p>
+<h4 id="$$F(n)=\sum_{d\mid_n}_f(d)$$">$$F(n)=\sum_{d\mid n} f(d)$$</h4><p><del>求详细解释者请自行@ZYK1997</del></p>
+<p>根据反演公式</p>
+<h4 id="$$f(n)=\sum_{d\mid_n}\mu(d)F(\frac{n}{d})$$">$$f(n)=\sum_{d\mid n}\mu(d)F(\frac{n}{d})$$</h4><p>然后换个元$(d’=\frac{n}{d})$，得</p>
+<h4 id="$$f(n)=\sum_{n\mid_d’}\mu(\frac{d’}{n})F(d’)$$">$$f(n)=\sum_{n\mid d’}\mu(\frac{d’}{n})F(d’)$$</h4><p>题目要求的东西搞定了，回过头看看$F(d)$怎么搞</p>
+<h4 id="$$F(d)=\sum_{i=1}^n\sum_{j=1}^m[d\mid_gcd(i,j)]$$-1">$$F(d)=\sum_{i=1}^n\sum_{j=1}^m[d\mid gcd(i,j)]$$</h4><h4 id="$$F(d)=\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}[1\mid_gcd(i,j)]$$">$$F(d)=\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}[1\mid gcd(i,j)]$$</h4><p>(这一步我脑补了好久 = =)</p>
+<h4 id="$$F(d)=\lfloor\frac{n}{d}\rfloor\cdot\lfloor\frac{m}{d}\rfloor$$">$$F(d)=\lfloor\frac{n}{d}\rfloor\cdot\lfloor\frac{m}{d}\rfloor$$</h4><p>$F(d)$也弄完了，下面看看怎么搞$\mu$(其实和筛法求$\varphi$的过程很相似…<del>所以我就不讲了 具体看代码吧2333</del>)</p>
+<p>最后的$f(k)$大概是这样</p>
+<h4 id="$$f(k)=\sum_{i=1}^{\lfloor\frac{min(n,m)}{k}\rfloor}\mu(i)\lfloor\frac{n}{i\cdot_k}\rfloor\lfloor\frac{m}{i\cdot_k}\rfloor$$">$$f(k)=\sum_{i=1}^{\lfloor\frac{min(n,m)}{k}\rfloor}\mu(i)\lfloor\frac{n}{i\cdot k}\rfloor\lfloor\frac{m}{i\cdot k}\rfloor$$</h4><p>但是只靠这一个式子会TLE <del>BZOJ我又卡了你1min我错了QAQ</del></p>
+<p>因为后面那一坨下取整在某一段区间内的值是一定的，所以把每一段搞成$\mu$在这一段的和乘上这一段的值</p>
+<p>以上求的是$x\in[1,n]\ y\in[1,m]$的$f(k)$，这样答案就可以搞出来了</p>
+<blockquote>
+<p>不注意int64会WA…</p>
+</blockquote>
+<p><i class="fa fa-code fa-2x"></i></p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2301;</span><br><span class="line"><span class="keyword">const</span> maxn=<span class="number">50000</span>;</span><br><span class="line"><span class="keyword">var</span> prime:<span class="keyword">array</span>[<span class="number">1</span>..maxn]<span class="keyword">of</span> boolean;</span><br><span class="line">    sieve,mu:<span class="keyword">array</span>[<span class="number">0</span>..maxn]<span class="keyword">of</span> longint;</span><br><span class="line">    n,i,a,b,c,d,k,tot:longint;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">min</span><span class="params">(a,b:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> a&lt;b <span class="keyword">then</span> <span class="keyword">exit</span>(a) <span class="keyword">else</span> <span class="keyword">exit</span>(b);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">init_mu</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,j:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  fillchar(prime,sizeof(prime),true);</span><br><span class="line">  tot:=<span class="number">0</span>;</span><br><span class="line">  mu[<span class="number">1</span>]:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> maxn <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> prime[i] <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      inc(tot);</span><br><span class="line">      sieve[tot]:=i;</span><br><span class="line">      mu[i]:=-<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> tot <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">if</span> i*sieve[j]&gt;maxn <span class="keyword">then</span> break;</span><br><span class="line">      prime[i*sieve[j]]:=false;</span><br><span class="line">      <span class="keyword">if</span> i <span class="keyword">mod</span> sieve[j]=<span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        mu[i*sieve[j]]:=<span class="number">0</span>;</span><br><span class="line">        break;</span><br><span class="line">      <span class="keyword">end</span> <span class="keyword">else</span> mu[i*sieve[j]]:=-mu[i];</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> maxn <span class="keyword">do</span> inc(mu[i],mu[i-<span class="number">1</span>]);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">solve</span><span class="params">(a,b:longint)</span>:</span>int64;</span><br><span class="line"><span class="keyword">var</span> d,i,j:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  a:=a <span class="keyword">div</span> k;</span><br><span class="line">  b:=b <span class="keyword">div</span> k;</span><br><span class="line">  d:=min(a,b);</span><br><span class="line">  solve:=<span class="number">0</span>;</span><br><span class="line">  i:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">while</span> i&lt;=d <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    j:=min(a <span class="keyword">div</span>(a <span class="keyword">div</span> i),b <span class="keyword">div</span>(b <span class="keyword">div</span> i));</span><br><span class="line">    inc(solve,(mu[j]-mu[i-<span class="number">1</span>])*int64(a <span class="keyword">div</span> i)*int64(b <span class="keyword">div</span> i));</span><br><span class="line">    i:=j+<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  init_mu;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    readln(a,b,c,d,k);</span><br><span class="line">    writeln(solve(b,d)+solve(a-<span class="number">1</span>,c-<span class="number">1</span>)-solve(b,c-<span class="number">1</span>)-solve(a-<span class="number">1</span>,d));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a href="http://platypuspro.gitcafe.io/posts/bzoj-2301/#comments" class="article-comment-link">评论</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/">Math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mobius-inversion/">Mobius_inversion</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/bzoj-3930/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          BZOJ 3930
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/bzoj-3560/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 3560</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-2301/" data-title="BZOJ 2301" data-url="http://platypuspro.gitcafe.io/posts/bzoj-2301/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">46</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/POJ/">POJ</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Expected-Value/">Expected Value</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extended-Euclidean/">Extended Euclidean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fotile-Tree/">Fotile Tree</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Link-Cut-Tree/">Link Cut Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Manacher/">Manacher</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matrix-Multiplication/">Matrix Multiplication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Max-Flow/">Max Flow</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mergeable-Heap/">Mergeable Heap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobius-inversion/">Mobius_inversion</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Search/">Search</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortest-Path/">Shortest Path</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Splay/">Splay</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steiner-Tree/">Steiner Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Suffix-Array/">Suffix Array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Suffix-Automaton/">Suffix Automaton</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tarjan-SCC/">Tarjan SCC</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree-Chain-Split/">Tree Chain Split</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree-in-Tree/">Tree in Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Virtual-Tree/">Virtual Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Whole-Binary-Divide/">Whole Binary-Divide</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+	  <script> NProgress.inc(); </script>
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 <a href="http://platypuspro.github.io" target="_blank">Platypus</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      Modifications Based on <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a><br>
+	  Orz <a href="http://wjmzbmr.com" target="_blank">WJMZBMR</a>
+    </div>
+  </div>
+</footer>
+	<script> NProgress.inc(); </script>
+  </div>
+  <nav id="mobile-nav">
+  <a class="mobile-nav-link" href="/"><i class="fa fa-home"></i></a>
+  <a class="mobile-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
+  <a class="mobile-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
+</nav>
+  <script> NProgress.inc(); </script>
+  <div id="totop">
+<a title="返回顶部"><img src="http://i3.tietuku.com/ad16d182a6d6f52b.png"/></a>
+</div>
+
+
+<link rel="stylesheet" href="http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],["\\(","\\)"]],processEscapes:true}});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{skipTags:['script','noscript','style','textarea','pre','code']}});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function(){var all=MathJax.Hub.getAllJax(),i;for(i=0;i<all.length;i+=1){all[i].SourceElement().parentNode.className+='has-jax';}});
+</script>
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"Platypus"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+<script src="http://libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  <script> NProgress.done(); </script>
+</div>
+</body>
+</html>

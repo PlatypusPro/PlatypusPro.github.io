@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BZOJ 1901 | Platypus&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src='//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'></script>
+  <link rel='stylesheet' href='/css/nprogress.css'>
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Alegreya+Sans+SC" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Exo+2" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-60564827-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?854482208903dbc461c4e5256e5d1c00";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+<script> NProgress.start(); </script>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Platypus&#39;s Blog</a>
+      </h1>
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+          <a class="main-nav-link" href="/"><i class="fa fa-home"></i></a>
+          <a class="main-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
+          <a class="main-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/PlatypusPro" title="Github"></a>
+        <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="platypuspro.gitcafe.io">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+	<script> NProgress.inc(); </script>
+    <div class="outer">
+      <section id="main"><article id="post-bzoj-1901" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/posts/bzoj-1901/" class="article-date">
+  <time datetime="2015-04-30T13:13:37.000Z" itemprop="datePublished">4月 30 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BZOJ 1901
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1901" target="_blank" rel="external">传送门</a></p>
+<p>其实这是道权限题…建议去ZOJ测…</p>
+<p><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=2112" target="_blank" rel="external">ZOJ传送门</a></p>
+<p>想+写一上午，调一下午…关键是这题的离散化好恶心啊尼玛，一堆数组绕着绕着就晕了…QAQ</p>
+<p>首先扯一个会MLE的解法</p>
+<p>对于普通的不带修改的主席树，$root[i]$记载的是从$1$到$i$的所有更改</p>
+<p>然后拿树状数组分组一下，让$root[i]$记载从$i-lowbit(i)$到$i$的所有更改，这样建树或修改的时间复杂度$O(n(\log_2n)^2)$</p>
+<p>但是呢…这样的空间复杂度有点受不了…大概是$O(n(\log_2n)^2+m(\log_2n)^2)$，毫无疑问MLE <del>何况ZOJ卡了32M内存尼玛</del></p>
+<p>正确的姿势是初始的建树按照正常的主席树建，然后每个修改再在树状数组套的主席树里改，这样的时间空间复杂度大概$O(n\log_2n+2m(\log_2n)^2)$，可以开得下了</p>
+<p>如果开到最大情况大概是$6240000*3\approx 70M$，但实际的数据没出全是修改的情况，我只用$2240000$就够了…</p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_1901;</span><br><span class="line"><span class="keyword">var</span> root,bit:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">50000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    s:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">2240000</span>]<span class="keyword">of</span> <span class="keyword">record</span> lc,rc,size:longint; <span class="keyword">end</span>;</span><br><span class="line">    q:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">10000</span>]<span class="keyword">of</span> <span class="keyword">record</span> query:boolean; a,b,k:longint; <span class="keyword">end</span>;</span><br><span class="line">    a,p,b:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">60000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    low:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">2</span>,<span class="number">0</span>..<span class="number">16</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    n,m,i,tot,len,l,lb:longint;</span><br><span class="line">    c:char;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">lowbit</span><span class="params">(x:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>(x <span class="keyword">and</span> -x);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">calc_low</span><span class="params">(p,t:longint)</span>;</span></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">while</span> p&gt;<span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    inc(low[t,<span class="number">0</span>]);</span><br><span class="line">    low[t,low[t,<span class="number">0</span>]]:=bit[p];</span><br><span class="line">    dec(p,lowbit(p));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">qsort</span><span class="params">(l,r:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,j,mid,t:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  i:=l;</span><br><span class="line">  j:=r;</span><br><span class="line">  mid:=a[(l+r)&gt;&gt;<span class="number">1</span>];</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    <span class="keyword">while</span> a[i]&lt;mid <span class="keyword">do</span> inc(i);</span><br><span class="line">    <span class="keyword">while</span> a[j]&gt;mid <span class="keyword">do</span> dec(j);</span><br><span class="line">    <span class="keyword">if</span> i&lt;=j <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      t:=a[i];</span><br><span class="line">      a[i]:=a[j];</span><br><span class="line">      a[j]:=t;</span><br><span class="line">      t:=p[i];</span><br><span class="line">      p[i]:=p[j];</span><br><span class="line">      p[j]:=t;</span><br><span class="line">      inc(i);</span><br><span class="line">      dec(j);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">until</span> i&gt;j;</span><br><span class="line">  <span class="keyword">if</span> i&lt;r <span class="keyword">then</span> qsort(i,r);</span><br><span class="line">  <span class="keyword">if</span> l&lt;j <span class="keyword">then</span> qsort(l,j);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">modify</span><span class="params">(<span class="keyword">var</span> t:longint;base,l,r,p,d:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> mid:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  inc(tot);</span><br><span class="line">  t:=tot;</span><br><span class="line">  s[t]:=s[base];</span><br><span class="line">  inc(s[t].size,d);</span><br><span class="line">  <span class="keyword">if</span> l=r <span class="keyword">then</span> <span class="keyword">exit</span>;</span><br><span class="line">  mid:=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">if</span> p&lt;=mid <span class="keyword">then</span> modify(s[t].lc,s[base].lc,l,mid,p,d)</span><br><span class="line">  <span class="keyword">else</span> modify(s[t].rc,s[base].rc,mid+<span class="number">1</span>,r,p,d);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">query</span><span class="params">(a,b,l,r,k:longint)</span>:</span>longint;</span><br><span class="line"><span class="keyword">var</span> i,t,mid:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">if</span> l=r <span class="keyword">then</span> <span class="keyword">exit</span>(l);</span><br><span class="line">  mid:=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">  t:=s[s[b].lc].size-s[s[a].lc].size;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> low[<span class="number">1</span>,<span class="number">0</span>] <span class="keyword">do</span> dec(t,s[s[low[<span class="number">1</span>,i]].lc].size);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> low[<span class="number">2</span>,<span class="number">0</span>] <span class="keyword">do</span> inc(t,s[s[low[<span class="number">2</span>,i]].lc].size);</span><br><span class="line">  <span class="keyword">if</span> t&gt;=k <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> low[<span class="number">1</span>,<span class="number">0</span>] <span class="keyword">do</span> low[<span class="number">1</span>,i]:=s[low[<span class="number">1</span>,i]].lc;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> low[<span class="number">2</span>,<span class="number">0</span>] <span class="keyword">do</span> low[<span class="number">2</span>,i]:=s[low[<span class="number">2</span>,i]].lc;</span><br><span class="line">    <span class="keyword">exit</span>(query(s[a].lc,s[b].lc,l,mid,k));</span><br><span class="line">  <span class="keyword">end</span> <span class="keyword">else</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> low[<span class="number">1</span>,<span class="number">0</span>] <span class="keyword">do</span> low[<span class="number">1</span>,i]:=s[low[<span class="number">1</span>,i]].rc;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> low[<span class="number">2</span>,<span class="number">0</span>] <span class="keyword">do</span> low[<span class="number">2</span>,i]:=s[low[<span class="number">2</span>,i]].rc;</span><br><span class="line">    <span class="keyword">exit</span>(query(s[a].rc,s[b].rc,mid+<span class="number">1</span>,r,k-t));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  tot:=<span class="number">0</span>;</span><br><span class="line">  readln(n,m);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> <span class="keyword">read</span>(a[i]);</span><br><span class="line">  readln;</span><br><span class="line">  len:=n;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">read</span>(c);</span><br><span class="line">    <span class="keyword">if</span> c=<span class="string">'Q'</span> <span class="keyword">then</span> readln(q[i].a,q[i].b,q[i].k) <span class="keyword">else</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      readln(q[i].a,q[i].k);</span><br><span class="line">      inc(len);</span><br><span class="line">      a[len]:=q[i].k;</span><br><span class="line">      q[i].b:=len;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    q[i].query:=(c=<span class="string">'Q'</span>);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> len <span class="keyword">do</span> p[i]:=i;</span><br><span class="line">  qsort(<span class="number">1</span>,len);</span><br><span class="line">  l:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> len <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (i=<span class="number">1</span>)<span class="keyword">or</span>(a[i]&lt;&gt;a[i-<span class="number">1</span>]) <span class="keyword">then</span> inc(l);</span><br><span class="line">    b[p[i]]:=l;</span><br><span class="line">    a[l]:=a[i];</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  root[<span class="number">0</span>]:=<span class="number">1</span>;</span><br><span class="line">  tot:=<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> modify(root[i],root[i-<span class="number">1</span>],<span class="number">1</span>,l,b[i],<span class="number">1</span>);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span> <span class="keyword">if</span> q[i].query <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    fillchar(low,sizeof(low),<span class="number">0</span>);</span><br><span class="line">    calc_low(q[i].a-<span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">    calc_low(q[i].b,<span class="number">2</span>);</span><br><span class="line">    writeln(a[query(root[q[i].a-<span class="number">1</span>],root[q[i].b],<span class="number">1</span>,l,q[i].k)]);</span><br><span class="line">  <span class="keyword">end</span> <span class="keyword">else</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    lb:=q[i].a;</span><br><span class="line">    <span class="keyword">while</span> lb&lt;=n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      modify(bit[lb],bit[lb],<span class="number">1</span>,l,b[q[i].a],-<span class="number">1</span>);</span><br><span class="line">      modify(bit[lb],bit[lb],<span class="number">1</span>,l,b[q[i].b],<span class="number">1</span>);</span><br><span class="line">      inc(lb,lowbit(lb));</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">    b[q[i].a]:=b[q[i].b];</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+<p><del>因为写裸题又被ZYK大爷D了 QAQ</del></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a href="http://platypuspro.gitcafe.io/posts/bzoj-1901/#comments" class="article-comment-link">评论</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Fotile-Tree/">Fotile Tree</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/bzoj-3111/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          BZOJ 3111
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/bzoj-3110/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">BZOJ 3110</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-1901/" data-title="BZOJ 1901" data-url="http://platypuspro.gitcafe.io/posts/bzoj-1901/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">46</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/POJ/">POJ</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Expected-Value/">Expected Value</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extended-Euclidean/">Extended Euclidean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fotile-Tree/">Fotile Tree</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Link-Cut-Tree/">Link Cut Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Manacher/">Manacher</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matrix-Multiplication/">Matrix Multiplication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Max-Flow/">Max Flow</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mergeable-Heap/">Mergeable Heap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobius-inversion/">Mobius_inversion</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Search/">Search</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortest-Path/">Shortest Path</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Splay/">Splay</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steiner-Tree/">Steiner Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Suffix-Array/">Suffix Array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Suffix-Automaton/">Suffix Automaton</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tarjan-SCC/">Tarjan SCC</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree-Chain-Split/">Tree Chain Split</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree-in-Tree/">Tree in Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Virtual-Tree/">Virtual Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Whole-Binary-Divide/">Whole Binary-Divide</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+	  <script> NProgress.inc(); </script>
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 <a href="http://platypuspro.github.io" target="_blank">Platypus</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      Modifications Based on <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a><br>
+	  Orz <a href="http://wjmzbmr.com" target="_blank">WJMZBMR</a>
+    </div>
+  </div>
+</footer>
+	<script> NProgress.inc(); </script>
+  </div>
+  <nav id="mobile-nav">
+  <a class="mobile-nav-link" href="/"><i class="fa fa-home"></i></a>
+  <a class="mobile-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
+  <a class="mobile-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
+</nav>
+  <script> NProgress.inc(); </script>
+  <div id="totop">
+<a title="返回顶部"><img src="http://i3.tietuku.com/ad16d182a6d6f52b.png"/></a>
+</div>
+
+
+<link rel="stylesheet" href="http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],["\\(","\\)"]],processEscapes:true}});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{skipTags:['script','noscript','style','textarea','pre','code']}});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function(){var all=MathJax.Hub.getAllJax(),i;for(i=0;i<all.length;i+=1){all[i].SourceElement().parentNode.className+='has-jax';}});
+</script>
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"Platypus"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+<script src="http://libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  <script> NProgress.done(); </script>
+</div>
+</body>
+</html>
