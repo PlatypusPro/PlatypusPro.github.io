@@ -3,6 +3,190 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-2242/</loc>
+    <lastmod>2015-06-09T09:12:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2242</title>
+        <pubTime>2015-06-09T07:46:28.000Z</pubTime>
+        
+        <tag>BSGS </tag>
+         
+        <tag>Math </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-4105/</loc>
+    <lastmod>2015-06-09T08:38:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4105</title>
+        <pubTime>2015-06-09T07:46:19.000Z</pubTime>
+        
+        <tag>Segment Tree </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-4103/</loc>
+    <lastmod>2015-06-09T08:12:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4103</title>
+        <pubTime>2015-06-09T07:46:14.000Z</pubTime>
+        
+        <tag>Persistent Trie </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3261/</loc>
+    <lastmod>2015-06-09T07:58:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3261</title>
+        <pubTime>2015-06-05T03:15:31.000Z</pubTime>
+        
+        <tag>Persistent Trie </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1026/</loc>
+    <lastmod>2015-06-09T07:53:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1026</title>
+        <pubTime>2015-06-05T03:15:21.000Z</pubTime>
+        
+        <tag>Dynamic Programming </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3926/</loc>
+    <lastmod>2015-06-09T07:52:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3926</title>
+        <pubTime>2015-06-05T03:15:16.000Z</pubTime>
+        
+        <tag>Suffix Automaton </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3993/</loc>
+    <lastmod>2015-06-09T02:56:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3993</title>
+        <pubTime>2015-06-05T03:15:12.000Z</pubTime>
+        
+        <tag>Binary Divide </tag>
+         
+        <tag>Max Flow </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3172/</loc>
+    <lastmod>2015-06-05T03:21:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3172</title>
+        <pubTime>2015-06-05T03:15:06.000Z</pubTime>
+        
+        <tag>Suffix Automaton </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3998/</loc>
+    <lastmod>2015-06-04T00:21:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3998</title>
+        <pubTime>2015-05-25T13:33:47.000Z</pubTime>
+        
+        <tag>Suffix Automaton </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3571/</loc>
     <lastmod>2015-05-28T03:25:18.000Z</lastmod>
     <data>
@@ -34,26 +218,6 @@
         
         <tag>Manacher </tag>
          
-        <tag>Suffix Automaton </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3998/</loc>
-    <lastmod>2015-05-25T14:02:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3998</title>
-        <pubTime>2015-05-25T13:33:47.000Z</pubTime>
-        
         <tag>Suffix Automaton </tag>
          
          
