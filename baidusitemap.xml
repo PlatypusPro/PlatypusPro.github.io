@@ -3,6 +3,26 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3998/</loc>
+    <lastmod>2015-06-10T02:09:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3998</title>
+        <pubTime>2015-05-25T13:33:47.000Z</pubTime>
+        
+        <tag>Suffix Automaton </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2242/</loc>
     <lastmod>2015-06-09T09:12:49.000Z</lastmod>
     <data>
@@ -153,26 +173,6 @@
         <display>
         <title>BZOJ 3172</title>
         <pubTime>2015-06-05T03:15:06.000Z</pubTime>
-        
-        <tag>Suffix Automaton </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3998/</loc>
-    <lastmod>2015-06-04T00:21:59.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3998</title>
-        <pubTime>2015-05-25T13:33:47.000Z</pubTime>
         
         <tag>Suffix Automaton </tag>
          
