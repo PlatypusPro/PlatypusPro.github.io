@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>BZOJ 1038 | Platypus&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src='//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'></script>
+  <link rel='stylesheet' href='/css/nprogress.css'>
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Alegreya+Sans+SC" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Exo+2" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-60564827-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?854482208903dbc461c4e5256e5d1c00";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+<script> NProgress.start(); </script>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Platypus&#39;s Blog</a>
+      </h1>
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+          <a class="main-nav-link" href="/"><i class="fa fa-home"></i></a>
+          <a class="main-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
+          <a class="main-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
+      </nav>
+      <nav id="sub-nav">
+        <a id="nav-github-link" class="nav-icon" href="https://github.com/PlatypusPro" title="Github"></a>
+        <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="platypuspro.github.io">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+	<script> NProgress.inc(); </script>
+    <div class="outer">
+      <section id="main"><article id="post-bzoj-1038" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/posts/bzoj-1038/" class="article-date">
+  <time datetime="2015-06-23T13:01:34.000Z" itemprop="datePublished">6月 23 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/BZOJ/">BZOJ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BZOJ 1038
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1038" target="_blank" rel="external">传送门</a></p>
+<p>先贴一发<a href="http://wenku.baidu.com/view/c750720bf78a6529647d53ae.html" target="_blank" rel="external">zzy的论文</a> Orz</p>
+<p>姿势大概是这样：</p>
+<ul>
+<li>将所有半平面按极角排序</li>
+<li>多个极角相同的半平面只保留一个，就是那个限制的范围最小的</li>
+<li>维护一个栈，栈内是个凸壳或凸多边形，每次往里加边的时候剔除栈中不在限制范围内的边。若是凸壳，一个栈就够了，若是凸多边形就需要双端队列了，因为后加的边可能会覆盖最开始加的</li>
+<li>如果需要，将栈中所有边求交</li>
+</ul>
+<p>拿计算几何实现的时候细节好多 = =</p>
+<p>求两直线交点时可以直接拿叉积+定比分点公式搞，或拿解析式算 <del>据说前一种适用范围广一点？</del></p>
+<p>这道题的最优解只可能出现在凸壳的顶点或山顶，这时上下各有一个点集和一个边集，搞完凸壳以后枚举一下就能得出答案</p>
+<p>刚开始我是枚举点集中的点和边集中的边，但是这样会出现各种奇怪的错误…因为有些边的端点并不属于点集然后blabla答案就错了 <del>啊扯得好乱</del></p>
+<p>所以只能枚举点集和另外一个点集</p>
+<p>还有就是记得加上边界，数据中有最优解在最边上山顶的情况</p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_1038;</span><br><span class="line"><span class="keyword">const</span> eps=<span class="number">1</span>e-<span class="number">10</span>;</span><br><span class="line"><span class="keyword">type</span> point=<span class="keyword">record</span> x,y:extended; <span class="keyword">end</span>;</span><br><span class="line">     line=<span class="keyword">record</span> a,b:point; k:extended; <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">var</span> n,m,i,tot:longint;</span><br><span class="line">    p,q:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">301</span>]<span class="keyword">of</span> point;</span><br><span class="line">    l,s:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">300</span>]<span class="keyword">of</span> line;</span><br><span class="line">    ans:extended;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">qsort</span><span class="params">(ll,rr:longint)</span>;</span></span><br><span class="line"><span class="keyword">var</span> i,j:longint;</span><br><span class="line">    mid,p:line;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  i:=ll;</span><br><span class="line">  j:=rr;</span><br><span class="line">  mid:=l[(ll+rr)&gt;&gt;<span class="number">1</span>];</span><br><span class="line">  <span class="keyword">repeat</span></span><br><span class="line">    <span class="keyword">while</span> l[i].k&lt;mid.k-eps <span class="keyword">do</span> inc(i);</span><br><span class="line">    <span class="keyword">while</span> l[j].k&gt;mid.k+eps <span class="keyword">do</span> dec(j);</span><br><span class="line">    <span class="keyword">if</span> i&lt;=j <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      p:=l[i];</span><br><span class="line">      l[i]:=l[j];</span><br><span class="line">      l[j]:=p;</span><br><span class="line">      inc(i);</span><br><span class="line">      dec(j);</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">until</span> i&gt;j;</span><br><span class="line">  <span class="keyword">if</span> ll&lt;j <span class="keyword">then</span> qsort(ll,j);</span><br><span class="line">  <span class="keyword">if</span> i&lt;rr <span class="keyword">then</span> qsort(i,rr);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">unique</span>;</span></span><br><span class="line"><span class="keyword">var</span> i:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  qsort(<span class="number">2</span>,n);</span><br><span class="line">  tot:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n+<span class="number">1</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">if</span> (i=<span class="number">1</span>)<span class="keyword">or</span>(abs(l[i].k-l[i-<span class="number">1</span>].k)&gt;eps) <span class="keyword">then</span> inc(tot);</span><br><span class="line">    l[tot]:=l[i];</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">convt</span><span class="params">(a,b:point)</span>:</span>line;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  convt.a:=a;</span><br><span class="line">  convt.b:=b;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cross</span><span class="params">(l1,l2:line)</span>:</span>extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>((l1.b.x-l1.a.x)*(l2.b.y-l2.a.y)-(l1.b.y-l1.a.y)*(l2.b.x-l2.a.x));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">inter</span><span class="params">(l1,l2:line)</span>:</span>point;</span><br><span class="line"><span class="keyword">var</span> s1,s2,t:extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  s1:=cross(l1,convt(l1.a,l2.a))/<span class="number">2</span>;</span><br><span class="line">  s2:=cross(convt(l1.a,l2.b),l1)/<span class="number">2</span>;</span><br><span class="line">  t:=s1/(s1+s2+eps);</span><br><span class="line">  inter.x:=l2.a.x+t*(l2.b.x-l2.a.x);</span><br><span class="line">  inter.y:=l2.a.y+t*(l2.b.y-l2.a.y);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">upper</span><span class="params">(p:point;l:line)</span>:</span>boolean;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>(cross(l,convt(l.a,p))+eps&gt;<span class="number">0</span>);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">solve</span>;</span></span><br><span class="line"><span class="keyword">var</span> top,i,j:longint;</span><br><span class="line">    t:point;</span><br><span class="line">    h:extended;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  s[<span class="number">1</span>]:=l[<span class="number">1</span>];</span><br><span class="line">  s[<span class="number">2</span>]:=l[<span class="number">2</span>];</span><br><span class="line">  top:=<span class="number">2</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">3</span> <span class="keyword">to</span> tot <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">while</span> (top&gt;<span class="number">1</span>)<span class="keyword">and</span>(<span class="keyword">not</span> upper(inter(s[top-<span class="number">1</span>],s[top]),l[i])) <span class="keyword">do</span> dec(top);</span><br><span class="line">    inc(top);</span><br><span class="line">    s[top]:=l[i];</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  m:=top-<span class="number">1</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span> q[i]:=inter(s[i],s[i+<span class="number">1</span>]);</span><br><span class="line">  ans:=maxlongint&lt;&lt;<span class="number">32</span>;</span><br><span class="line">  t.y:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> n-<span class="number">1</span> <span class="keyword">do</span> <span class="keyword">if</span> (p[j].x&lt;=q[i].x)<span class="keyword">and</span>(p[j+<span class="number">1</span>].x&gt;=q[i].x) <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    t.x:=q[i].x;</span><br><span class="line">    h:=q[i].y-inter(convt(q[i],t),convt(p[j],p[j+<span class="number">1</span>])).y+eps;</span><br><span class="line">    <span class="keyword">if</span> h&lt;ans <span class="keyword">then</span> ans:=h;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> m-<span class="number">1</span> <span class="keyword">do</span> <span class="keyword">if</span> (q[j].x&lt;=p[i].x)<span class="keyword">and</span>(q[j+<span class="number">1</span>].x&gt;=p[i].x) <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    t.x:=p[i].x;</span><br><span class="line">    h:=inter(convt(p[i],t),convt(q[j],q[j+<span class="number">1</span>])).y-p[i].y+eps;</span><br><span class="line">    <span class="keyword">if</span> h&lt;ans <span class="keyword">then</span> ans:=h;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> <span class="keyword">read</span>(p[i].x);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> <span class="keyword">read</span>(p[i].y);</span><br><span class="line">  p[<span class="number">0</span>].x:=p[<span class="number">1</span>].x;</span><br><span class="line">  p[<span class="number">0</span>].y:=<span class="number">100000</span>;</span><br><span class="line">  p[n+<span class="number">1</span>].x:=p[n].x;</span><br><span class="line">  p[n+<span class="number">1</span>].y:=<span class="number">1000000</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n+<span class="number">1</span> <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    l[i].a:=p[i-<span class="number">1</span>];</span><br><span class="line">    l[i].b:=p[i];</span><br><span class="line">    l[i].k:=arctan((p[i-<span class="number">1</span>].y-p[i].y)/(p[i-<span class="number">1</span>].x-p[i].x+eps));</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  unique;</span><br><span class="line">  solve;</span><br><span class="line">  writeln(ans:<span class="number">0</span>:<span class="number">3</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a href="http://platypuspro.github.io/posts/bzoj-1038/#comments" class="article-comment-link">评论</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Half-Plane-Intersection/">Half-Plane Intersection</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/posts/bzoj-2618/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          BZOJ 2618
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/bzoj-2599/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">BZOJ 2599</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-1038/" data-title="BZOJ 1038" data-url="http://platypuspro.github.io/posts/bzoj-1038/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/algorithm/">Algorithm</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/BZOJ/">BZOJ</a><span class="category-list-count">60</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/others/">Others</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/POJ/">POJ</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/BSGS/">BSGS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Divide/">Binary Divide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Binary-Indexed-Tree/">Binary Indexed Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bipartite-Graph-Matching/">Bipartite-Graph Matching</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Divide-and-Conquer/">Divide and Conquer</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Convex-Hull/">Dynamic Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Euler-s-totient-function/">Euler's Totient Function</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Expected-Value/">Expected Value</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Extended-Euclidean/">Extended Euclidean</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Fotile-Tree/">Fotile Tree</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game-Theory/">Game Theory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Half-Plane-Intersection/">Half-Plane Intersection</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Kuhn-Munkres/">Kuhn-Munkres</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Link-Cut-Tree/">Link Cut Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Manacher/">Manacher</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Math/">Math</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matrix-Multiplication/">Matrix Multiplication</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Max-Flow/">Max Flow</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mergeable-Heap/">Mergeable Heap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Min-Cost-Flow/">Min Cost Flow</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mo-Algorithm/">Mo Algorithm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobius-inversion/">Mobius_inversion</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Partitioning/">Partitioning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Persistent-Trie/">Persistent Trie</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Search/">Search</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segment-Tree/">Segment Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Shortest-Path/">Shortest Path</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Splay/">Splay</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Steiner-Tree/">Steiner Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Suffix-Array/">Suffix Array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Suffix-Automaton/">Suffix Automaton</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tarjan-SCC/">Tarjan SCC</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree-Chain-Split/">Tree Chain Split</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tree-in-Tree/">Tree in Tree</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Virtual-Tree/">Virtual Tree</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Whole-Binary-Divide/">Whole Binary-Divide</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://www.lydsy.com/JudgeOnline" target="_blank">BZOJ</a>
+          </li>
+        
+          <li>
+            <a href="http://zyk1997.github.io/" target="_blank">ZYK</a>
+          </li>
+        
+          <li>
+            <a href="http://juruo.github.io/" target="_blank">Hydra</a>
+          </li>
+        
+          <li>
+            <a href="http://myidea.farbox.com/" target="_blank">Keyhvw</a>
+          </li>
+        
+          <li>
+            <a href="http://lzy-foenix.gitcafe.io/" target="_blank">lzy</a>
+          </li>
+        
+          <li>
+            <a href="http://hzwer.com/" target="_blank">HZWER</a>
+          </li>
+        
+          <li>
+            <a href="http://yy-y.xyz/" target="_blank">Chenyao</a>
+          </li>
+        
+          <li>
+            <a href="http://blog.csdn.net/wmdcstdio/" target="_blank">Cstdio</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/Asm-Definer/" target="_blank">Asm.Definer</a>
+          </li>
+        
+          <li>
+            <a href="http://twd2.me/" target="_blank">twd2</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+	  <script> NProgress.inc(); </script>
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 <a href="http://platypuspro.github.io" target="_blank">Platypus</a><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      Modifications Based on <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a><br>
+	  Orz <a href="http://wjmzbmr.com" target="_blank">WJMZBMR</a>
+    </div>
+  </div>
+</footer>
+	<script> NProgress.inc(); </script>
+  </div>
+  <nav id="mobile-nav">
+  <a class="mobile-nav-link" href="/"><i class="fa fa-home"></i></a>
+  <a class="mobile-nav-link" href="/archives/"><i class="fa fa-folder-open-o"></i></a>
+  <a class="mobile-nav-link" href="/about-me.html"><i class="fa fa-info-circle"></i></a>
+</nav>
+  <script> NProgress.inc(); </script>
+  <div id="totop">
+<a title="返回顶部"><img src="http://i3.tietuku.com/ad16d182a6d6f52b.png"/></a>
+</div>
+
+
+<link rel="stylesheet" href="http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],["\\(","\\)"]],processEscapes:true}});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax:{skipTags:['script','noscript','style','textarea','pre','code']}});
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Queue(function(){var all=MathJax.Hub.getAllJax(),i;for(i=0;i<all.length;i+=1){all[i].SourceElement().parentNode.className+='has-jax';}});
+</script>
+<script type="text/javascript" src="http://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=zh-hans"></script>
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"Platypus"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+<script src="http://libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  <script> NProgress.done(); </script>
+</div>
+</body>
+</html>
