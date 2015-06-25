@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>BZOJ 3675 | Platypus&#39;s Blog</title>
+  <title>BZOJ 2823 | Platypus&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src='//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'></script>
   <link rel='stylesheet' href='/css/nprogress.css'>
@@ -71,10 +71,10 @@
 </header>
 	<script> NProgress.inc(); </script>
     <div class="outer">
-      <section id="main"><article id="post-bzoj-3675" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-bzoj-2823" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/posts/bzoj-3675/" class="article-date">
-  <time datetime="2015-05-02T11:00:26.000Z" itemprop="datePublished">5月 2 2015</time>
+    <a href="/posts/bzoj-2823/" class="article-date">
+  <time datetime="2015-06-25T12:37:10.000Z" itemprop="datePublished">6月 25 2015</time>
 </a>
     
   <div class="article-category">
@@ -89,7 +89,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      BZOJ 3675
+      BZOJ 2823
     </h1>
   
 
@@ -97,22 +97,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>PASCAL的常数啊QAQ<br><a id="more"></a><br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3675" target="_blank" rel="external">传送门</a></p>
-<p>设最后分成的各个子序列的和分别为$S_1,S_2,\cdots,S_{k+1}$，那么答案就是<br>$$\sum_{i=1}^kS_i\sum_{j=i+1}^{k+1}S_j$$</p>
-<p>与分割的顺序无关，然后可以搞出DP方程<br>$$F_{i,k}=max\lbrace F_{j,k-1},j\in[1,i)\rbrace+sum_j\times(sum_i-sum_j)$$</p>
-<p>取$0&lt;a,b&lt;i$，决策$a$优于决策$b$当且仅当</p>
-<p>$$F_{a,k}+sum_a\cdot sum_i-{sum_a}^2&gt;F_{b,k}+sum_b\cdot sum_i-{sum_b}^2$$</p>
-<p>$$\frac{(F_{a,k}-{sum_a}^2)-(F_{b,k}-{sum_b}^2)}{sum_a-sum_b}&gt;-sum_i$$</p>
-<p>然后就是斜率优化的事了…（只用滚动数组就够了）</p>
-<p><del>C++平均10s PASCAL最快25s（我30s）是要闹哪样</del></p>
-<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_3675;</span><br><span class="line"><span class="keyword">const</span> eps=<span class="number">1</span>e-<span class="number">6</span>;</span><br><span class="line"><span class="keyword">var</span> f,g:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">100000</span>,<span class="number">0</span>..<span class="number">1</span>]<span class="keyword">of</span> int64;</span><br><span class="line">    sum,q:<span class="keyword">array</span>[<span class="number">0</span>..<span class="number">100000</span>]<span class="keyword">of</span> longint;</span><br><span class="line">    n,m,hd,tl,i,j,t:longint;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  readln(n,m);</span><br><span class="line">  sum[<span class="number">0</span>]:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    <span class="keyword">read</span>(t);</span><br><span class="line">    sum[i]:=sum[i-<span class="number">1</span>]+t;</span><br><span class="line">    g[i,<span class="number">0</span>]:=-int64(sum[i])*int64(sum[i]);</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  t:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> m <span class="keyword">do</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    hd:=<span class="number">1</span>;</span><br><span class="line">    tl:=<span class="number">1</span>;</span><br><span class="line">    q[<span class="number">1</span>]:=<span class="number">0</span>;</span><br><span class="line">    t:=t xor <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      <span class="keyword">while</span> (hd&lt;tl)<span class="keyword">and</span>(g[q[hd],t xor <span class="number">1</span>]-g[q[hd+<span class="number">1</span>],t xor <span class="number">1</span>]&lt;-int64(sum[i])*int64(sum[q[hd]]-sum[q[hd+<span class="number">1</span>]])+eps) <span class="keyword">do</span> inc(hd);</span><br><span class="line">      f[i,t]:=f[q[hd],t xor <span class="number">1</span>]+int64(sum[q[hd]])*int64(sum[i]-sum[q[hd]]);</span><br><span class="line">      g[i,t]:=f[i,t]-int64(sum[i])*int64(sum[i]);</span><br><span class="line">      <span class="keyword">while</span> (hd&lt;tl)<span class="keyword">and</span>((g[q[tl-<span class="number">1</span>],t xor <span class="number">1</span>]-g[q[tl],t xor <span class="number">1</span>])*int64(sum[i]-sum[q[tl]])+eps&gt;(g[q[tl],t xor <span class="number">1</span>]-g[i,t xor <span class="number">1</span>])*int64(sum[q[tl]]-sum[q[tl-<span class="number">1</span>]])) <span class="keyword">do</span> dec(tl);</span><br><span class="line">      inc(tl);</span><br><span class="line">      q[tl]:=i;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  writeln(f[n,t]);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
+        <a id="more"></a>
+<p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2823" target="_blank" rel="external">传送门</a></p>
+<p>嗯复习一下随机增量…</p>
+<p>先${\rm shuffle}$一下，然后每次挑一个圆外的点加进来</p>
+<p><del>公示推错QAQ</del></p>
+<p>傻逼<code>extended</code>连四舍五入都不会<del>你吃*去吧</del> 只能用<code>double</code></p>
+<p><i class="fa fa-code fa-2x"></i><br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">program</span> bzoj_2823;</span><br><span class="line"><span class="keyword">const</span> eps=<span class="number">1</span>e-<span class="number">6</span>;</span><br><span class="line"><span class="keyword">type</span> point=<span class="keyword">record</span> x,y:double; <span class="keyword">end</span>;</span><br><span class="line"><span class="keyword">var</span> p:<span class="keyword">array</span>[<span class="number">1</span>..<span class="number">1000000</span>]<span class="keyword">of</span> point;</span><br><span class="line">    n,i,j,k:longint;</span><br><span class="line">    o:point;</span><br><span class="line">    r:double;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">swap</span><span class="params">(<span class="keyword">var</span> a,b:point)</span>;</span></span><br><span class="line"><span class="keyword">var</span> p:point;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  p:=a;</span><br><span class="line">  a:=b;</span><br><span class="line">  b:=p;</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dis</span><span class="params">(a,b:point)</span>:</span>double;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">exit</span>(sqrt(sqr(a.x-b.x)+sqr(a.y-b.y)));</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">procedure</span> <span class="title">calc</span><span class="params">(a,b,c:point)</span>;</span></span><br><span class="line"><span class="keyword">var</span> k1,k2,b1,b2:double;</span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  k1:=(b.x-a.x)/(a.y-b.y);</span><br><span class="line">  k2:=(c.x-b.x)/(b.y-c.y);</span><br><span class="line">  b1:=(a.x*a.x-b.x*b.x+a.y*a.y-b.y*b.y)/(<span class="number">2</span>*(a.y-b.y));</span><br><span class="line">  b2:=(b.x*b.x-c.x*c.x+b.y*b.y-c.y*c.y)/(<span class="number">2</span>*(b.y-c.y));</span><br><span class="line">  o.x:=(b2-b1)/(k1-k2);</span><br><span class="line">  o.y:=(k2*b1-k1*b2)/(k2-k1);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  randomize;</span><br><span class="line">  readln(n);</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">1</span> <span class="keyword">to</span> n <span class="keyword">do</span> readln(p[i].x,p[i].y);</span><br><span class="line">  <span class="keyword">for</span> i:=n <span class="keyword">downto</span> <span class="number">2</span> <span class="keyword">do</span> swap(p[i],p[random(i-<span class="number">1</span>)+<span class="number">1</span>]);</span><br><span class="line">  o:=p[<span class="number">1</span>];</span><br><span class="line">  r:=<span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> i:=<span class="number">2</span> <span class="keyword">to</span> n <span class="keyword">do</span> <span class="keyword">if</span> dis(p[i],o)&gt;r+eps <span class="keyword">then</span></span><br><span class="line">  <span class="keyword">begin</span></span><br><span class="line">    o:=p[i];</span><br><span class="line">    r:=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> j:=<span class="number">1</span> <span class="keyword">to</span> i-<span class="number">1</span> <span class="keyword">do</span> <span class="keyword">if</span> dis(o,p[j])&gt;r+eps <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">      o.x:=(p[i].x+p[j].x)/<span class="number">2</span>;</span><br><span class="line">      o.y:=(p[i].y+p[j].y)/<span class="number">2</span>;</span><br><span class="line">      r:=dis(o,p[j]);</span><br><span class="line">      <span class="keyword">for</span> k:=<span class="number">1</span> <span class="keyword">to</span> j-<span class="number">1</span> <span class="keyword">do</span> <span class="keyword">if</span> dis(o,p[k])&gt;r+eps <span class="keyword">then</span></span><br><span class="line">      <span class="keyword">begin</span></span><br><span class="line">        calc(p[i],p[j],p[k]);</span><br><span class="line">        r:=dis(p[k],o);</span><br><span class="line">      <span class="keyword">end</span>;</span><br><span class="line">    <span class="keyword">end</span>;</span><br><span class="line">  <span class="keyword">end</span>;</span><br><span class="line">  writeln(o.x:<span class="number">0</span>:<span class="number">2</span>,<span class="string">' '</span>,o.y:<span class="number">0</span>:<span class="number">2</span>,<span class="string">' '</span>,r:<span class="number">0</span>:<span class="number">2</span>);</span><br><span class="line"><span class="keyword">end</span>.</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
     <footer class="article-footer">
-      <a href="http://platypuspro.github.io/posts/bzoj-3675/#comments" class="article-comment-link">评论</a>
+      <a href="http://platypuspro.github.io/posts/bzoj-2823/#comments" class="article-comment-link">评论</a>
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dynamic-Programming/">Dynamic Programming</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random-Incremental/">Random Incremental</a></li></ul>
 
     </footer>
   </div>
@@ -120,19 +118,10 @@
     
 <nav id="article-nav">
   
-    <a href="/posts/bzoj-3295/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          BZOJ 3295
-        
-      </div>
-    </a>
   
-  
-    <a href="/posts/bzoj-4034/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/posts/bzoj-2618/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">BZOJ 4034</div>
+      <div class="article-nav-title">BZOJ 2618</div>
     </a>
   
 </nav>
@@ -142,7 +131,7 @@
 
 
   <section id="comments">
-    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-3675/" data-title="BZOJ 3675" data-url="http://platypuspro.github.io/posts/bzoj-3675/"></div>
+    <div id="ds-thread" class="ds-thread" data-thread-key="posts/bzoj-2823/" data-title="BZOJ 2823" data-url="http://platypuspro.github.io/posts/bzoj-2823/"></div>
   </section>
 </section>
       
