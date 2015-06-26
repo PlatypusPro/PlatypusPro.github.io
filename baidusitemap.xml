@@ -3,6 +3,26 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-2190/</loc>
+    <lastmod>2015-06-26T11:29:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2190</title>
+        <pubTime>2015-03-19T10:09:07.000Z</pubTime>
+        
+        <tag>Euler&#39;s Totient Function </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3262/</loc>
     <lastmod>2015-06-26T10:29:45.000Z</lastmod>
     <data>
@@ -582,26 +602,6 @@
         <display>
         <title>BZOJ 2818</title>
         <pubTime>2015-03-19T11:36:13.000Z</pubTime>
-        
-        <tag>Euler&#39;s Totient Function </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-2190/</loc>
-    <lastmod>2015-05-20T13:34:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2190</title>
-        <pubTime>2015-03-19T10:09:07.000Z</pubTime>
         
         <tag>Euler&#39;s Totient Function </tag>
          
