@@ -3,6 +3,48 @@
 
     
   <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-4008/</loc>
+    <lastmod>2015-07-10T13:36:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4008</title>
+        <pubTime>2015-04-26T09:59:06.000Z</pubTime>
+        
+        <tag>Dynamic Programming </tag>
+         
+        <tag>Expected Value </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1901/</loc>
+    <lastmod>2015-07-10T13:21:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1901</title>
+        <pubTime>2015-04-30T13:13:37.000Z</pubTime>
+        
+        <tag>Fotile Tree </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://platypuspro.github.io/posts/vimrc/</loc>
     <lastmod>2015-07-10T10:40:01.000Z</lastmod>
     <data>
@@ -1012,28 +1054,6 @@
 
     
   <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-4008/</loc>
-    <lastmod>2015-05-20T13:31:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4008</title>
-        <pubTime>2015-04-26T09:59:06.000Z</pubTime>
-        
-        <tag>Dynamic Programming </tag>
-         
-        <tag>Expected Value </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://platypuspro.github.io/posts/poj-2104/</loc>
     <lastmod>2015-05-20T13:31:37.000Z</lastmod>
     <data>
@@ -1049,26 +1069,6 @@
            
              
               <breadCrumb title="POJ" url="http://platypuspro.github.io/categories/POJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-1901/</loc>
-    <lastmod>2015-05-20T13:31:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1901</title>
-        <pubTime>2015-04-30T13:13:37.000Z</pubTime>
-        
-        <tag>Fotile Tree </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
           
         </display>
     </data>
