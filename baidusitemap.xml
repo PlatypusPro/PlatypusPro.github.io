@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1492/</loc>
+    <lastmod>2015-07-12T08:51:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1492</title>
+        <pubTime>2015-04-11T13:35:56.000Z</pubTime>
+        
+        <tag>Divide and Conquer </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-1857/</loc>
+    <lastmod>2015-07-12T08:22:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1857</title>
+        <pubTime>2015-03-16T12:43:13.000Z</pubTime>
+        
+        <tag>Divide and Conquer </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4008/</loc>
-    <lastmod>2015-07-10T13:36:43.000Z</lastmod>
+    <lastmod>2015-07-10T13:36:42.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4008</title>
@@ -46,7 +88,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/vimrc/</loc>
-    <lastmod>2015-07-10T10:40:01.000Z</lastmod>
+    <lastmod>2015-07-10T10:40:00.000Z</lastmod>
     <data>
         <display>
         <title>vimrc</title>
@@ -126,7 +168,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3931/</loc>
-    <lastmod>2015-07-10T08:36:05.000Z</lastmod>
+    <lastmod>2015-07-10T08:36:04.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3931</title>
@@ -148,7 +190,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2150/</loc>
-    <lastmod>2015-07-10T04:45:05.000Z</lastmod>
+    <lastmod>2015-07-10T04:45:04.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2150</title>
@@ -171,7 +213,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3786/</loc>
-    <lastmod>2015-07-03T09:02:21.000Z</lastmod>
+    <lastmod>2015-07-03T09:02:20.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3786</title>
@@ -195,7 +237,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3122/</loc>
-    <lastmod>2015-06-27T12:09:53.000Z</lastmod>
+    <lastmod>2015-06-27T12:09:52.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3122</title>
@@ -215,7 +257,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2190/</loc>
-    <lastmod>2015-06-26T11:29:29.000Z</lastmod>
+    <lastmod>2015-06-26T11:29:28.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2190</title>
@@ -235,7 +277,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3262/</loc>
-    <lastmod>2015-06-26T10:29:45.000Z</lastmod>
+    <lastmod>2015-06-26T10:29:44.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3262</title>
@@ -255,7 +297,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2823/</loc>
-    <lastmod>2015-06-25T12:42:01.000Z</lastmod>
+    <lastmod>2015-06-25T12:42:00.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2823</title>
@@ -275,7 +317,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3564/</loc>
-    <lastmod>2015-06-25T09:11:23.000Z</lastmod>
+    <lastmod>2015-06-25T09:11:22.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3564</title>
@@ -295,7 +337,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2618/</loc>
-    <lastmod>2015-06-23T13:46:07.000Z</lastmod>
+    <lastmod>2015-06-23T13:46:06.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2618</title>
@@ -315,7 +357,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1038/</loc>
-    <lastmod>2015-06-23T13:39:15.000Z</lastmod>
+    <lastmod>2015-06-23T13:39:14.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1038</title>
@@ -335,7 +377,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2599/</loc>
-    <lastmod>2015-06-18T12:51:55.000Z</lastmod>
+    <lastmod>2015-06-18T12:51:54.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2599</title>
@@ -395,7 +437,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2141/</loc>
-    <lastmod>2015-06-14T10:34:29.000Z</lastmod>
+    <lastmod>2015-06-14T10:34:28.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2141</title>
@@ -457,7 +499,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2242/</loc>
-    <lastmod>2015-06-09T09:12:49.000Z</lastmod>
+    <lastmod>2015-06-09T09:12:48.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2242</title>
@@ -479,7 +521,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4105/</loc>
-    <lastmod>2015-06-09T08:38:19.000Z</lastmod>
+    <lastmod>2015-06-09T08:38:18.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4105</title>
@@ -499,7 +541,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4103/</loc>
-    <lastmod>2015-06-09T08:12:31.000Z</lastmod>
+    <lastmod>2015-06-09T08:12:30.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4103</title>
@@ -519,7 +561,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1026/</loc>
-    <lastmod>2015-06-09T07:53:13.000Z</lastmod>
+    <lastmod>2015-06-09T07:53:12.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1026</title>
@@ -539,7 +581,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3926/</loc>
-    <lastmod>2015-06-09T07:52:49.000Z</lastmod>
+    <lastmod>2015-06-09T07:52:48.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3926</title>
@@ -645,7 +687,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4006/</loc>
-    <lastmod>2015-05-20T14:00:41.000Z</lastmod>
+    <lastmod>2015-05-20T14:00:40.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4006</title>
@@ -667,7 +709,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2300/</loc>
-    <lastmod>2015-05-20T13:35:45.000Z</lastmod>
+    <lastmod>2015-05-20T13:35:44.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2300</title>
@@ -709,33 +751,13 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1854/</loc>
-    <lastmod>2015-05-20T13:35:29.000Z</lastmod>
+    <lastmod>2015-05-20T13:35:28.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1854</title>
         <pubTime>2015-03-16T13:02:53.000Z</pubTime>
         
         <tag>Bipartite-Graph Matching </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-1857/</loc>
-    <lastmod>2015-05-20T13:35:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1857</title>
-        <pubTime>2015-03-16T12:43:13.000Z</pubTime>
-        
-        <tag>Divide and Conquer </tag>
          
          
            
@@ -769,7 +791,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2818/</loc>
-    <lastmod>2015-05-20T13:34:47.000Z</lastmod>
+    <lastmod>2015-05-20T13:34:46.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2818</title>
@@ -829,7 +851,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-1010/</loc>
-    <lastmod>2015-05-20T13:34:23.000Z</lastmod>
+    <lastmod>2015-05-20T13:34:22.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 1010</title>
@@ -869,7 +891,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3566/</loc>
-    <lastmod>2015-05-20T13:34:11.000Z</lastmod>
+    <lastmod>2015-05-20T13:34:10.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3566</title>
@@ -931,7 +953,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2152/</loc>
-    <lastmod>2015-05-20T13:33:31.000Z</lastmod>
+    <lastmod>2015-05-20T13:33:30.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2152</title>
@@ -951,7 +973,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/hungary/</loc>
-    <lastmod>2015-05-20T13:33:13.000Z</lastmod>
+    <lastmod>2015-05-20T13:33:12.000Z</lastmod>
     <data>
         <display>
         <title>Hungary</title>
@@ -1055,7 +1077,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/poj-2104/</loc>
-    <lastmod>2015-05-20T13:31:37.000Z</lastmod>
+    <lastmod>2015-05-20T13:31:36.000Z</lastmod>
     <data>
         <display>
         <title>POJ 2104</title>
@@ -1077,7 +1099,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3111/</loc>
-    <lastmod>2015-05-20T13:31:21.000Z</lastmod>
+    <lastmod>2015-05-20T13:31:20.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3111</title>
@@ -1097,7 +1119,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4033/</loc>
-    <lastmod>2015-05-20T13:31:11.000Z</lastmod>
+    <lastmod>2015-05-20T13:31:10.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4033</title>
@@ -1139,7 +1161,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3611/</loc>
-    <lastmod>2015-05-20T13:30:49.000Z</lastmod>
+    <lastmod>2015-05-20T13:30:48.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3611</title>
@@ -1179,7 +1201,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4002/</loc>
-    <lastmod>2015-05-20T00:55:29.000Z</lastmod>
+    <lastmod>2015-05-20T00:55:28.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4002</title>
@@ -1199,7 +1221,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-4003/</loc>
-    <lastmod>2015-05-19T02:24:15.000Z</lastmod>
+    <lastmod>2015-05-19T02:24:14.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 4003</title>
@@ -1281,7 +1303,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-3675/</loc>
-    <lastmod>2015-05-02T12:34:15.000Z</lastmod>
+    <lastmod>2015-05-02T12:34:14.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 3675</title>
@@ -1301,7 +1323,7 @@
     
   <url>
     <loc>http://platypuspro.github.io/posts/bzoj-2049/</loc>
-    <lastmod>2015-04-26T11:11:41.000Z</lastmod>
+    <lastmod>2015-04-26T11:11:40.000Z</lastmod>
     <data>
         <display>
         <title>BZOJ 2049</title>
@@ -1370,26 +1392,6 @@
         <pubTime>2015-04-26T09:58:21.000Z</pubTime>
         
         <tag>Suffix Array </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-1492/</loc>
-    <lastmod>2015-04-13T07:54:32.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1492</title>
-        <pubTime>2015-04-11T13:35:56.000Z</pubTime>
-        
-        <tag>Divide and Conquer </tag>
          
          
            

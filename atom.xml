@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://platypuspro.github.io/"/>
-  <updated>2015-07-03T09:02:21.000Z</updated>
+  <updated>2015-07-03T09:02:20.000Z</updated>
   <id>http://platypuspro.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3786/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3786/</id>
     <published>2015-07-03T08:42:48.000Z</published>
-    <updated>2015-07-03T09:02:21.000Z</updated>
+    <updated>2015-07-03T09:02:20.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3786" target="_blank" rel="external">传送门</a></p>
 <p>用$\texttt{Splay}$维护$\texttt{DFS}$序</p>
@@ -50,7 +50,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3122/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3122/</id>
     <published>2015-06-27T11:44:41.000Z</published>
-    <updated>2015-06-27T12:09:53.000Z</updated>
+    <updated>2015-06-27T12:09:52.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3122" target="_blank" rel="external">传送门</a></p>
 <p>先判断$x$是否等于$t$</p>
@@ -84,7 +84,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3262/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3262/</id>
     <published>2015-06-26T09:20:56.000Z</published>
-    <updated>2015-06-26T10:29:45.000Z</updated>
+    <updated>2015-06-26T10:29:44.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3262" target="_blank" rel="external">不稳定的传送门</a></p>
 <p><del>感觉整个人都CDQ了…尼玛这么多维闹哪样啊</del></p>
@@ -110,7 +110,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2823/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2823/</id>
     <published>2015-06-25T12:37:10.000Z</published>
-    <updated>2015-06-25T12:42:01.000Z</updated>
+    <updated>2015-06-25T12:42:00.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2823" target="_blank" rel="external">传送门</a></p>
 <p>嗯复习一下随机增量…</p>
@@ -136,7 +136,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2618/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2618/</id>
     <published>2015-06-23T13:01:39.000Z</published>
-    <updated>2015-06-23T13:46:07.000Z</updated>
+    <updated>2015-06-23T13:46:06.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2618" target="_blank" rel="external">传送门</a></p>
 <p>坑B<code>extended</code>啊啊啊啊啊啊啊凭什么一样的公式算出来的东西还是会有误差啊啊啊啊啊啊</p>
@@ -161,7 +161,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-1038/"/>
     <id>http://platypuspro.github.io/posts/bzoj-1038/</id>
     <published>2015-06-23T13:01:34.000Z</published>
-    <updated>2015-06-23T13:39:15.000Z</updated>
+    <updated>2015-06-23T13:39:14.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1038" target="_blank" rel="external">传送门</a></p>
 <p>先贴一发<a href="http://wenku.baidu.com/view/c750720bf78a6529647d53ae.html" target="_blank" rel="external">zzy的论文</a> Orz</p>
@@ -197,7 +197,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2599/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2599/</id>
     <published>2015-06-18T12:35:40.000Z</published>
-    <updated>2015-06-18T12:51:55.000Z</updated>
+    <updated>2015-06-18T12:51:54.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2599" target="_blank" rel="external">不稳定的传送门</a></p>
 <p>对于当前的重心，遍历当前重心的子树时，假设遍历到的点距重心距离为$d$，那么需要找在遍历过的<strong>当前重心</strong>的其他子树中是否走过一条长度为$k-d$的边，若存在一条长度为$k-d$的边，说明能拼成一条长度为$k$的路径，更新答案，为了更新答案还要记录一下到达每个长度所需的最小边数</p>
@@ -278,7 +278,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2141/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2141/</id>
     <published>2015-06-14T10:05:02.000Z</published>
-    <updated>2015-06-14T10:34:29.000Z</updated>
+    <updated>2015-06-14T10:34:28.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2141" target="_blank" rel="external">传送门</a></p>
 <p>正常的解法是树套树<del>然而我不会</del> 所以写了个分块</p>
@@ -337,7 +337,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-2242/"/>
     <id>http://platypuspro.github.io/posts/bzoj-2242/</id>
     <published>2015-06-09T07:46:28.000Z</published>
-    <updated>2015-06-09T09:12:49.000Z</updated>
+    <updated>2015-06-09T09:12:48.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2242" target="_blank" rel="external">传送门</a></p>
 <p>尼玛每次BSGS忘了清空哈希一直冲突搞了我一上午 <del>然而还是会冲突，所以要拉链…</del></p>
@@ -376,7 +376,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-4105/"/>
     <id>http://platypuspro.github.io/posts/bzoj-4105/</id>
     <published>2015-06-09T07:46:19.000Z</published>
-    <updated>2015-06-09T08:38:19.000Z</updated>
+    <updated>2015-06-09T08:38:18.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4105" target="_blank" rel="external">不稳定的传送门</a></p>
 <h3 id="Description">Description</h3><p>现有一个长度为$N$的序列$ \lbrace X_1,X_2,…,X_N\rbrace $，要求支持两种操作：<br>$1.\ 0\ l\ r$  表示将$\forall i\in [l,r],X_i = X_i^2\ {\rm mod}\ p$<br>$2.\ 1\ l\ r$  询问$\sum_{l\leq i\leq r}X_i$</p>
@@ -543,7 +543,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-4103/"/>
     <id>http://platypuspro.github.io/posts/bzoj-4103/</id>
     <published>2015-06-09T07:46:14.000Z</published>
-    <updated>2015-06-09T08:12:31.000Z</updated>
+    <updated>2015-06-09T08:12:30.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4103" target="_blank" rel="external">不稳定的传送门</a></p>
 <h3 id="Description">Description</h3><p>给定长度为$n$的数列$ X = \lbrace x_1,x_2,…,x_n\rbrace $和长度为$m$的数列$Y=\lbrace y_1,y_2,…,y_m\rbrace $，令矩阵$A$中第$i$行第$j$列的值$A_{ij}=x_i\bigoplus y_j$，每次询问给定矩形区域$i\in[u,d],j\in[l,r]$，找出第$k$大的$A_{ij}$。</p>
@@ -600,7 +600,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-1026/"/>
     <id>http://platypuspro.github.io/posts/bzoj-1026/</id>
     <published>2015-06-05T03:15:21.000Z</published>
-    <updated>2015-06-09T07:53:13.000Z</updated>
+    <updated>2015-06-09T07:53:12.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1026" target="_blank" rel="external">传送门</a></p>
 <p>Orz <a href="http://zyk1997.github.io/2015/03/20/ShuWeiDP/" target="_blank" rel="external">ZYK</a></p>
@@ -624,7 +624,7 @@
     <link href="http://platypuspro.github.io/posts/bzoj-3926/"/>
     <id>http://platypuspro.github.io/posts/bzoj-3926/</id>
     <published>2015-06-05T03:15:16.000Z</published>
-    <updated>2015-06-09T07:52:49.000Z</updated>
+    <updated>2015-06-09T07:52:48.000Z</updated>
     <content type="html"><![CDATA[<a id="more"></a>
 <p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3926" target="_blank" rel="external">传送门</a></p>
 <p>陈老师语文水平高超+1 2333</p>
