@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+  <url>
+    <loc>http://platypuspro.github.io/posts/bzoj-3786/</loc>
+    <lastmod>2015-12-12T11:52:10.529Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3786</title>
+        <pubTime>2015-06-03T08:42:48.000Z</pubTime>
+        
+        <tag>DFS Sequence </tag>
+         
+        <tag>Splay </tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
     
   <url>
@@ -210,28 +231,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://platypuspro.github.io/posts/bzoj-3786/</loc>
-    <lastmod>2015-07-03T09:02:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3786</title>
-        <pubTime>2015-07-03T08:42:48.000Z</pubTime>
-        
-        <tag>DFS Sequence </tag>
-         
-        <tag>Splay </tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="http://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
   <url>
