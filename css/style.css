@@ -804,6 +804,19 @@ a.article-title:hover {
   font-family: FontAwesome;
   padding-right: 8px;
 }
+#busuanzi_value_site_uv:before {
+  content: "\f007";
+  font-family: FontAwesome;
+  padding-right: 8px;
+}
+#busuanzi_value_site_pv {
+  padding-right: 16px;
+}
+#busuanzi_value_site_pv:before {
+  content: "\f06e";
+  font-family: FontAwesome;
+  padding-right: 8px;
+}
 #article-nav {
   zoom: 1;
   position: relative;
