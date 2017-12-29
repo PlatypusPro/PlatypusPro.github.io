@@ -143,18 +143,7 @@
 </article>
 
 
-  <section id="comments">
-    <div id="disqus_thread"></div>
-      <script>
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://platypuspro.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </section>
+  <section id="comments"></section>
 </section>
       
       <aside id="sidebar">
@@ -250,16 +239,20 @@ MathJax.Hub.Queue(function(){var all=MathJax.Hub.getAllJax(),i;for(i=0;i<all.len
 </script>
 <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML&locale=zh-hans"></script>
 
-<div id="disqus_thread"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://platypuspro.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+var gitment = new Gitment({
+    id: '',
+    owner: 'PlatypusPro',
+    repo: 'PlatypusPro.github.io',
+    oauth: {
+    client_id: '4fb1d1a12cc56d1e8b6a',
+    client_secret: 'd7b7f9ba12ed7bf7541a23b3581c4c583d74eca4',
+    },
+})
+gitment.render('comments')
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <script src="/js/script.js"></script>
   <script> NProgress.done(); </script>
 </div>
@@ -272,7 +265,7 @@ s.setAttribute('data-timestamp', +new Date());
     position: fixed;
     width: 200px;
     height: 400px;
-    opacity:0.9;
+    opacity:1;
     right: 0px;
     z-index: 999;
     pointer-events: none;
