@@ -1065,6 +1065,7 @@ a.article-title:hover {
   padding: 50px 0;
   border-top: 1px solid #ddd;
   color: #888;
+  z-index: -1;
 }
 #footer a {
   color: #0098bd;
