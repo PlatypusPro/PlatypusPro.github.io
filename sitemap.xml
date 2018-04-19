@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://platypuspro.github.io/about-me.html</loc>
+    
+    <lastmod>2018-04-19T03:05:16.622Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://platypuspro.github.io/posts/bzoj-2300/</loc>
     
     <lastmod>2017-11-26T06:48:51.920Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>https://platypuspro.github.io/posts/bzoj-1036/</loc>
     
     <lastmod>2017-11-26T06:29:23.243Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/about-me.html</loc>
-    
-    <lastmod>2017-11-18T14:14:53.850Z</lastmod>
     
   </url>
   
