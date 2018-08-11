@@ -2,9 +2,471 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://platypuspro.github.io/posts/poj-2104/</loc>
+    
+    <lastmod>2018-08-11T08:13:21.065Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3295/</loc>
+    
+    <lastmod>2018-08-11T08:13:03.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1901/</loc>
+    
+    <lastmod>2018-08-11T08:12:39.940Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/poj-1741/</loc>
+    
+    <lastmod>2018-08-11T08:11:30.288Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4105/</loc>
+    
+    <lastmod>2018-08-11T08:11:20.738Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4103/</loc>
+    
+    <lastmod>2018-08-11T08:11:11.920Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4034/</loc>
+    
+    <lastmod>2018-08-11T08:11:01.082Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4033/</loc>
+    
+    <lastmod>2018-08-11T08:10:50.963Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4008/</loc>
+    
+    <lastmod>2018-08-11T08:10:43.003Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4007/</loc>
+    
+    <lastmod>2018-08-11T08:10:26.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4006/</loc>
+    
+    <lastmod>2018-08-11T08:10:16.832Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4003/</loc>
+    
+    <lastmod>2018-08-11T08:09:58.642Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4002/</loc>
+    
+    <lastmod>2018-08-11T08:09:17.905Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3998/</loc>
+    
+    <lastmod>2018-08-11T08:09:02.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3993/</loc>
+    
+    <lastmod>2018-08-11T08:08:56.099Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3932/</loc>
+    
+    <lastmod>2018-08-11T08:08:36.898Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://platypuspro.github.io/posts/bzoj-3673-3674/</loc>
     
-    <lastmod>2018-07-18T16:58:39.063Z</lastmod>
+    <lastmod>2018-08-11T08:07:39.388Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3931/</loc>
+    
+    <lastmod>2018-08-11T08:07:24.619Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3930/</loc>
+    
+    <lastmod>2018-08-11T08:07:10.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3926/</loc>
+    
+    <lastmod>2018-08-11T08:06:57.131Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3884/</loc>
+    
+    <lastmod>2018-08-11T08:06:42.594Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3786/</loc>
+    
+    <lastmod>2018-08-11T08:06:23.401Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3676/</loc>
+    
+    <lastmod>2018-08-11T08:06:12.458Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3675/</loc>
+    
+    <lastmod>2018-08-11T08:05:59.756Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3611/</loc>
+    
+    <lastmod>2018-08-11T08:05:27.521Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3571/</loc>
+    
+    <lastmod>2018-08-11T08:04:59.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3566/</loc>
+    
+    <lastmod>2018-08-11T08:04:50.297Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3564/</loc>
+    
+    <lastmod>2018-08-11T08:04:40.990Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3560/</loc>
+    
+    <lastmod>2018-08-11T08:04:22.959Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3289/</loc>
+    
+    <lastmod>2018-08-11T08:03:43.867Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3262/</loc>
+    
+    <lastmod>2018-08-11T08:03:37.119Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3261/</loc>
+    
+    <lastmod>2018-08-11T08:03:25.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3192/</loc>
+    
+    <lastmod>2018-08-11T08:03:08.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3172/</loc>
+    
+    <lastmod>2018-08-11T08:03:01.209Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3122/</loc>
+    
+    <lastmod>2018-08-11T08:02:52.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3111/</loc>
+    
+    <lastmod>2018-08-11T08:02:27.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3110/</loc>
+    
+    <lastmod>2018-08-11T08:01:43.207Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2823/</loc>
+    
+    <lastmod>2018-08-11T08:01:23.767Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2821/</loc>
+    
+    <lastmod>2018-08-11T08:01:03.486Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2819/</loc>
+    
+    <lastmod>2018-08-11T08:00:44.053Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2818/</loc>
+    
+    <lastmod>2018-08-11T08:00:28.889Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2705/</loc>
+    
+    <lastmod>2018-08-11T07:59:58.213Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2618/</loc>
+    
+    <lastmod>2018-08-11T07:59:38.328Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2599/</loc>
+    
+    <lastmod>2018-08-11T07:58:58.047Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2539/</loc>
+    
+    <lastmod>2018-08-11T07:58:42.574Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2301/</loc>
+    
+    <lastmod>2018-08-11T07:57:24.428Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2300/</loc>
+    
+    <lastmod>2018-08-11T07:57:06.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2286/</loc>
+    
+    <lastmod>2018-08-11T07:56:37.618Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2242/</loc>
+    
+    <lastmod>2018-08-11T07:55:40.949Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2190/</loc>
+    
+    <lastmod>2018-08-11T07:55:16.342Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2186/</loc>
+    
+    <lastmod>2018-08-11T07:54:31.950Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2152/</loc>
+    
+    <lastmod>2018-08-11T07:54:12.806Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2150/</loc>
+    
+    <lastmod>2018-08-11T07:53:31.729Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2141/</loc>
+    
+    <lastmod>2018-08-11T07:53:04.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2049/</loc>
+    
+    <lastmod>2018-08-11T07:52:29.275Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2038/</loc>
+    
+    <lastmod>2018-08-11T07:52:03.824Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1965/</loc>
+    
+    <lastmod>2018-08-11T07:51:06.118Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1857/</loc>
+    
+    <lastmod>2018-08-11T07:50:08.287Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1854/</loc>
+    
+    <lastmod>2018-08-11T07:49:31.072Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1492/</loc>
+    
+    <lastmod>2018-08-11T07:47:41.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1070-2879/</loc>
+    
+    <lastmod>2018-08-11T07:47:16.110Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1051/</loc>
+    
+    <lastmod>2018-08-11T07:46:14.683Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1038/</loc>
+    
+    <lastmod>2018-08-11T07:45:40.405Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1036/</loc>
+    
+    <lastmod>2018-08-11T07:45:23.823Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1031/</loc>
+    
+    <lastmod>2018-08-11T07:45:02.357Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1026/</loc>
+    
+    <lastmod>2018-08-11T07:44:53.360Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1010/</loc>
+    
+    <lastmod>2018-08-11T07:43:54.856Z</lastmod>
     
   </url>
   
@@ -16,23 +478,9 @@
   </url>
   
   <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2300/</loc>
-    
-    <lastmod>2017-11-26T06:48:51.920Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://platypuspro.github.io/posts/vimrc/</loc>
     
     <lastmod>2017-11-26T06:47:30.818Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/poj-2104/</loc>
-    
-    <lastmod>2017-11-26T06:39:45.779Z</lastmod>
     
   </url>
   
@@ -44,457 +492,9 @@
   </url>
   
   <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4105/</loc>
-    
-    <lastmod>2017-11-26T06:38:24.340Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4103/</loc>
-    
-    <lastmod>2017-11-26T06:38:15.756Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4008/</loc>
-    
-    <lastmod>2017-11-26T06:38:08.404Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4003/</loc>
-    
-    <lastmod>2017-11-26T06:38:00.590Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3930/</loc>
-    
-    <lastmod>2017-11-26T06:37:32.140Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3884/</loc>
-    
-    <lastmod>2017-11-26T06:37:03.276Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3611/</loc>
-    
-    <lastmod>2017-11-26T06:35:19.924Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3571/</loc>
-    
-    <lastmod>2017-11-26T06:34:59.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3566/</loc>
-    
-    <lastmod>2017-11-26T06:34:12.006Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3560/</loc>
-    
-    <lastmod>2017-11-26T06:32:58.475Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3111/</loc>
-    
-    <lastmod>2017-11-26T06:31:48.291Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3110/</loc>
-    
-    <lastmod>2017-11-26T06:31:39.011Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2301/</loc>
-    
-    <lastmod>2017-11-26T06:31:16.484Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2150/</loc>
-    
-    <lastmod>2017-11-26T06:31:02.179Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1492/</loc>
-    
-    <lastmod>2017-11-26T06:30:43.219Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1070-2879/</loc>
-    
-    <lastmod>2017-11-26T06:30:13.020Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1036/</loc>
-    
-    <lastmod>2017-11-26T06:29:23.243Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3786/</loc>
-    
-    <lastmod>2015-12-12T11:52:10.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1857/</loc>
-    
-    <lastmod>2015-07-12T08:22:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1901/</loc>
-    
-    <lastmod>2015-07-10T13:21:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3261/</loc>
-    
-    <lastmod>2015-07-10T09:21:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3932/</loc>
-    
-    <lastmod>2015-07-10T08:37:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3931/</loc>
-    
-    <lastmod>2015-07-10T08:36:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://platypuspro.github.io/toss.html</loc>
     
     <lastmod>2015-06-29T09:29:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3122/</loc>
-    
-    <lastmod>2015-06-27T12:09:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2190/</loc>
-    
-    <lastmod>2015-06-26T11:29:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3262/</loc>
-    
-    <lastmod>2015-06-26T10:29:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2823/</loc>
-    
-    <lastmod>2015-06-25T12:42:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3564/</loc>
-    
-    <lastmod>2015-06-25T09:11:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2618/</loc>
-    
-    <lastmod>2015-06-23T13:46:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1038/</loc>
-    
-    <lastmod>2015-06-23T13:39:14.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2599/</loc>
-    
-    <lastmod>2015-06-18T12:51:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/poj-1741/</loc>
-    
-    <lastmod>2015-06-17T01:59:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2821/</loc>
-    
-    <lastmod>2015-06-16T23:52:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2141/</loc>
-    
-    <lastmod>2015-06-14T10:34:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2819/</loc>
-    
-    <lastmod>2015-06-13T12:02:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3998/</loc>
-    
-    <lastmod>2015-06-10T02:09:54.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2242/</loc>
-    
-    <lastmod>2015-06-09T09:12:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1026/</loc>
-    
-    <lastmod>2015-06-09T07:53:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3926/</loc>
-    
-    <lastmod>2015-06-09T07:52:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3993/</loc>
-    
-    <lastmod>2015-06-09T02:56:06.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3172/</loc>
-    
-    <lastmod>2015-06-05T03:21:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3676/</loc>
-    
-    <lastmod>2015-05-25T23:21:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4006/</loc>
-    
-    <lastmod>2015-05-20T14:00:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2539/</loc>
-    
-    <lastmod>2015-05-20T13:35:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1854/</loc>
-    
-    <lastmod>2015-05-20T13:35:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2818/</loc>
-    
-    <lastmod>2015-05-20T13:34:46.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2705/</loc>
-    
-    <lastmod>2015-05-20T13:34:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3289/</loc>
-    
-    <lastmod>2015-05-20T13:34:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1010/</loc>
-    
-    <lastmod>2015-05-20T13:34:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2152/</loc>
-    
-    <lastmod>2015-05-20T13:33:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3192/</loc>
-    
-    <lastmod>2015-05-20T13:32:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2186/</loc>
-    
-    <lastmod>2015-05-20T13:32:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1965/</loc>
-    
-    <lastmod>2015-05-20T13:32:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4033/</loc>
-    
-    <lastmod>2015-05-20T13:31:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4007/</loc>
-    
-    <lastmod>2015-05-20T13:30:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4002/</loc>
-    
-    <lastmod>2015-05-20T00:55:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2286/</loc>
-    
-    <lastmod>2015-05-15T10:57:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3295/</loc>
-    
-    <lastmod>2015-05-14T13:44:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4034/</loc>
-    
-    <lastmod>2015-05-02T12:41:46.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3675/</loc>
-    
-    <lastmod>2015-05-02T12:34:14.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2049/</loc>
-    
-    <lastmod>2015-04-26T11:11:40.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1051/</loc>
-    
-    <lastmod>2015-04-26T11:06:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1031/</loc>
-    
-    <lastmod>2015-04-26T10:05:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2038/</loc>
-    
-    <lastmod>2015-03-18T00:15:38.000Z</lastmod>
     
   </url>
   

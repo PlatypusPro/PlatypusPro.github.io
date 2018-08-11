@@ -4,17 +4,95 @@
 
     
   <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3673-3674/</loc>
-    <lastmod>2018-07-18T16:58:39.063Z</lastmod>
+    <loc>https://platypuspro.github.io/posts/poj-2104/</loc>
+    <lastmod>2018-08-11T08:13:21.065Z</lastmod>
     <data>
         <display>
-        <title>BZOJ 3673 3674</title>
-        <pubTime>2018-07-18T16:46:10.000Z</pubTime>
+        <title>POJ 2104</title>
+        <pubTime>2015-04-27T13:31:52.000Z</pubTime>
         
-        <tag>可持久化</tag>
+        <tag>可持久化线段树</tag>
          
-        <tag>并查集</tag>
+        <tag>整体二分</tag>
          
+         
+           
+             
+              <breadCrumb title="POJ" url="https://platypuspro.github.io/categories/POJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3295/</loc>
+    <lastmod>2018-08-11T08:13:03.826Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3295</title>
+        <pubTime>2015-05-14T12:37:26.000Z</pubTime>
+        
+        <tag>可持久化线段树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1901/</loc>
+    <lastmod>2018-08-11T08:12:39.940Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1901</title>
+        <pubTime>2015-04-30T13:13:37.000Z</pubTime>
+        
+        <tag>可持久化线段树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/poj-1741/</loc>
+    <lastmod>2018-08-11T08:11:30.288Z</lastmod>
+    <data>
+        <display>
+        <title>POJ 1741</title>
+        <pubTime>2015-06-16T23:55:40.000Z</pubTime>
+        
+        <tag>点分治</tag>
+         
+         
+           
+             
+              <breadCrumb title="POJ" url="https://platypuspro.github.io/categories/POJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4105/</loc>
+    <lastmod>2018-08-11T08:11:20.738Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4105</title>
+        <pubTime>2015-06-09T07:46:19.000Z</pubTime>
+        
         <tag>线段树</tag>
          
          
@@ -27,16 +105,15 @@
     </url>
 
     
-    
   <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2300/</loc>
-    <lastmod>2017-11-26T06:48:51.920Z</lastmod>
+    <loc>https://platypuspro.github.io/posts/bzoj-4103/</loc>
+    <lastmod>2018-08-11T08:11:11.920Z</lastmod>
     <data>
         <display>
-        <title>BZOJ 2300</title>
-        <pubTime>2015-03-11T23:55:51.000Z</pubTime>
+        <title>BZOJ 4103</title>
+        <pubTime>2015-06-09T07:46:14.000Z</pubTime>
         
-        <tag>Dynamic Convex Hull</tag>
+        <tag>可持久化线段树</tag>
          
          
            
@@ -47,6 +124,1275 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4034/</loc>
+    <lastmod>2018-08-11T08:11:01.082Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4034</title>
+        <pubTime>2015-05-02T11:00:19.000Z</pubTime>
+        
+        <tag>树链剖分</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4033/</loc>
+    <lastmod>2018-08-11T08:10:50.963Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4033</title>
+        <pubTime>2015-05-02T11:00:11.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4008/</loc>
+    <lastmod>2018-08-11T08:10:43.003Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4008</title>
+        <pubTime>2015-04-26T09:59:06.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4007/</loc>
+    <lastmod>2018-08-11T08:10:26.161Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4007</title>
+        <pubTime>2015-05-19T13:00:44.000Z</pubTime>
+        
+        <tag>搜索</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4006/</loc>
+    <lastmod>2018-08-11T08:10:16.832Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4006</title>
+        <pubTime>2015-05-20T13:19:04.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>斯坦纳树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4003/</loc>
+    <lastmod>2018-08-11T08:09:58.642Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4003</title>
+        <pubTime>2015-05-19T01:03:22.000Z</pubTime>
+        
+        <tag>Splay</tag>
+         
+        <tag>可并堆</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-4002/</loc>
+    <lastmod>2018-08-11T08:09:17.905Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 4002</title>
+        <pubTime>2015-05-18T13:00:38.000Z</pubTime>
+        
+        <tag>矩阵乘法</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3998/</loc>
+    <lastmod>2018-08-11T08:09:02.513Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3998</title>
+        <pubTime>2015-05-25T13:33:47.000Z</pubTime>
+        
+        <tag>后缀自动机</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3993/</loc>
+    <lastmod>2018-08-11T08:08:56.099Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3993</title>
+        <pubTime>2015-06-05T03:15:12.000Z</pubTime>
+        
+        <tag>最大流</tag>
+         
+        <tag>二分答案</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3932/</loc>
+    <lastmod>2018-08-11T08:08:36.898Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3932</title>
+        <pubTime>2015-04-11T13:36:02.000Z</pubTime>
+        
+        <tag>可持久化线段树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3673-3674/</loc>
+    <lastmod>2018-08-11T08:07:39.388Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3673 3674</title>
+        <pubTime>2015-05-18T16:46:10.000Z</pubTime>
+        
+        <tag>可持久化线段树</tag>
+         
+        <tag>并查集</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3931/</loc>
+    <lastmod>2018-08-11T08:07:24.619Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3931</title>
+        <pubTime>2015-04-09T13:37:01.000Z</pubTime>
+        
+        <tag>最大流</tag>
+         
+        <tag>最短路</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3930/</loc>
+    <lastmod>2018-08-11T08:07:10.939Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3930</title>
+        <pubTime>2015-04-09T07:59:37.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+        <tag>莫比乌斯反演</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3926/</loc>
+    <lastmod>2018-08-11T08:06:57.131Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3926</title>
+        <pubTime>2015-06-05T03:15:16.000Z</pubTime>
+        
+        <tag>后缀自动机</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3884/</loc>
+    <lastmod>2018-08-11T08:06:42.594Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3884</title>
+        <pubTime>2015-04-03T08:49:30.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3786/</loc>
+    <lastmod>2018-08-11T08:06:23.401Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3786</title>
+        <pubTime>2015-06-03T08:42:48.000Z</pubTime>
+        
+        <tag>Splay</tag>
+         
+        <tag>DFS序</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3676/</loc>
+    <lastmod>2018-08-11T08:06:12.458Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3676</title>
+        <pubTime>2015-05-25T13:27:57.000Z</pubTime>
+        
+        <tag>后缀自动机</tag>
+         
+        <tag>Manacher</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3675/</loc>
+    <lastmod>2018-08-11T08:05:59.756Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3675</title>
+        <pubTime>2015-05-02T11:00:26.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3611/</loc>
+    <lastmod>2018-08-11T08:05:27.521Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3611</title>
+        <pubTime>2015-05-17T01:04:00.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+        <tag>虚树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3571/</loc>
+    <lastmod>2018-08-11T08:04:59.599Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3571</title>
+        <pubTime>2015-04-14T11:44:24.000Z</pubTime>
+        
+        <tag>KM</tag>
+         
+        <tag>分治</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3566/</loc>
+    <lastmod>2018-08-11T08:04:50.297Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3566</title>
+        <pubTime>2015-03-18T12:27:34.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3564/</loc>
+    <lastmod>2018-08-11T08:04:40.990Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3564</title>
+        <pubTime>2015-03-18T11:46:42.000Z</pubTime>
+        
+        <tag>随机增量</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3560/</loc>
+    <lastmod>2018-08-11T08:04:22.959Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3560</title>
+        <pubTime>2015-04-03T10:14:12.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3289/</loc>
+    <lastmod>2018-08-11T08:03:43.867Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3289</title>
+        <pubTime>2015-03-20T12:39:02.000Z</pubTime>
+        
+        <tag>莫队</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3262/</loc>
+    <lastmod>2018-08-11T08:03:37.119Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3262</title>
+        <pubTime>2015-06-26T09:20:56.000Z</pubTime>
+        
+        <tag>CDQ分治</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3261/</loc>
+    <lastmod>2018-08-11T08:03:25.533Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3261</title>
+        <pubTime>2015-06-05T03:15:31.000Z</pubTime>
+        
+        <tag>可持久化Trie</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3192/</loc>
+    <lastmod>2018-08-11T08:03:08.838Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3192</title>
+        <pubTime>2015-03-11T02:35:48.000Z</pubTime>
+        
+        <tag>树状数组</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3172/</loc>
+    <lastmod>2018-08-11T08:03:01.209Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3172</title>
+        <pubTime>2015-06-05T03:15:06.000Z</pubTime>
+        
+        <tag>后缀自动机</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3122/</loc>
+    <lastmod>2018-08-11T08:02:52.446Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3122</title>
+        <pubTime>2015-06-27T11:44:41.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3111/</loc>
+    <lastmod>2018-08-11T08:02:27.616Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3111</title>
+        <pubTime>2015-05-02T11:00:05.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-3110/</loc>
+    <lastmod>2018-08-11T08:01:43.207Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 3110</title>
+        <pubTime>2015-04-28T13:32:05.000Z</pubTime>
+        
+        <tag>整体二分</tag>
+         
+        <tag>树套树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2823/</loc>
+    <lastmod>2018-08-11T08:01:23.767Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2823</title>
+        <pubTime>2015-06-25T12:37:10.000Z</pubTime>
+        
+        <tag>随机增量</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2821/</loc>
+    <lastmod>2018-08-11T08:01:03.486Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2821</title>
+        <pubTime>2015-06-16T13:14:23.000Z</pubTime>
+        
+        <tag>分块</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2819/</loc>
+    <lastmod>2018-08-11T08:00:44.053Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2819</title>
+        <pubTime>2015-06-13T11:44:39.000Z</pubTime>
+        
+        <tag>博弈论</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2818/</loc>
+    <lastmod>2018-08-11T08:00:28.889Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2818</title>
+        <pubTime>2015-03-19T11:36:13.000Z</pubTime>
+        
+        <tag>欧拉函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2705/</loc>
+    <lastmod>2018-08-11T07:59:58.213Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2705</title>
+        <pubTime>2015-03-19T13:19:20.000Z</pubTime>
+        
+        <tag>欧拉函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2618/</loc>
+    <lastmod>2018-08-11T07:59:38.328Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2618</title>
+        <pubTime>2015-06-23T13:01:39.000Z</pubTime>
+        
+        <tag>半平面交</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2599/</loc>
+    <lastmod>2018-08-11T07:58:58.047Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2599</title>
+        <pubTime>2015-06-18T12:35:40.000Z</pubTime>
+        
+        <tag>点分治</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2539/</loc>
+    <lastmod>2018-08-11T07:58:42.574Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2539</title>
+        <pubTime>2015-03-13T13:25:46.000Z</pubTime>
+        
+        <tag>二分图匹配</tag>
+         
+        <tag>KM</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2301/</loc>
+    <lastmod>2018-08-11T07:57:24.428Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2301</title>
+        <pubTime>2015-04-08T11:22:15.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+        <tag>莫比乌斯反演</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2300/</loc>
+    <lastmod>2018-08-11T07:57:06.599Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2300</title>
+        <pubTime>2015-03-11T23:55:51.000Z</pubTime>
+        
+        <tag>凸包</tag>
+         
+        <tag>平衡树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2286/</loc>
+    <lastmod>2018-08-11T07:56:37.618Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2286</title>
+        <pubTime>2015-05-14T12:37:38.000Z</pubTime>
+        
+        <tag>虚树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2242/</loc>
+    <lastmod>2018-08-11T07:55:40.949Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2242</title>
+        <pubTime>2015-06-09T07:46:28.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+        <tag>BSGS</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2190/</loc>
+    <lastmod>2018-08-11T07:55:16.342Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2190</title>
+        <pubTime>2015-03-19T10:09:07.000Z</pubTime>
+        
+        <tag>欧拉函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2186/</loc>
+    <lastmod>2018-08-11T07:54:31.950Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2186</title>
+        <pubTime>2015-04-17T13:27:34.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+        <tag>扩展欧几里得</tag>
+         
+        <tag>欧拉函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2152/</loc>
+    <lastmod>2018-08-11T07:54:12.806Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2152</title>
+        <pubTime>2015-04-13T13:44:40.000Z</pubTime>
+        
+        <tag>点分治</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2150/</loc>
+    <lastmod>2018-08-11T07:53:31.729Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2150</title>
+        <pubTime>2015-04-26T09:58:59.000Z</pubTime>
+        
+        <tag>二分图匹配</tag>
+         
+        <tag>最大流</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2141/</loc>
+    <lastmod>2018-08-11T07:53:04.617Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2141</title>
+        <pubTime>2015-06-14T10:05:02.000Z</pubTime>
+        
+        <tag>分块</tag>
+         
+        <tag>树状数组</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2049/</loc>
+    <lastmod>2018-08-11T07:52:29.275Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2049</title>
+        <pubTime>2015-04-26T09:58:43.000Z</pubTime>
+        
+        <tag>动态树</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-2038/</loc>
+    <lastmod>2018-08-11T07:52:03.824Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 2038</title>
+        <pubTime>2015-03-17T12:56:27.000Z</pubTime>
+        
+        <tag>莫队</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1965/</loc>
+    <lastmod>2018-08-11T07:51:06.118Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1965</title>
+        <pubTime>2015-04-17T13:27:01.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+        <tag>扩展欧几里得</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1857/</loc>
+    <lastmod>2018-08-11T07:50:08.287Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1857</title>
+        <pubTime>2015-03-16T12:43:13.000Z</pubTime>
+        
+        <tag>三分法</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1854/</loc>
+    <lastmod>2018-08-11T07:49:31.072Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1854</title>
+        <pubTime>2015-03-16T13:02:53.000Z</pubTime>
+        
+        <tag>二分图匹配</tag>
+         
+        <tag>匈牙利算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1492/</loc>
+    <lastmod>2018-08-11T07:47:41.021Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1492</title>
+        <pubTime>2015-04-11T13:35:56.000Z</pubTime>
+        
+        <tag>CDQ分治</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1070-2879/</loc>
+    <lastmod>2018-08-11T07:47:16.110Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1070+2879</title>
+        <pubTime>2015-03-11T09:57:40.000Z</pubTime>
+        
+        <tag>网络流</tag>
+         
+        <tag>费用流</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1051/</loc>
+    <lastmod>2018-08-11T07:46:14.683Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1051</title>
+        <pubTime>2015-04-26T09:58:33.000Z</pubTime>
+        
+        <tag>强连通分量</tag>
+         
+        <tag>Tarjan</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1038/</loc>
+    <lastmod>2018-08-11T07:45:40.405Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1038</title>
+        <pubTime>2015-06-23T13:01:34.000Z</pubTime>
+        
+        <tag>半平面交</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1036/</loc>
+    <lastmod>2018-08-11T07:45:23.823Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1036</title>
+        <pubTime>2015-04-26T09:58:27.000Z</pubTime>
+        
+        <tag>动态树</tag>
+         
+        <tag>树链剖分</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1031/</loc>
+    <lastmod>2018-08-11T07:45:02.357Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1031</title>
+        <pubTime>2015-04-26T09:58:21.000Z</pubTime>
+        
+        <tag>后缀数组</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1026/</loc>
+    <lastmod>2018-08-11T07:44:53.360Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1026</title>
+        <pubTime>2015-06-05T03:15:21.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://platypuspro.github.io/posts/bzoj-1010/</loc>
+    <lastmod>2018-08-11T07:43:54.856Z</lastmod>
+    <data>
+        <display>
+        <title>BZOJ 1010</title>
+        <pubTime>2015-03-20T23:42:33.000Z</pubTime>
+        
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://platypuspro.github.io/posts/vimrc/</loc>
@@ -60,28 +1406,6 @@
            
              
               <breadCrumb title="Others" url="https://platypuspro.github.io/categories/others/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/poj-2104/</loc>
-    <lastmod>2017-11-26T06:39:45.779Z</lastmod>
-    <data>
-        <display>
-        <title>POJ 2104</title>
-        <pubTime>2015-04-27T13:31:52.000Z</pubTime>
-        
-        <tag>Fotile Tree</tag>
-         
-        <tag>Whole Binary-Divide</tag>
-         
-         
-           
-             
-              <breadCrumb title="POJ" url="https://platypuspro.github.io/categories/POJ/"/>
           
         </display>
     </data>
@@ -106,1322 +1430,6 @@
     </url>
 
     
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4105/</loc>
-    <lastmod>2017-11-26T06:38:24.340Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4105</title>
-        <pubTime>2015-06-09T07:46:19.000Z</pubTime>
-        
-        <tag>Segment Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4103/</loc>
-    <lastmod>2017-11-26T06:38:15.756Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4103</title>
-        <pubTime>2015-06-09T07:46:14.000Z</pubTime>
-        
-        <tag>Persistent Trie</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4008/</loc>
-    <lastmod>2017-11-26T06:38:08.404Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4008</title>
-        <pubTime>2015-04-26T09:59:06.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-        <tag>Expected Value</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4003/</loc>
-    <lastmod>2017-11-26T06:38:00.590Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4003</title>
-        <pubTime>2015-05-19T01:03:22.000Z</pubTime>
-        
-        <tag>Splay</tag>
-         
-        <tag>Mergeable Heap</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3930/</loc>
-    <lastmod>2017-11-26T06:37:32.140Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3930</title>
-        <pubTime>2015-04-09T07:59:37.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-        <tag>Mobius_inversion</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3884/</loc>
-    <lastmod>2017-11-26T06:37:03.276Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3884</title>
-        <pubTime>2015-04-03T08:49:30.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3611/</loc>
-    <lastmod>2017-11-26T06:35:19.924Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3611</title>
-        <pubTime>2015-05-17T01:04:00.000Z</pubTime>
-        
-        <tag>Virtual Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3571/</loc>
-    <lastmod>2017-11-26T06:34:59.721Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3571</title>
-        <pubTime>2015-04-14T11:44:24.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-        <tag>Kuhn-Munkres</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3566/</loc>
-    <lastmod>2017-11-26T06:34:12.006Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3566</title>
-        <pubTime>2015-03-18T12:27:34.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3560/</loc>
-    <lastmod>2017-11-26T06:32:58.475Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3560</title>
-        <pubTime>2015-04-03T10:14:12.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3111/</loc>
-    <lastmod>2017-11-26T06:31:48.291Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3111</title>
-        <pubTime>2015-05-02T11:00:05.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3110/</loc>
-    <lastmod>2017-11-26T06:31:39.011Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3110</title>
-        <pubTime>2015-04-28T13:32:05.000Z</pubTime>
-        
-        <tag>Whole Binary-Divide</tag>
-         
-        <tag>Tree in Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2301/</loc>
-    <lastmod>2017-11-26T06:31:16.484Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2301</title>
-        <pubTime>2015-04-08T11:22:15.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-        <tag>Mobius_inversion</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2150/</loc>
-    <lastmod>2017-11-26T06:31:02.179Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2150</title>
-        <pubTime>2015-04-26T09:58:59.000Z</pubTime>
-        
-        <tag>Bipartite-Graph Matching</tag>
-         
-        <tag>Max Flow</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1492/</loc>
-    <lastmod>2017-11-26T06:30:43.219Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1492</title>
-        <pubTime>2015-04-11T13:35:56.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1070-2879/</loc>
-    <lastmod>2017-11-26T06:30:13.020Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1070+2879</title>
-        <pubTime>2015-03-11T09:57:40.000Z</pubTime>
-        
-        <tag>Min Cost Flow</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1036/</loc>
-    <lastmod>2017-11-26T06:29:23.243Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1036</title>
-        <pubTime>2015-04-26T09:58:27.000Z</pubTime>
-        
-        <tag>Link Cut Tree</tag>
-         
-        <tag>Tree Chain Split</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3786/</loc>
-    <lastmod>2015-12-12T11:52:10.529Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3786</title>
-        <pubTime>2015-06-03T08:42:48.000Z</pubTime>
-        
-        <tag>Splay</tag>
-         
-        <tag>DFS Sequence</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1857/</loc>
-    <lastmod>2015-07-12T08:22:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1857</title>
-        <pubTime>2015-03-16T12:43:13.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1901/</loc>
-    <lastmod>2015-07-10T13:21:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1901</title>
-        <pubTime>2015-04-30T13:13:37.000Z</pubTime>
-        
-        <tag>Fotile Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3261/</loc>
-    <lastmod>2015-07-10T09:21:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3261</title>
-        <pubTime>2015-06-05T03:15:31.000Z</pubTime>
-        
-        <tag>Persistent Trie</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3932/</loc>
-    <lastmod>2015-07-10T08:37:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3932</title>
-        <pubTime>2015-04-11T13:36:02.000Z</pubTime>
-        
-        <tag>Fotile Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3931/</loc>
-    <lastmod>2015-07-10T08:36:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3931</title>
-        <pubTime>2015-04-09T13:37:01.000Z</pubTime>
-        
-        <tag>Max Flow</tag>
-         
-        <tag>Shortest Path</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3122/</loc>
-    <lastmod>2015-06-27T12:09:52.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3122</title>
-        <pubTime>2015-06-27T11:44:41.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2190/</loc>
-    <lastmod>2015-06-26T11:29:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2190</title>
-        <pubTime>2015-03-19T10:09:07.000Z</pubTime>
-        
-        <tag>Euler&#39;s Totient Function</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3262/</loc>
-    <lastmod>2015-06-26T10:29:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3262</title>
-        <pubTime>2015-06-26T09:20:56.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2823/</loc>
-    <lastmod>2015-06-25T12:42:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2823</title>
-        <pubTime>2015-06-25T12:37:10.000Z</pubTime>
-        
-        <tag>Random Incremental</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3564/</loc>
-    <lastmod>2015-06-25T09:11:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3564</title>
-        <pubTime>2015-03-18T11:46:42.000Z</pubTime>
-        
-        <tag>Random Incremental</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2618/</loc>
-    <lastmod>2015-06-23T13:46:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2618</title>
-        <pubTime>2015-06-23T13:01:39.000Z</pubTime>
-        
-        <tag>Half-Plane Intersection</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1038/</loc>
-    <lastmod>2015-06-23T13:39:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1038</title>
-        <pubTime>2015-06-23T13:01:34.000Z</pubTime>
-        
-        <tag>Half-Plane Intersection</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2599/</loc>
-    <lastmod>2015-06-18T12:51:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2599</title>
-        <pubTime>2015-06-18T12:35:40.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/poj-1741/</loc>
-    <lastmod>2015-06-17T01:59:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>POJ 1741</title>
-        <pubTime>2015-06-16T23:55:40.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-         
-           
-             
-              <breadCrumb title="POJ" url="https://platypuspro.github.io/categories/POJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2821/</loc>
-    <lastmod>2015-06-16T23:52:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2821</title>
-        <pubTime>2015-06-16T13:14:23.000Z</pubTime>
-        
-        <tag>Partitioning</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2141/</loc>
-    <lastmod>2015-06-14T10:34:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2141</title>
-        <pubTime>2015-06-14T10:05:02.000Z</pubTime>
-        
-        <tag>Partitioning</tag>
-         
-        <tag>Binary Indexed Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2819/</loc>
-    <lastmod>2015-06-13T12:02:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2819</title>
-        <pubTime>2015-06-13T11:44:39.000Z</pubTime>
-        
-        <tag>Game Theory</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3998/</loc>
-    <lastmod>2015-06-10T02:09:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3998</title>
-        <pubTime>2015-05-25T13:33:47.000Z</pubTime>
-        
-        <tag>Suffix Automaton</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2242/</loc>
-    <lastmod>2015-06-09T09:12:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2242</title>
-        <pubTime>2015-06-09T07:46:28.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-        <tag>BSGS</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1026/</loc>
-    <lastmod>2015-06-09T07:53:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1026</title>
-        <pubTime>2015-06-05T03:15:21.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3926/</loc>
-    <lastmod>2015-06-09T07:52:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3926</title>
-        <pubTime>2015-06-05T03:15:16.000Z</pubTime>
-        
-        <tag>Suffix Automaton</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3993/</loc>
-    <lastmod>2015-06-09T02:56:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3993</title>
-        <pubTime>2015-06-05T03:15:12.000Z</pubTime>
-        
-        <tag>Max Flow</tag>
-         
-        <tag>Binary Divide</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3172/</loc>
-    <lastmod>2015-06-05T03:21:52.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3172</title>
-        <pubTime>2015-06-05T03:15:06.000Z</pubTime>
-        
-        <tag>Suffix Automaton</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3676/</loc>
-    <lastmod>2015-05-25T23:21:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3676</title>
-        <pubTime>2015-05-25T13:27:57.000Z</pubTime>
-        
-        <tag>Suffix Automaton</tag>
-         
-        <tag>Manacher</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4006/</loc>
-    <lastmod>2015-05-20T14:00:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4006</title>
-        <pubTime>2015-05-20T13:19:04.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-        <tag>Steiner Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2539/</loc>
-    <lastmod>2015-05-20T13:35:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2539</title>
-        <pubTime>2015-03-13T13:25:46.000Z</pubTime>
-        
-        <tag>Bipartite-Graph Matching</tag>
-         
-        <tag>Kuhn-Munkres</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1854/</loc>
-    <lastmod>2015-05-20T13:35:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1854</title>
-        <pubTime>2015-03-16T13:02:53.000Z</pubTime>
-        
-        <tag>Bipartite-Graph Matching</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2818/</loc>
-    <lastmod>2015-05-20T13:34:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2818</title>
-        <pubTime>2015-03-19T11:36:13.000Z</pubTime>
-        
-        <tag>Euler&#39;s Totient Function</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2705/</loc>
-    <lastmod>2015-05-20T13:34:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2705</title>
-        <pubTime>2015-03-19T13:19:20.000Z</pubTime>
-        
-        <tag>Euler&#39;s Totient Function</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3289/</loc>
-    <lastmod>2015-05-20T13:34:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3289</title>
-        <pubTime>2015-03-20T12:39:02.000Z</pubTime>
-        
-        <tag>Mo Algorithm</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1010/</loc>
-    <lastmod>2015-05-20T13:34:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1010</title>
-        <pubTime>2015-03-20T23:42:33.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2152/</loc>
-    <lastmod>2015-05-20T13:33:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2152</title>
-        <pubTime>2015-04-13T13:44:40.000Z</pubTime>
-        
-        <tag>Divide and Conquer</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3192/</loc>
-    <lastmod>2015-05-20T13:32:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3192</title>
-        <pubTime>2015-03-11T02:35:48.000Z</pubTime>
-        
-        <tag>Binary Indexed Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2186/</loc>
-    <lastmod>2015-05-20T13:32:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2186</title>
-        <pubTime>2015-04-17T13:27:34.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-        <tag>Euler&#39;s Totient Function</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1965/</loc>
-    <lastmod>2015-05-20T13:32:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1965</title>
-        <pubTime>2015-04-17T13:27:01.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-        <tag>Extended Euclidean</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4033/</loc>
-    <lastmod>2015-05-20T13:31:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4033</title>
-        <pubTime>2015-05-02T11:00:11.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4007/</loc>
-    <lastmod>2015-05-20T13:30:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4007</title>
-        <pubTime>2015-05-19T13:00:44.000Z</pubTime>
-        
-        <tag>Search</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4002/</loc>
-    <lastmod>2015-05-20T00:55:28.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4002</title>
-        <pubTime>2015-05-18T13:00:38.000Z</pubTime>
-        
-        <tag>Matrix Multiplication</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2286/</loc>
-    <lastmod>2015-05-15T10:57:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2286</title>
-        <pubTime>2015-05-14T12:37:38.000Z</pubTime>
-        
-        <tag>Virtual Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3295/</loc>
-    <lastmod>2015-05-14T13:44:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3295</title>
-        <pubTime>2015-05-14T12:37:26.000Z</pubTime>
-        
-        <tag>Fotile Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-4034/</loc>
-    <lastmod>2015-05-02T12:41:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 4034</title>
-        <pubTime>2015-05-02T11:00:19.000Z</pubTime>
-        
-        <tag>Tree Chain Split</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-3675/</loc>
-    <lastmod>2015-05-02T12:34:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 3675</title>
-        <pubTime>2015-05-02T11:00:26.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2049/</loc>
-    <lastmod>2015-04-26T11:11:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2049</title>
-        <pubTime>2015-04-26T09:58:43.000Z</pubTime>
-        
-        <tag>Link Cut Tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1051/</loc>
-    <lastmod>2015-04-26T11:06:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1051</title>
-        <pubTime>2015-04-26T09:58:33.000Z</pubTime>
-        
-        <tag>Tarjan SCC</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-1031/</loc>
-    <lastmod>2015-04-26T10:05:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 1031</title>
-        <pubTime>2015-04-26T09:58:21.000Z</pubTime>
-        
-        <tag>Suffix Array</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://platypuspro.github.io/posts/bzoj-2038/</loc>
-    <lastmod>2015-03-18T00:15:38.000Z</lastmod>
-    <data>
-        <display>
-        <title>BZOJ 2038</title>
-        <pubTime>2015-03-17T12:56:27.000Z</pubTime>
-        
-        <tag>Mo Algorithm</tag>
-         
-         
-           
-             
-              <breadCrumb title="BZOJ" url="https://platypuspro.github.io/categories/BZOJ/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
     
