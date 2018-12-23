@@ -1,0 +1,209 @@
+: 1543250965:0;sudo apt install mysql-server
+: 1543251030:0;sudo apt install apache
+: 1543251038:0;sudo apt install apache2
+: 1543251107:0;sudo apt install php7.3 libapache2-mod-php7.3 php7.3-mysql
+: 1543251122:0;sudo apt install php7.2 libapache2-mod-php7.2 php7.2-mysql
+: 1543251176:0;mysql -u root -p
+: 1543251226:0;vim /etc/mysql/my.cnf
+: 1543251260:0;ls /etc/mysql
+: 1543251269:0;vim /etc/mysql/debian.cnf
+: 1543251273:0;sudo vim /etc/mysql/debian.cnf
+: 1543251292:0;mysql -u root -p
+: 1543251299:0;sudo vim /etc/mysql/debian.cnf
+: 1543251321:0;mysql -u root -p
+: 1543251344:0;sudo service mysqld status
+: 1543251347:0;sudo service mysql status
+: 1543251358:0;mysql -u root -p
+: 1543251371:0;sudo vim /etc/mysql/debian.cnf
+: 1543251403:0;mysql -u debian-sys-maint -p
+: 1543251442:0;mysql -u root -p
+: 1543251451:0;mysql -u debian-sys-maint -p
+: 1543251631:0;cat /var/log/mysqld.log | grep password
+: 1543251653:0;mysql -u debian-sys-maint -p
+: 1543252218:0;mysql_secure_installation
+: 1543252272:0;mysql -u root -p
+: 1543252290:0;ls /etc/mysql
+: 1543252350:0;sudo apt install php-curl php-json php-cgi
+: 1543252373:0;sudo apt remove php7.2-mysql
+: 1543252385:0;sudo apt install php-mysql
+: 1543252616:0;sudo mkdir /var/log/php
+: 1543252620:0;sudo chown www-data /var/log/php
+: 1543252625:0;sudo systemctl restart apache2
+: 1543252648:0;cd /var/www
+: 1543252649:0;ls
+: 1543252652:0;cd html
+: 1543252653:0;ls
+: 1543252671:0;sudo service apache status
+: 1543252674:0;sudo service apache2 status
+: 1543252684:0;wget -c localhost
+: 1543252690:0;ls
+: 1543252693:0;vim index.html
+: 1543252704:0;rm index.html
+: 1543252709:0;ls
+: 1543252749:0;cd /etc/apache2
+: 1543252749:0;ls
+: 1543252755:0;ls sites-enabled
+: 1543252780:0;vim sites-enabled/000-default.conf
+: 1543252871:0;cd sites-enabled
+: 1543252894:0;ls
+: 1543252895:0;cd ..
+: 1543252895:0;ls
+: 1543252900:0;cd sites-available
+: 1543252900:0;ls
+: 1543252915:0;sudo cp 000-default.conf platypuspro.cn.conf
+: 1543252918:0;vim platypuspro.cn.conf
+: 1543252922:0;sudo vim platypuspro.cn.conf
+: 1543253162:0;sudo mkdir -p /var/www/html/example.com/{public_html,logs}
+: 1543253175:0;sudo a2ensite platypuspro.cn
+: 1543253190:0;sudo a2dissite 000-default.conf
+: 1543253205:0;ls ../sites-enabled
+: 1543253220:0;sudo systemctl reload apache2
+: 1543253233:0;journalctl -xe
+: 1543253270:0;ls /var/www/html
+: 1543253284:0;sudo rm -r /var/www/html/example.com
+: 1543253287:0;ls /var/www/html
+: 1543253305:0;sudo mkdir -p /var/www/html/platypuspro.cn/{public_html,logs}
+: 1543253308:0;sudo systemctl reload apache2
+: 1543253327:0;ls /var/log
+: 1543253361:0;mysql -u root -p
+: 1543253668:0;sudo systemctl restart apache2
+: 1543253682:0;vim /var/www/html/platypuspro.cn
+: 1543253692:0;cd /var/www/html/platypuspro.cn
+: 1543253692:0;l
+: 1543253693:0;ls
+: 1543253696:0;cd phb
+: 1543253698:0;cd public_html
+: 1543253699:0;ls
+: 1543253716:0;vim phptest.php
+: 1543253882:0;sudo mv ~/tmp.php ./phptest.php
+: 1543253882:0;ls
+: 1543253908:0;mysql -u webuser -p
+: 1543253935:0;mysql -u root -p
+: 1543253948:0;mysql -u webuser -p
+: 1543253971:0;sudo rm phptest.php
+: 1543253973:0;ls
+: 1543254080:0;sudo apt install phpmyadmin
+: 1543254287:0;sudo apt autoremove phpmyadmin
+: 1543254361:0;sudo dkpg --configure -a
+: 1543254371:0;sudo apt update
+: 1543254408:0;phpmyadmin
+: 1543254481:0;ls /etc/phpmyadmin/
+: 1543254492:0;sudo apt autoremove phpmyadmin
+: 1543254507:0;sudo apt install -f
+: 1543254515:0;sudo apt autoremove
+: 1543254544:0;sudo dpkg
+: 1543254552:0;sudo dpkg --configure -a
+: 1543254612:0;Could not get lock
+: 1543254615:0;ps -A | grep apt-get
+: 1543254621:0;ps -A
+: 1543254629:0;ps -A | grep apt
+: 1543254636:0;sudo kill 7861
+: 1543254644:0;sudo apt autoremove phpmyadmin
+: 1543254651:0;sudo dkpg --configure -a
+: 1543254656:0;sudo dpkg --configure -a
+: 1543254697:0;ps -A | grep apt
+: 1543254707:0;sudo apt autoremove phpmyadmin
+: 1543254713:0;sudo dpkg --configure -a
+: 1543254797:0;sudo apt upgrade
+: 1543255232:0;ls
+: 1543255286:0;cd /etc/
+: 1543255286:0;ls
+: 1543255289:0;cd phpmyadmin
+: 1543255289:0;ls
+: 1543255299:0;vim config-db.php
+: 1543255305:0;sudo vim config-db.php
+: 1543255379:0;mysql -u root -p
+: 1543255453:0;ls
+: 1543255462:0;vim config.inc.php
+: 1543255525:0;sudo cp /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf 
+: 1543255530:0;sudo a2enconf phpmyadmin
+: 1543255545:0;sudo a2dissite platypuspro.cn
+: 1543255556:0;sudo systemctl restart apache2
+: 1543258118:0;exi
+: 1543258120:0;exit
+: 1543335501:0;sudo apt remove phpmyadmin
+: 1543335525:0;sudo apt remove php
+: 1543335533:0;sudo apt remove php*
+: 1543335542:0;sudo apt remove php7.2
+: 1543335558:0;sudo apt autoremove
+: 1543335585:0;sudo apt remove apache2
+: 1543335603:0;sudo apt remove php
+: 1543335611:0;sudo apt autoremove
+: 1543335629:0;sudo apt remove mysql
+: 1543335632:0;sudo apt remove mysql-server
+: 1543335642:0;sudo apt autoremove
+: 1543335664:0;cd /var
+: 1543335666:0;ls
+: 1543335668:0;cd www
+: 1543335668:0;ls
+: 1543335670:0;cd html
+: 1543335671:0;ls
+: 1543335675:0;vim index.html
+: 1543335696:0;ls
+: 1543335698:0;cd platypuspro.cn
+: 1543335699:0;ls
+: 1543335701:0;cd ..
+: 1543335707:0;ls
+: 1543335708:0;cd ..
+: 1543335709:0;ls
+: 1543335718:0;sudo rm -r www/*
+: 1543335720:0;ls www
+: 1543335721:0;ls
+: 1543335741:0;cd /etc
+: 1543335741:0;ls
+: 1543335748:0;cd apache2
+: 1543335748:0;ls
+: 1543335752:0;cd ..
+: 1543335757:0;sudo rm -r apache2
+: 1543335758:0;ls
+: 1543335766:0;sudo rm -r php
+: 1543335773:0;sudo rm -r phpmyadmin
+: 1543335888:0;sysinfo
+: 1543335942:0;cd ~
+: 1543335944:0;wget -c https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-boost-8.0.13.tar.gz
+: 1543336074:0;ls
+: 1543336081:0;tar -xzf mysql-boost-8.0.13.tar.gz
+: 1543336092:0;cd mysql-8.0.13
+: 1543336093:0;ls
+: 1543336097:0;./configure
+: 1543336108:0;make
+: 1543336112:0;cmake .
+: 1543336117:0;sudo apt install cmake
+: 1543336136:0;cmake .
+: 1543336156:0;ls
+: 1543336173:0;ls include
+: 1543336201:0;cmake . -DWITH_BOOST=include/boost_1_67_0
+: 1543336221:0;cmake -DWITH_BOOST=include/boost_1_67_0 .
+: 1543336234:0;cmake -DWITH_BOOST='include/boost_1_67_0/' .
+: 1543336318:0;cd ..
+: 1543336318:0;ls
+: 1543336325:0;cd mysql-8.0.13
+: 1543336326:0;ls
+: 1543336348:0;cmake . -DWITH_BOOST=boost
+: 1543336522:0;sudo apt install openssl
+: 1543336528:0;sudo apt install openssl-devel
+: 1543336615:0;sudo apt-get install libssl-dev
+: 1543336633:0;cmake . -DWITH_BOOST=boost
+: 1543336646:0;sudo apt install curses
+: 1543336648:0;sudo apt install curse
+: 1543336663:0;sudo apt install ncurses ncurses-devel
+: 1543336671:0;sudo apt install ncurses
+: 1543336697:0;sudo apt install libncurses5-dev
+: 1543336709:0;cmake . -DWITH_BOOST=boost
+: 1543336733:0;ls
+: 1543336739:0;make -j4
+: 1543338052:0;exit
+: 1543338059:0;sudo apt install screen
+: 1543338069:0;screen -S make
+: 1543338073:0;make
+: 1543338393:0;exit
+: 1543383918:0;screen -r make
+: 1543383932:0;make -j2
+: 1543384128:0;make
+: 1543384281:0;make clean
+: 1543384297:0;make -j2
+: 1543384321:0;make
+: 1543384334:0;make clean
+: 1543384341:0;make
+: 1543384370:0;cmake .
+: 1543384388:0;make

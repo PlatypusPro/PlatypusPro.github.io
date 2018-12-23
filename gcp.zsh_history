@@ -1,0 +1,713 @@
+: 1538038864:0;git clone https://github.com/arut/nginx-rtmp-module
+: 1538038893:0;ls
+: 1538038896:0;cd nginx-rtmp-module
+: 1538039331:0;cd /etc/nginx
+: 1538039332:0;ls
+: 1538039363:0;cd NGINX
+: 1538039526:0;cd sites-enabled
+: 1538039527:0;ls
+: 1538039529:0;vim default
+: 1538039669:0;sudo service nginx status
+: 1538039677:0;sudo apt remove nginx
+: 1538039685:0;sudo apt autoremove
+: 1538039709:0;cd ~
+: 1538039713:0;ls /etc/nginx
+: 1538039729:0;wget -c http://nginx.org/download/nginx-1.15.4.tar.gz
+: 1538039750:0;ls
+: 1538039759:0;tar -xzf nginx-1.15.4.tar.gz
+: 1538039760:0;ls
+: 1538039768:0;rm nginx-1.15.4.tar.gz
+: 1538039771:0;cd nginx-1.15.4
+: 1538039771:0;ls
+: 1538039795:0;./configure --add-module=~/nginx-rtmp-module
+: 1538039817:0;make
+: 1538039842:0;./configure --add-module=~/nginx-rtmp-module --with-http_ssl_module
+: 1538039927:0;./configure --add-module=../nginx-rtmp-module --with-http_ssl_module
+: 1538039972:0;./configure --add-module=../nginx-rtmp-module
+: 1538040001:0;sudo apt install pcre
+: 1538040038:0;cd ..
+: 1538040042:0;wget -c https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.gz
+: 1538040052:0;tar -xzf pcre-8.42.tar.gz
+: 1538040055:0;cd pcre-8.42
+: 1538040056:0;ls
+: 1538040061:0;make
+: 1538040066:0;cmake .
+: 1538040071:0;make
+: 1538040079:0;sudo make install
+: 1538040082:0;cd ..
+: 1538040084:0;ls
+: 1538040090:0;cd nginx-1.15.4
+: 1538040098:0;./configure --add-module=../nginx-rtmp-module
+: 1538040122:0;make
+: 1538040199:0;sudo make install
+: 1538042561:0;exit
+: 1538044195:0;ls
+: 1538044203:0;rm pcre-8.42.tar.gz
+: 1538044204:0;ls
+: 1538044209:0;rm -r curl-7.61.1
+: 1538044214:0;sudo rm -r curl-7.61.1
+: 1538044243:0;ls
+: 1538044250:0;sudo rm -r pcre-8.42
+: 1538044252:0;ls
+: 1538044261:0;cd nginx-
+: 1538044264:0;cd nginx-1.15.4
+: 1538044265:0;ls
+: 1538044269:0;vim Makefile
+: 1538044743:0;exit
+: 1538049165:0;ls
+: 1538049167:0;exit
+: 1538049254:0;sudo do-release-upgrade
+: 1538049293:0;exit
+: 1538052796:0;ls
+: 1538052805:0;exit
+: 1538100516:0;sudo apt upgrade
+: 1538100526:0;cd /usr/local
+: 1538100527:0;ls
+: 1538100536:0;ls sib
+: 1538100543:0;ls sbin/
+: 1538100547:0;ls bin
+: 1538100553:0;nginx -v
+: 1538100565:0;cd ~
+: 1538100565:0;ls
+: 1538100578:0;sudo apt remove nginx
+: 1538100587:0;cd nginx-1.15.4
+: 1538100589:0;ls
+: 1538100596:0;sudo make install
+: 1538100604:0;ls /usr/local
+: 1538100612:0;cd /usr/local/nginx
+: 1538100612:0;ls
+: 1538100616:0;cd conf
+: 1538100617:0;ls
+: 1538100640:0;vim nginx.conf
+: 1538100664:0;sudo vim nginx.conf
+: 1538100982:0;sudo service nginx start
+: 1538100986:0;nginx -v
+: 1538100993:0;sudo service nginx status
+: 1538101011:0;sudo ls /usr/sbin
+: 1538101022:0;sudo ls /usr/sbin/nginx
+: 1538101061:0;sudo service nginx configtest
+: 1538101073:0;sudo service nginx reload
+: 1538101084:0;netstat -nlp
+: 1538101100:0;service nginx restart
+: 1538101106:0;sudo service nginx restart
+: 1538101116:0;netstat -nlp
+: 1538101168:0;sudo netstat -nlp
+: 1538101178:0;nginx -v
+: 1538101181:0;nginx
+: 1538101187:0;sudo nginx
+: 1538101239:0;cp nginx.conf ~
+: 1538101242:0;ls ~
+: 1538101251:0;sudo service nginx stop
+: 1538101253:0;cd ~
+: 1538101262:0;sudo apt remove nginx
+: 1538101274:0;sudo apt remove nginx*
+: 1538101303:0;sudo rm -rf /etc/nginx
+: 1538101316:0;sudo rm -rf /etc/sbin/nginx
+: 1538101330:0;ls /usr/man/man1
+: 1538101335:0;sudo ls /usr/man/man1
+: 1538101343:0;ls /usr/share/man/man1
+: 1538101405:0;sudo rm -rf /etc/nginx
+: 1538101407:0;ls
+: 1538101412:0;cd nginx-1
+: 1538101417:0;cd nginx-1.15.4
+: 1538101417:0;ls
+: 1538101423:0;sudo make install
+: 1538101426:0;nginx
+: 1538101436:0;make
+: 1538101645:0;nginx -v
+: 1538101655:0;nginx
+: 1538101664:0;ls/ usr/sbin
+: 1538101672:0;ls /usr/sbin
+: 1538101692:0;sudo rm /usr/sbin/nginx
+: 1538101698:0;sudo make install
+: 1538101704:0;ls /usr/sbin
+: 1538101709:0;nginx
+: 1538101803:0;cd /usr/local/nginx
+: 1538101804:0;ls
+: 1538101811:0;sudo ls
+: 1538101814:0;cd sbin
+: 1538101815:0;ls
+: 1538101821:0;./nginx
+: 1538101824:0;./nginx -v
+: 1538101832:0;./nginx.old -v
+: 1538101837:0;rm nginx.old
+: 1538101841:0;sudo rm nginx.old
+: 1538101844:0;cd ..
+: 1538101854:0;sudo cp sbin/nginx /usr/sbin/
+: 1538101856:0;nginx
+: 1538101859:0;nginx -v
+: 1538101880:0;ls
+: 1538101882:0;cd conf
+: 1538101883:0;ls
+: 1538101888:0;vim nginx.conf
+: 1538101903:0;sudo service nginx start
+: 1538101960:0;cd /etc/
+: 1538101966:0;cd init.d
+: 1538101967:0;ls
+: 1538101973:0;./nginx
+: 1538101977:0;./nginx -v
+: 1538101985:0;./nginx start
+: 1538101991:0;sudo ./nginx start
+: 1538101999:0;journalctl -xe
+: 1538102019:0;cd /usr/local/nginx
+: 1538102020:0;ls
+: 1538102022:0;cd conf
+: 1538102028:0;vim nginx.conf
+: 1538102058:0;sudo vim nginx.conf
+: 1538102104:0;sudo service nginx configteest
+: 1538102108:0;sudo service nginx configtest
+: 1538102121:0;sudo service nginx reload
+: 1538102130:0;sudo service nginx start
+: 1538102176:0;sudo service nginx status
+: 1538104606:0;cd /etc/ng
+: 1538104611:0;ls /etc
+: 1538104617:0;cd ~
+: 1538104622:0;cd nginx-1.15.4
+: 1538104626:0;sudo make install
+: 1538105510:0;sudo service nginx start
+: 1538105568:0;;s /etc/init.d
+: 1538105570:0;ls /etc/init.d
+: 1538105586:0;vim /etc/init.d/nginx
+: 1538105656:0;ls /etc/init.d -al
+: 1538106708:0;sudo rm /etc/init.d/nginx
+: 1538106717:0;sudo wget https://raw.githubusercontent.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx
+: 1538106727:0;sudo chmod +x /etc/init.d/nginx
+: 1538106732:0;ls /etc/init.d -al
+: 1538106741:0;nginx 
+: 1538106746:0;sudo service nginx status
+: 1538106759:0;sudo service nginx start
+: 1538106779:0;sudo service nginx stop
+: 1538106782:0;sudo service nginx start
+: 1538106806:0;sudo vim /etc/init.d/nginx
+: 1538106858:0;sudo service nginx
+: 1538106864:0;sudo service nginx reload
+: 1538106871:0;sudo service nginx configtest
+: 1538106886:0;sudo service nginx start
+: 1538107086:0;systemctl status nginx.service
+: 1538107261:0;sudo vim /etc/init.d/nginx
+: 1538107300:0;ls
+: 1538107309:0;cd /usr/local/nginx
+: 1538107309:0;ls
+: 1538107314:0;cd sbin
+: 1538107315:0;ls
+: 1538107317:0;./nginx
+: 1538107323:0;./nginx -s start
+: 1538107335:0;./nginx -help
+: 1538107341:0;./nginx --help
+: 1538107345:0;./nginx -h
+: 1538107360:0;./nginx -t
+: 1538107378:0;ls
+: 1538107380:0;cd ..
+: 1538107381:0;ls
+: 1538107384:0;ls logs
+: 1538107400:0;ls -al
+: 1538107408:0;cd logs
+: 1538107409:0;ls -la
+: 1538107411:0;ls -al
+: 1538107434:0;cd ..
+: 1538107435:0;ls
+: 1538107438:0;cd sbin
+: 1538107441:0;sudo ./nginx -t
+: 1538107460:0;sudo ./nginx -s start
+: 1538107464:0;sudo ./nginx -s stop
+: 1538107472:0;./nginx -h
+: 1538107487:0;./nginx -V
+: 1538107520:0;sudo apt install nginx
+: 1538107526:0;nginx -v
+: 1538107535:0;sudo service nginx start
+: 1538107548:0;cd ~
+: 1538107557:0;sudo rm -rf /usr/local/nginx
+: 1538107559:0;ls
+: 1538107563:0;ls /etc
+: 1538107578:0;sudo rm /etc/init.d/nginx
+: 1538107585:0;cd nginx-1.15.4
+: 1538107586:0;ls
+: 1538107962:0;sudo apt install nginx
+: 1538107970:0;sudo apt remove nginx
+: 1538107975:0;sudo apt install nginx
+: 1538107980:0;nginx -v
+: 1538108023:0;ls /usr
+: 1538108025:0;cd sbin
+: 1538108025:0;ls
+: 1538108032:0;ls /usr/sbin
+: 1538108033:0;ls
+: 1538108040:0;sudo rm /usr/sbin/nginx
+: 1538108047:0;sudo apt remove nginx
+: 1538108054:0;sudo apt install nginx
+: 1538108059:0;nginx -v
+: 1538108093:0;ls
+: 1538108098:0;cd /usr/local
+: 1538108099:0;ls
+: 1538108103:0;cd bin
+: 1538108103:0;ls
+: 1538108106:0;cd ..
+: 1538108106:0;ls
+: 1538108112:0;cd etc
+: 1538108112:0;ls
+: 1538108115:0;cd ..
+: 1538108116:0;exit
+: 1538114819:0;cd nginx-1
+: 1538114820:0;cd nginx-1.15.4
+: 1538114821:0;ls
+: 1538114825:0;sudo make install
+: 1538114832:0;cd /usr/local/nginx/sbin
+: 1538114834:0;nginx
+: 1538114837:0;./nginx
+: 1538114843:0;sudo ./nginx
+: 1538114872:0;sudo ./nginx -s stop
+: 1538114890:0;ls
+: 1538114904:0;sudo cp nginx /usr/sbin
+: 1538114907:0;nginx
+: 1538114954:0;sudo service nginx start
+: 1538114991:0;nginx -v
+: 1538114995:0;nginx -V
+: 1538116355:0;sudo update-rc.d
+: 1538116367:0;sudo update-rc.d nginx default
+: 1538116497:0;sudo service nginx status
+: 1538116521:0;ls /lib/systemd/system
+: 1538116541:0;sudo chkconfig add nginx
+: 1538117580:0;sudo service nginx
+: 1538117597:0;sudo service nginx status
+: 1538117840:0;sudo update-rc.d -f remove nginx
+: 1538117861:0;sudo update-rc.d -f nginx remove
+: 1538117878:0;sudo update-rc.d -f nginx defaults
+: 1538117900:0;sudo vim /etc/init.d/nginx
+: 1538117933:0;vim ~/nginx
+: 1538118386:0;vi ~/nginx
+: 1538118412:0;gedit
+: 1538118444:0;nginx -v
+: 1538118540:0;sudo chmod 755 ~/nginx
+: 1538118546:0;sudo chmod +x ~/nginx
+: 1538118560:0;sudo mv ~/nginx /etc/init.d/
+: 1538118574:0;sudo update-rc.d -f nginx defaults
+: 1538118583:0;sudo service nginx configtest
+: 1538118592:0;sudo service nginx start
+: 1538118603:0;sudo service nginx reload
+: 1538118608:0;sudo service nginx restart
+: 1538118633:0;sudo systemctl enable nginx
+: 1538118640:0;sudo service nginx start
+: 1538118744:0;journalctl -xe
+: 1538118851:0;nginx -t -c /etc/nginx/nginx.conf
+: 1538118855:0;sudo nginx -t -c /etc/nginx/nginx.conf
+: 1538118872:0;sudo nginx -t -c /usr/local/nginx/conf/nginx.conf
+: 1538118987:0;cd /usr/lib/systemd
+: 1538118988:0;ls
+: 1538119000:0;systemctl -a
+: 1538119272:0;ls
+: 1538119276:0;ls user
+: 1538119280:0;ls boot
+: 1538119286:0;ls network
+: 1538119289:0;ls user-generators
+: 1538119292:0;ls catalog
+: 1538119308:0;ls -al
+: 1538119315:0;sudo ls
+: 1538119366:0;cd /lib/systemd
+: 1538119366:0;ls
+: 1538119371:0;cd system
+: 1538119371:0;ls
+: 1538119378:0;vim nginx.service
+: 1538119417:0;ls /usr/local/nginx
+: 1538119421:0;ls /usr/local/nginxlogs
+: 1538119425:0;ls /usr/local/nginx/logs
+: 1538119435:0;sudo vim nginx.service
+: 1538119497:0;sudo service nginx start
+: 1538119508:0;sudo systemctl daemon-reloda
+: 1538119510:0;sudo systemctl daemon-reload
+: 1538119514:0;sudo service nginx start
+: 1538119603:0;journalctl -xe
+: 1538119632:0;ls
+: 1538119635:0;vim nginx.service
+: 1538119792:0;vim /etc/init.d/nginx
+: 1538119822:0;ls /usr/local/nginx/logs
+: 1538119829:0;ls /usr/local/nginx
+: 1538119841:0;ls /usr/local/nginx/sbin
+: 1538119846:0;ls /usr/local/nginx/conf
+: 1538119856:0;cd ~
+: 1538119859:0;cd nginx-1.15.4
+: 1538119863:0;sudo make install
+: 1538119872:0;ls /usr/local/nginx/logs
+: 1538119983:0;cd /usr/local/nginx
+: 1538119983:0;ls
+: 1538119986:0;cd sbin
+: 1538119988:0;./nginx
+: 1538119994:0;sudo ./nginx
+: 1538120008:0;sudo ./nginx -s stop
+: 1538120014:0;sudo ./nginx -v
+: 1538120016:0;sudo ./nginx -h
+: 1538120048:0;cd ..
+: 1538120049:0;ls
+: 1538120051:0;ls logs
+: 1538120056:0;ls conf
+: 1538120064:0;rm *.default
+: 1538120078:0;rm conf/*.default
+: 1538120083:0;sudo rm conf/*.default
+: 1538120085:0;ls conf
+: 1538120091:0;vim conf/nginx.conf
+: 1538120123:0;cd ..
+: 1538120123:0;ls
+: 1538120127:0;ls man
+: 1538120131:0;ls man/man1
+: 1538120139:0;cd nginx
+: 1538120139:0;ls
+: 1538120143:0;ls html
+: 1538120149:0;ls proxy_temp
+: 1538120152:0;ls logs
+: 1538120159:0;ls /var/run
+: 1538120193:0;cd sbin
+: 1538120199:0;sudo ./nginx
+: 1538120202:0;cd ..
+: 1538120204:0;ls logs
+: 1538120217:0;vim logs/nginx.pid
+: 1538120577:0;ls
+: 1538120580:0;ls logs
+: 1538120584:0;cd sbin
+: 1538120585:0;ls
+: 1538120594:0;sudo rm nginx.old
+: 1538120599:0;sudo ./nginx -s stop
+: 1538120601:0;cd ..
+: 1538120603:0;ls logs
+: 1538120618:0;journalctl -a | grep nginx
+: 1538120651:0;ls -al /usr/sbin
+: 1538120680:0;sudo rm /usr/sbin/nginx
+: 1538120895:0;cd sbin
+: 1538120908:0;sudo ln -s nginx /usr/sbin/nginx
+: 1538120912:0;ls /usr/sbin
+: 1538120919:0;ls /usr/sbin -al
+: 1538120935:0;sudo rm /usr/sbin/nginx
+: 1538120936:0;ls
+: 1538120952:0;sudo ln -s /usr/sbin/nginx nginx
+: 1538120984:0;sudo ln -s /usr/local/nginx/sbin/nginx /usr/sbin/nginx
+: 1538120989:0;sudo ls /usr/sbin
+: 1538120998:0;ls -al /usr/sbin
+: 1538121010:0;sudo service nginx start
+: 1538121019:0;sudo service nginx status
+: 1538121048:0;sudo service nginx stop
+: 1538121467:0;cd ~
+: 1538121468:0;ls
+: 1538121483:0;cd /usr/local/nginx/conf
+: 1538121484:0;ls
+: 1538121495:0;mv nginx.conf nginx.conf.bak
+: 1538121500:0;sudo mv nginx.conf nginx.conf.bak
+: 1538121507:0;sudo mv ~/nginx.conf .
+: 1538121507:0;ls
+: 1538121514:0;sudo service nginx start
+: 1538121526:0;journalctl -xe
+: 1538121549:0;sudo vim nginx.conf
+: 1538121596:0;sudo service nginx start
+: 1538121654:0;netstat -nlp
+: 1538123390:0;ffmpeg -i rtmp://live.hkstv.hk.lxdns.com/live/hks -vcodec copy -acodec copy -f flv rtmp://192.168.90.26/hls/mystream
+: 1538123394:0;ffmpeg
+: 1538123443:0;exit
+: 1538129636:0;sudo apt install ffmpeg
+: 1538129707:0;ffmpeg -i rtmp://live.hkstv.hk.lxdns.com/live/hks -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538130812:0;ffmpeg -re -i sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538130838:0;ls /usr/local/nginx/hls
+: 1538130843:0;ls /usr/local/nginx
+: 1538130845:0;ls
+: 1538130866:0;vim /usr/local/nginx/conf/nginx.conf
+: 1538130882:0;ls /usr/local/nginx/html
+: 1538130884:0;ls /usr/local/nginx/htmlhls
+: 1538130888:0;ls /usr/local/nginx/html/hls
+: 1538130892:0;sudo ls /usr/local/nginx/html/hls
+: 1538130917:0;cd /usr/local/nginx/html
+: 1538130920:0;cd hls
+: 1538130920:0;ls
+: 1538130937:0;sudo cd hls
+: 1538130941:0;sudo su
+: 1538131255:0;sudo service nginx status
+: 1538131259:0;sudo service nginx restart
+: 1538131283:0;ls
+: 1538131294:0;sudo vim hls/playhls.html
+: 1538131362:0;sudo chown hls/* platypus
+: 1538131366:0;sudo chown hls platypus
+: 1538131374:0;sudo chown platypus hls
+: 1538131377:0;cd hls
+: 1538131378:0;ls
+: 1538131382:0;vim playhls.html
+: 1538131388:0;cd ..
+: 1538131396:0;sudo chown -R platypus hls
+: 1538131399:0;cd hls
+: 1538131399:0;ls
+: 1538131401:0;ls -al
+: 1538131403:0;sudo ls
+: 1538131408:0;ls
+: 1538131409:0;cd ..
+: 1538131409:0;ls
+: 1538131414:0;vim index.html
+: 1538131419:0;cd ..
+: 1538131427:0;sudo chown -R platypus html
+: 1538131430:0;cd html
+: 1538131432:0;vim index.html
+: 1538131435:0;ls -al
+: 1538131437:0;cd hls
+: 1538131438:0;ls
+: 1538131452:0;ffmpeg -re -i sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538131456:0;cd ~
+: 1538131458:0;ffmpeg -re -i sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538131505:0;cd /usr/local/nginx/html
+: 1538131505:0;ls
+: 1538131507:0;cd .
+: 1538131508:0;cd ..
+: 1538131509:0;cd conf
+: 1538131512:0;vim nginx.conf
+: 1538131546:0;sudo service nginx restart
+: 1538131568:0;wget localhost:8080/hls/playhls.html
+: 1538131576:0;wget http://localhost:8080/hls/playhls.html
+: 1538131583:0;cd ~
+: 1538131585:0;wget http://localhost:8080/hls/playhls.html
+: 1538131588:0;ls
+: 1538131591:0;vim playhls.html
+: 1538131612:0;cd /usr/local/nginx/html
+: 1538131613:0;ls
+: 1538131615:0;cd hls
+: 1538131615:0;ls
+: 1538131618:0;cd hls
+: 1538131626:0;sudo chown -r platypus hls
+: 1538131630:0;sudo chown - platypus hls
+: 1538131634:0;sudo chown -R platypus hls
+: 1538131636:0;cd hls
+: 1538131636:0;ls
+: 1538131638:0;vim playhls.html
+: 1538131678:0;ls
+: 1538131691:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538131703:0;ls
+: 1538131705:0;cd ..
+: 1538131706:0;ls
+: 1538131718:0;vim 50x.html
+: 1538131729:0;mkdir test
+: 1538131730:0;ls
+: 1538131738:0;cp index.html test/index.html
+: 1538131740:0;ls test
+: 1538131749:0;ls hls
+: 1538131750:0;ls
+: 1538131773:0;cd ..
+: 1538131775:0;cd conf
+: 1538131776:0;vim nginx.conf
+: 1538131825:0;sudo service nginx restart
+: 1538131840:0;cd ~
+: 1538131854:0;wget http://gcp.platypuspro.cn:8080/hls/playhls.html
+: 1538131911:0;netstat -a
+: 1538131921:0;netstat -anp
+: 1538132142:0;cd /usr/local/nginx/html
+: 1538132143:0;ls
+: 1538132145:0;cd hls
+: 1538132172:0;sudo cp index.html hls/
+: 1538132197:0;cd ..
+: 1538132198:0;ls
+: 1538132199:0;cd vonf
+: 1538132204:0;sudo vim conf/nginx.conf
+: 1538132358:0;ls
+: 1538132360:0;ls conf
+: 1538132368:0;sudo vim conf/nginx.conf
+: 1538132592:0;cd ~
+: 1538132604:0;wget http://localhost:8080/hls/playhls.html
+: 1538132606:0;ls
+: 1538132609:0;rm playhls.html
+: 1538132611:0;vim playhls.html.1
+: 1538132713:0;rm playhls.html.1
+: 1538133021:0;cd /usr/local/nginx/html
+: 1538133023:0;cd hls
+: 1538133035:0;cd ..
+: 1538133038:0;vim conf/nginx.conf
+: 1538133112:0;ls
+: 1538133119:0;vim conf/nginx.conf
+: 1538133185:0;sudo chown -r platypus hls
+: 1538133189:0;sudo chown -R platypus hls
+: 1538133197:0;sudo chown -R platypus html/hls
+: 1538133247:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538133265:0;ls
+: 1538133267:0;cd html
+: 1538133268:0;ls
+: 1538133269:0;cd hls
+: 1538133270:0;ls
+: 1538133292:0;cd ..
+: 1538133296:0;cp hls/playhls.html test/
+: 1538133313:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538133330:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538133380:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538133391:0;ls hls
+: 1538133392:0;ls
+: 1538133398:0;clear
+: 1538133399:0;cd hls
+: 1538133408:0;sudo ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://127.0.0.1/hls/mystream
+: 1538133415:0;ls 
+: 1538133416:0;ls
+: 1538133446:0;vim ../../conf/nginx.conf
+: 1538133480:0;netstat -anp
+: 1538133488:0;netstat -nlp
+: 1538133646:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538134547:0;ls
+: 1538134548:0;cd ..
+: 1538134554:0;sudo rm -r hls
+: 1538134556:0;mkdir hls
+: 1538134564:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538134570:0;ls hls
+: 1538134572:0;ls
+: 1538134576:0;ls hls
+: 1538134597:0;cd /usr/local/nginx/html/hls
+: 1538134602:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538134604:0;ls
+: 1538134612:0;sl
+: 1538134617:0;exit
+: 1538134776:0;ffmpeg -re -i ~/sample.flv -vcodec copy -flags global_header -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538134827:0;sudo service nginx restart
+: 1538134833:0;ffmpeg -re -i ~/sample.flv -vcodec copy -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538135371:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy -f mp4 rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538135391:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538135400:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy -f flv rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538135417:0;ffmpeg --help
+: 1538135461:0;ffmpeg -re --help
+: 1538135596:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538135610:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy -f avi rtmp://gcp.platypuspro.cn/hls/mystream
+: 1538135626:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy -f avi rtmp://localhost/hls/mystream
+: 1538135641:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy -f avi rtmp://127.0.0.1:1935/hls/mystream
+: 1538135660:0;netstat -nlp
+: 1538135669:0;ffmpeg -re -i ~/sample.mp4 -vcodec copy -acodec copy -f avi rtmp://localhost:1935/hls/mystream
+: 1538135687:0;ls hls
+: 1538136992:0;ls hls -al
+: 1538137060:0;ls hls
+: 1538137212:0;ls
+: 1538137215:0;cd test
+: 1538137215:0;ls
+: 1538137218:0;vim playhls.html
+: 1538137299:0;cd ..
+: 1538137300:0;ls
+: 1538137304:0;cp test/playhls.html .
+: 1538137305:0;ls
+: 1538137310:0;rm index.html
+: 1538137316:0;mv playhls.html index.html
+: 1538137316:0;ls
+: 1538137319:0;vim index.html
+: 1538137775:0;npm 
+: 1538137784:0;npm instll --save flv.js
+: 1538137789:0;npm install --save flv.js
+: 1538138072:0;mv ~/flv.min.js .
+: 1538138073:0;ls
+: 1538138080:0;vim index.html
+: 1538150801:0;cd /usr/local/nginx/html
+: 1538150802:0;ls
+: 1538150804:0;vim index.html
+: 1538150818:0;ls -al
+: 1538150822:0;rm .index.html.swp
+: 1538150825:0;vim index.html
+: 1538151888:0;exit
+: 1538154735:0;ls
+: 1538154751:0;ssserver -c ss.json -d start
+: 1538154760:0;sudo ssserver -c ss.json -d start
+: 1538154765:0;exit
+: 1538288013:0;mysql -v
+: 1538288020:0;mysql --version
+: 1538288228:0;git clone https://dev.mysql.com/downloads/file/?id=479859
+: 1538288235:0;wget -c https://dev.mysql.com/downloads/file/?id=479859
+: 1538288255:0;wget -c https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.12.tar.gz
+: 1538288310:0;ls
+: 1538288340:0;rm sample.mp4
+: 1538288343:0;rm sample.flv
+: 1538288343:0;ls
+: 1538289086:0;rm mysql-8.0.12.tar.gz
+: 1538289087:0;ls
+: 1538289102:0;cd /usr/local/nginx/html
+: 1538289103:0;ls
+: 1538289106:0;vim index.html
+: 1538289144:0;rm flv.min.js
+: 1538289145:0;ls
+: 1538289148:0;ls node_modules
+: 1538289163:0;npm uninstall video-js
+: 1538289175:0;ls
+: 1538289176:0;cd node_modules
+: 1538289177:0;ls
+: 1538289184:0;cd ..
+: 1538289184:0;ls
+: 1538289214:0;npm uninstall -s flv.js
+: 1538289219:0;ls
+: 1538289222:0;ls node_modules
+: 1538289226:0;rm node_modules
+: 1538289231:0;rm -r node_modules
+: 1538289231:0;ls
+: 1538289236:0;ls test
+: 1538289236:0;ls
+: 1538289243:0;rm -rf test
+: 1538289252:0;ls hls
+: 1538289256:0;rm 50x.html
+: 1538289257:0;ls
+: 1538289260:0;vim index.html
+: 1538291373:0;exit
+: 1538350976:0;cd /usr/local/nginx
+: 1538350981:0;vim conf/nginx.conf
+: 1541763745:0;sudo apt upgrade
+: 1541763859:0;sudo apt autoremove
+: 1541763880:0;exit
+: 1543072350:0;ping thepiratebay.org
+: 1543072393:0;ls
+: 1543072398:0;wget thepiratebay.org
+: 1543072454:0;ls
+: 1543072457:0;exit
+: 1543249503:0;ssh ubuntu@platypuspro.cn
+: 1543249515:0;sudo apt upgrade
+: 1543249530:0;ls
+: 1543249531:0;exit
+: 1543256451:0;nginx --version
+: 1543256455:0;nginx -v
+: 1543256461:0;ls
+: 1543256472:0;cd nginx-1.15.4
+: 1543256473:0;ls
+: 1543256491:0;ls auto
+: 1543256496:0;cd man
+: 1543256497:0;ls
+: 1543256499:0;cd ..
+: 1543256503:0;cd src
+: 1543256503:0;ls
+: 1543256505:0;cd ..
+: 1543256508:0;ls
+: 1543256512:0;cd con
+: 1543256513:0;ls
+: 1543256514:0;cd ..
+: 1543256515:0;ls
+: 1543256521:0;cd nginx-rtmp-module
+: 1543256521:0;ls
+: 1543256528:0;cd ..
+: 1543256530:0;ls
+: 1543256539:0;cd /etc/nginx
+: 1543256539:0;ls
+: 1543256542:0;cd ..
+: 1543256550:0;cd /usr/local
+: 1543256551:0;ls
+: 1543256554:0;cd nginx
+: 1543256554:0;ls
+: 1543256559:0;cd sbin
+: 1543256560:0;ls
+: 1543256562:0;./nginx -v
+: 1543256739:0;cd ~
+: 1543256742:0;wget -c http://php.net/get/php-7.2.12.tar.gz/from/a/mirror
+: 1543256747:0;ls
+: 1543256753:0;rm mirror
+: 1543256789:0;wget -c http://php.net/distributions/php-7.2.12.tar.gz
+: 1543256798:0;ls
+: 1543256803:0;tar -xzf php-7.2.12.tar.gz
+: 1543256808:0;ls
+: 1543256811:0;cd php-7.2.12
+: 1543256812:0;ls
+: 1543256825:0;./configure
+: 1543256869:0;sudo apt install xml2
+: 1543256876:0;sudo apt install xml2-dev
+: 1543256882:0;sudo apt install zlib
+: 1543256890:0;./configure
+: 1543256931:0;sudo apt-get install libxml2
+: 1543256936:0;sudo apt-get install libxml2-dev
+: 1543256948:0;./configure
+: 1543256986:0;make
+: 1543258037:0;sudo make install
+: 1543258047:0;php
+: 1543258058:0;php --version
+: 1543258115:0;exit
+: 1543296889:0;ls
+: 1543296894:0;rm php-7.2.12.tar.gz
+: 1543296895:0;ls
+: 1543296903:0;php -h
+: 1543296944:0;vim tmp.php
+: 1543296956:0;php tmp.php
+: 1543296962:0;vim tmp.php
+: 1543296978:0;php tmp.php
+: 1543297001:0;cat tmp.php
+: 1543297007:0;php tmp.php
+: 1543297129:0;php -v
